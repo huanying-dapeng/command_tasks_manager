@@ -55,6 +55,7 @@ atexit.register(_call_python_exit)
 class CommTools(object):
     @staticmethod
     def del_list_elements(target_list: list, *elems, del_all=False):
+        # delete batch elements from a list
         if del_all:
             flag = 0
             check_dic = {e: 1 for e in elems}
@@ -71,6 +72,13 @@ class CommTools(object):
                     target_list.remove(elem)
                 except ValueError:
                     pass
+
+    @staticmethod
+    def check_file(*files):
+        for file in files:
+            if not os.path.isfile(file):
+                raise FileNotFoundError('"{}" is not exiting, please check it manually')
+        return files
 
     def __new__(cls, *args, **kwargs):
         raise TypeError("CommTools has no instance")
@@ -148,11 +156,17 @@ class ResourceManagement(object):
         mem = ResourceManagement.to_human_readable_format(mem)
         res = "max_cpu:{cpu}\tmax_memory:{mem}".format(
             cpu="not stat in win" if WINDOWS else cpu, mem=mem)
+
         if result_list is None:
             return res
 
     @staticmethod
     def to_human_readable_format(*num):
+        """
+        byte format memory data ---> human readable format [G, M]
+        :param num:
+        :return:
+        """
         temp_list = []
         for mem in num:
             g_mem = round(mem / 1024 / 1024 / 1024, 5)
@@ -176,160 +190,6 @@ class ResourceManagement(object):
     @property
     def total_mem(self):
         return self.total_memory
-
-
-class CmdPool(dict):
-    __LOCK__ = threading.Lock()
-
-    def __init__(self, re_manager: ResourceManagement):
-        super(CmdPool, self).__init__()
-        self.__manager = re_manager
-        self.is_running_list = []
-        self.__is_waiting_list = []
-        self.is_remain_list = []
-        self.is_completed_list = []
-        self.is_error_list = []
-        self.__c2f = {}  # key: cmd, value: depend
-        self.__f2c = {}  # key: depended, value: cmd
-        self.__is_ready = False
-        self._signal_queue = queue.Queue()
-        self.__cmd_queue = queue.Queue()
-        self.__total_task = 0
-        # add one thread to update list
-        # thread = threading.Thread(target=self._update_wait_list)
-        # thread.setDaemon(True)
-        # thread.start()
-        # threads_ref_set.add(thread)
-
-    def get_all_deps(self, cmd_obj):
-        res_list = []
-        if isinstance(cmd_obj, Command):
-            deps = self.__f2c.get(cmd_obj.name, [])
-            if not deps:
-                return [cmd_obj.name]
-            for n in deps:
-                res_list.append(n)
-                res_list.extend(self.get_all_deps(self[n]))
-        return res_list
-
-    def next(self, now_run_cmd=None):
-        if not self.__is_ready:
-            with self.__LOCK__:
-                if not self.__is_ready:
-                    self.__is_waiting_list = [i for i in set(self.__is_waiting_list)]
-                    self.is_remain_list = [i for i in set(self.is_remain_list)]
-                    self.__is_ready = True
-
-        with self.__LOCK__:
-            if isinstance(now_run_cmd, Command):
-                if now_run_cmd.is_completed:
-                    if now_run_cmd.is_error:
-                        self.is_error_list.append(now_run_cmd.name)
-                        for i in self.get_all_deps(now_run_cmd):
-                            self[i].is_running = False
-                            self[i].is_completed = True
-                            self[i].is_waiting = False
-                            self[i].is_error = True
-                    else:
-                        self.is_completed_list.append(now_run_cmd.name)
-                elif now_run_cmd.is_waiting and not now_run_cmd.is_error:
-                    self[now_run_cmd.name].is_running = False
-                    self[now_run_cmd.name].is_completed = False
-                    self[now_run_cmd.name].is_waiting = True
-                    self[now_run_cmd.name].is_error = False
-                    self.__cmd_queue.put(now_run_cmd.name)
-
-            if len(self.is_completed_list) == self.__total_task: return None
-            # print(self.is_completed_list)
-            flag = 0
-            while True:
-                flag += 1
-                if flag == 3: return "waite"
-                size = self.__cmd_queue.qsize()
-                for i in range(size):
-                    cmd_name = self.__cmd_queue.get(timeout=2)
-                    cmd_obj = self[cmd_name]
-                    if cmd_obj.is_waiting and self.__manager.check_resource(cmd_obj=cmd_obj):
-                        cmd_obj.is_waiting = False
-                        return cmd_obj
-                    else:
-                        self.__cmd_queue.put(cmd_name)
-                for name, cmd_obj in self.items():
-                    is_ready = True
-                    for dname in cmd_obj.depends:
-                        if not self[dname].is_completed:
-                            is_ready = False
-                            break
-                    if is_ready and name not in self.is_completed_list:
-                        print(cmd_obj.is_in_queue, name)
-                        self.__cmd_queue.put(name)
-
-    def _update_wait_list(self):
-        while 1:
-            try:
-                signal = self._signal_queue.get(timeout=2)
-            except queue.Empty:
-                time.sleep(2)
-                continue
-
-            if signal is None:
-                break
-
-            temp = []
-            with self.__LOCK__:
-                for item in self.is_remain_list:
-                    cmd_obj = self[item]
-                    if cmd_obj.is_ready:
-                        temp.append(item)
-                        self.__is_waiting_list.append(item)
-                for i in temp:
-                    try:
-                        self.is_remain_list.pop(i)
-                    except ValueError:
-                        pass
-
-    def add_waiting_cmds(self, *cmd_names):
-        """
-        add commands which do not depend any commands
-        :param cmd_names: list of command' name
-        :return: None
-        """
-        with self.__LOCK__:
-            self.__is_waiting_list.extend(cmd_names)
-
-    def update_dep(self):
-        temp_list = self.is_remain_list[:]
-        for k, v in self.items():
-            for i in v.depends:
-                if i not in self.__f2c:
-                    self.__f2c[i] = []
-                if k in temp_list:
-                    temp_list.pop(temp_list.index(k))
-                self.__f2c[i].append(k)
-        self.__is_waiting_list = temp_list
-        for i in temp_list:
-            self.__cmd_queue.put(i)
-            self.is_remain_list.pop(self.is_remain_list.index(i))
-
-    def add_running_cmd(self, name):
-        with self.__LOCK__:
-            self.is_running_list.append(name)
-
-    def del_running_cmd(self, name):
-        with self.__LOCK__:
-            try:
-                self.is_running_list.remove(name)
-            except ValueError:
-                pass
-
-    def is_ready(self):
-        self.__is_ready = True
-
-    def __setitem__(self, key, value):
-        self.is_remain_list.append(key)
-        if key not in self:
-            self.__total_task += 1
-        super(CmdPool, self).__setitem__(key, value)
 
 
 class Command(object):
@@ -371,11 +231,15 @@ class Command(object):
             return False
 
     def run(self, monitor):
-        self.is_waiting = False
+        # ----------------- update state -----------------
+        self.is_waiting = False  # waiting is False
         self.is_running = True
-        process = Popen(self.__cmd, shell=True, stderr=PIPE, stdout=PIPE, universal_newlines=True)
         self.__bind_pool.add_running_cmd(self.name)
+
+        process = Popen(self.__cmd, shell=True, stderr=PIPE, stdout=PIPE, universal_newlines=True)
         result_list = []
+
+        # Monitor resource usage of this process
         if callable(monitor):
             thread = threading.Thread(target=monitor, args=(process.pid, result_list))
             thread.setDaemon(True)
@@ -383,6 +247,7 @@ class Command(object):
             # add thread to
             threads_ref_set.add(thread)
         processes_ref_set.add(process)
+
         # read err, and stdout to avoid pipe blockage
         out, err = [], []
         for line in process.stdout:
@@ -402,11 +267,16 @@ class Command(object):
         mem = ResourceManagement.to_human_readable_format(mem)
         res = "max_cpu:{cpu}\tmax_memory:{mem}".format(
             cpu="not stat in win" if WINDOWS else cpu, mem=mem[0])
+
+        # ----------------- update state -----------------
         self.is_running = False
         self.is_completed = True
+        self.__bind_pool.del_running_cmd(self.name)
+
         return res if len(result_list) > 0 else "may be error"
 
     def parse_mem(self):
+        # Make memory machine-readable (int)
         if isinstance(self.__mem, str):
             print("mem", self.__mem)
             mem = self.__mem.strip()
@@ -457,6 +327,228 @@ class Command(object):
         return self.__depends
 
 
+class CmdPool(dict):
+    __LOCK__ = threading.Lock()
+
+    def __init__(self, re_manager: ResourceManagement):
+        super(CmdPool, self).__init__()
+        self.__manager = re_manager
+        self.__is_running_list = []  # cmd is running
+        self.__is_waiting_list = []  # cmd is in queue
+        self.__is_remain_list = []  # cmd does not meet the running requirements
+        self.__is_completed_list = []  # cmd is completed
+        self.__is_error_list = []  # # cmd is error
+        self.__f2c = {}  # key: depended, value: cmd
+        self.__is_ready = False
+        self._signal_queue = queue.Queue()
+        self.__cmd_queue = queue.Queue()
+        self.__total_task = 0
+        # add one thread to update list
+        # thread = threading.Thread(target=self._update_wait_list)
+        # thread.setDaemon(True)
+        # thread.start()
+        # threads_ref_set.add(thread)
+
+    def get_all_deps(self, cmd_obj: Command):
+        """
+        Recursively retrieves all commands that depend on this cmd_obj
+        :param cmd_obj:
+        :return: [cmd_obj.name, ...]
+        """
+        res_list = []
+        deps = self.__f2c.get(cmd_obj.name, [])
+        if not deps:
+            return res_list
+        for n in deps:
+            res_list.append(n)
+            res_list.extend(self.get_all_deps(self[n]))
+        return res_list
+
+    def _update_queue(self):
+        trans_list = []
+        for name, cmd_obj in self.items():
+            is_ready = True
+            for dname in cmd_obj.depends:
+                # cmd is unfinished and in waiting and not in queue
+                if not self[dname].is_completed:
+                    is_ready = False
+                    break
+            # is_ready == True: all depends are completed 
+            # cmd is not in cmd queue
+            # cmd is not in __is_completed_list or cmd_obj.is_completed is True
+            cmd_obj = self[name]
+            print(is_ready,is_ready
+                    ,not cmd_obj.is_in_queue, (name not in self.__is_completed_list or not cmd_obj.is_completed),self.__is_completed_list)
+            if is_ready \
+                    and not cmd_obj.is_in_queue \
+                    and (name not in self.__is_completed_list or not cmd_obj.is_completed):
+                cmd_obj.is_in_queue = True
+                self.__cmd_queue.put(name)
+                trans_list.append(name)
+        # self.__cmd_queue.put(name)
+        # <-- self.__is_remain_list
+        CommTools.del_list_elements(self.__is_remain_list, *trans_list)
+        # --> self.__is_waiting_list
+        self.__is_waiting_list.extend(trans_list)
+
+    def next(self, now_run_cmd=None):
+        # Double-Checked Locking: to increase concurrency
+        if not self.__is_ready:
+            with self.__LOCK__:
+                if not self.__is_ready:
+                    self.__is_waiting_list = [i for i in set(self.__is_waiting_list)]
+                    self.__is_remain_list = [i for i in set(self.__is_remain_list)]
+                    self.__is_ready = True
+
+        with self.__LOCK__:  # take command
+            if isinstance(now_run_cmd, Command):
+                name = now_run_cmd.name
+                if now_run_cmd.is_completed:
+                    all_relevant_cmds = []
+                    # cmd error# cmd error
+                    if now_run_cmd.is_error:
+                        # <-- cmd_obj running error
+                        CommTools.del_list_elements(self.__is_running_list, name)
+                        # --> self.__is_error_list
+                        self.__is_error_list.append(name)
+                        all_relevant_cmds = self.get_all_deps(now_run_cmd)
+                        all_relevant_cmds.append(name)
+                        for i in all_relevant_cmds:
+                            cmd_obj = self[i]
+                            cmd_obj.is_running = False
+                            cmd_obj.is_completed = True
+                            cmd_obj.is_waiting = False
+                            cmd_obj.is_error = True
+                            cmd_obj.is_in_queue = False
+                        # <-- self.__is_remain_list
+                        CommTools.del_list_elements(self.__is_remain_list, *all_relevant_cmds, del_all=True)
+                    # normal accomplishment
+                    else:
+                        all_relevant_cmds.append(name)
+                        # <-- self.__is_running_list cmd_obj running
+                        CommTools.del_list_elements(self.__is_running_list, name)
+                    # <-- self.__is_waiting_list
+                    CommTools.del_list_elements(self.__is_waiting_list, *all_relevant_cmds, del_all=True)
+                    # --> self.__is_completed_list
+                    self.__is_completed_list.extend(all_relevant_cmds)
+                elif now_run_cmd.is_waiting and not now_run_cmd.is_error:
+                    now_run_cmd.is_running = False
+                    now_run_cmd.is_completed = False
+                    now_run_cmd.is_waiting = True
+                    now_run_cmd.is_error = False
+                    now_run_cmd.is_in_queue = True
+                    self.__cmd_queue.put(name)
+                    # <-- cmd_obj running
+                    CommTools.del_list_elements(self.__is_running_list, name)
+                    # --> self.__is_waiting_list
+                    self.__is_waiting_list.extend(name)
+
+            # termination condition
+            if len(self.__is_completed_list) == self.__total_task:
+                return None
+
+            flag = 0  # flag: it's used to mark the number of times of taking cmd
+            while True:
+                flag += 1
+                # "waite": the thread getting the this signal will waite a few second
+                if flag == 3: return "waite"
+                size = self.__cmd_queue.qsize()
+                if size < 2: self._update_queue()
+                # if size < 2: self._update_queue()
+                for _ in range(size):
+                    cmd_name = self.__cmd_queue.get(timeout=2)
+                    cmd_obj = self[cmd_name]
+                    if cmd_obj.is_waiting and self.__manager.check_resource(cmd_obj=cmd_obj):
+                        # cmd_name = self.__cmd_queue.get(timeout=2)
+                        # <-- self.__is_waiting_list
+                        CommTools.del_list_elements(self.__is_waiting_list, cmd_name)
+                        # --> self.__is_running_list
+                        self.__is_running_list.append(cmd_name)
+                        # queue is False
+                        cmd_obj.is_in_queue = False
+                        return cmd_obj
+                    else:  # not enough resources
+                        cmd_obj.is_in_queue = True
+                        self.__cmd_queue.put(cmd_name)
+                self._update_queue()
+
+    def _update_wait_list(self):
+        while 1:
+            try:
+                signal = self._signal_queue.get(timeout=2)
+            except queue.Empty:
+                time.sleep(2)
+                continue
+            if signal is None:
+                break
+            temp = []
+            with self.__LOCK__:
+                for item in self.__is_remain_list:
+                    cmd_obj = self[item]
+                    if cmd_obj.is_ready:
+                        temp.append(item)
+                        self.__is_waiting_list.append(item)
+                CommTools.del_list_elements(self.__is_remain_list, *temp)
+
+    def update_dep(self):
+        """
+        Create dependency network and object and update pool states
+        :return:
+        """
+        del_list = []
+        for k, v in self.items():
+            if v.depends:
+                for i in v.depends:
+                    if i not in self.__f2c:
+                        self.__f2c[i] = []
+                        del_list.append(k)
+                    self.__f2c[i].append(k)
+            else:
+                self[k].is_in_queue = True
+                self.__cmd_queue.put(k)
+                self.__is_waiting_list.append(k)
+
+        if len(self.__is_waiting_list) != len(set(self.__is_waiting_list)):
+            raise Exception("self.__is_waiting_list has duplication")
+
+        CommTools.del_list_elements(self.__is_remain_list, *del_list, del_all=True)
+
+    def add_waiting_cmds(self, *cmd_names):
+        """
+        add commands which do not depend any commands
+        :param cmd_names: list of command' name
+        :return: None
+        """
+        with self.__LOCK__:
+            self.__is_waiting_list.extend(cmd_names)
+
+    def del_waiting_cmds(self, *cmd_names):
+        """
+        add commands which do not depend any commands
+        :param cmd_names: list of command' name
+        :return: None
+        """
+        CommTools.del_list_elements(self.__is_waiting_list, *cmd_names)
+
+    def add_running_cmd(self, name):
+        with self.__LOCK__:
+            self.__is_running_list.append(name)
+
+    def del_running_cmd(self, name):
+        CommTools.del_list_elements(self.__is_running_list, name, del_all=True)
+
+    def is_ready(self):
+        self.__is_ready = True
+
+    def __setitem__(self, key, value):
+        self.__is_remain_list.append(key)
+        if key not in self:
+            self.__total_task += 1
+        else:
+            raise Exception("the cmd name has duplication, please check them")
+        super(CmdPool, self).__setitem__(key, value)
+
+
 class CmdFactory(object):
     def __init__(self, cmd_json: str, relation_json: str):
         self.__cmd_dict = None
@@ -475,6 +567,11 @@ class CmdFactory(object):
             self.__rel_dict = catch_except(json.load, rela_handler)
 
     def manuf_cmd_pool(self, resource_manager):
+        """
+        create CmdPool(resource_manager) instance
+        :param resource_manager:
+        :return: CmdPool()
+        """
         pool = CmdPool(resource_manager)
         for k, v in self.__cmd_dict.items():
             cmd_obj = Command(
@@ -484,6 +581,7 @@ class CmdFactory(object):
                 depends=self.__rel_dict[k]["depends"],
                 bind_pool=pool
             )
+            # first resource check
             if resource_manager.first_check(cmd_obj):
                 cmd_obj.is_waiting = True
                 pool[k] = cmd_obj
@@ -508,8 +606,11 @@ class MultiRunManager(object):
         cmd_obj = self.__pool.next()
         while True:
             if isinstance(cmd_obj, Command):
+                # bind resource (determine whether the resources meet the cmd requirements)
+                # if the bind is successful, it will run, or else it will add cmd to queue
                 if self.__resource_manager.bind_resource(cmd_obj):
                     resource_stat = cmd_obj.run(self.__resource_manager.monitor_resource)
+                    # release resource bound before
                     self.__resource_manager.release_resource(cmd_obj)
                     print(threading.current_thread().name, cmd_obj, " resource_stat: " + resource_stat)
                     cmd_obj = self.__pool.next(cmd_obj)
@@ -525,10 +626,8 @@ class MultiRunManager(object):
                     cmd_obj = self.__pool.next()
 
     def run(self):
-        exc_list = []
         with ThreadPoolExecutor(self.__max_thread) as executor:
-            for i in range(self.__max_thread):
-                exc_list.append(executor.submit(self._cmd_run))
+                exc_list = [executor.submit(self._cmd_run) for _ in range(self.__max_thread)]
         _ = [i.result() for i in exc_list]
 
 
@@ -542,13 +641,15 @@ if __name__ == '__main__':
     if len(argvs) == 0 or '-h' in argvs or "--help" in argvs:
         parser.parse_args(['-h'])
     print(argvs, "argv")
-    args = parser.parse_args()
-    cmd_dic = args.cmd_json
-    relation_dic = args.relation_json
+    args_obj = parser.parse_args()
+    cmd_json_file = args_obj.cmd_json
+    relation_json_file = args_obj.relation_json
+
+    cmd_json_file, relation_json_file = CommTools.check_file(cmd_json_file, relation_json_file)
 
     res_manager = ResourceManagement()
-    cmd_factory = CmdFactory(cmd_dic, relation_dic)
+    cmd_factory = CmdFactory(cmd_json_file, relation_json_file)
     cmds_pool = cmd_factory.manuf_cmd_pool(res_manager)
 
-    runner = MultiRunManager(cmds_pool, res_manager, args.max_threads)
+    runner = MultiRunManager(cmds_pool, res_manager, args_obj.max_threads)
     runner.run()
