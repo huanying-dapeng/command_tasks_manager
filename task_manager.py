@@ -6,25 +6,27 @@
 @author  : zhipeng.zhao
 @contact : 757049042@qq.com
 """
-import atexit
-import os
-import sys
-import queue
-import time
-import json
-import threading
-import psutil
-import weakref
 import argparse
-from subprocess import Popen, PIPE
+import atexit
+import json
+import os
+import queue
+import sys
+import threading
+import time
+import weakref
 from concurrent.futures import ThreadPoolExecutor
+from subprocess import Popen, PIPE
+
+import psutil
 
 """
-1. 资源管理
-2. 运行管理（多线程）
+1. 资源管理: ResourceManagement
+2. 运行管理(多线程): MultiRunManager
 3. 日志管理
-4. 参数获取
-5. pool创建工厂
+4. 参数获取: if main中
+5. pool创建工厂: CmdFactory -> CmdPool
+6. 命令对象: Command
 """
 
 POSIX = os.name == "posix"
@@ -45,8 +47,33 @@ def _call_python_exit():
     for p in processes_ref_set:
         p.kill()
 
+
 # Functions thus registered are automatically executed upon normal interpreter termination.
 atexit.register(_call_python_exit)
+
+
+class CommTools(object):
+    @staticmethod
+    def del_list_elements(target_list: list, *elems, del_all=False):
+        if del_all:
+            flag = 0
+            check_dic = {e: 1 for e in elems}
+            list_len = len(target_list)
+            while flag < list_len:
+                if check_dic.get(target_list[flag], 0):
+                    target_list.pop(flag)
+                    list_len -= 1
+                else:
+                    flag += 1
+        else:
+            for elem in elems:
+                try:
+                    target_list.remove(elem)
+                except ValueError:
+                    pass
+
+    def __new__(cls, *args, **kwargs):
+        raise TypeError("CommTools has no instance")
 
 
 class ResourceManagement(object):
@@ -74,11 +101,13 @@ class ResourceManagement(object):
         cpu = cmd_obj.cpu
         mem = cmd_obj.mem_byte
         available_mem = psutil.virtual_memory().available
-        return self.__used_cpu + cpu <= self.total_cpu_num \
-                and self.__used_mem + mem <= available_mem * self.__available_mem_percent \
-                and self.__used_mem + mem <= self.total_memory * self.__available_mem_percent
+        cpu_check = self.__used_cpu + cpu <= self.total_cpu_num
+        mem_check = self.__used_mem + mem <= available_mem * self.__available_mem_percent
+        total_mem_check = self.__used_mem + mem <= self.total_memory * self.__available_mem_percent
+        return cpu_check and mem_check and total_mem_check
 
-    def first_check(self, cmd_obj) -> bool:
+    @staticmethod
+    def first_check(cmd_obj) -> bool:
         mem = cmd_obj.mem_byte
         available_mem = psutil.virtual_memory().available
         if mem >= available_mem * 0.9:
@@ -95,10 +124,10 @@ class ResourceManagement(object):
             self.__used_mem = mem_ if mem_ >= 0 else 0
 
     @staticmethod
-    def monitor_resource(pid: int, result_list: list=None) -> str:
+    def monitor_resource(pid: int, result_list: list = None) -> str:
         try:
             p = psutil.Process(pid=pid)
-        except psutil._exceptions.NoSuchProcess as e:
+        except psutil.NoSuchProcess as e:
             raise Exception(e.msg)
         res_list = result_list if isinstance(result_list, list) else []
         while p.is_running():
@@ -232,45 +261,8 @@ class CmdPool(dict):
                             is_ready = False
                             break
                     if is_ready and name not in self.is_completed_list:
+                        print(cmd_obj.is_in_queue, name)
                         self.__cmd_queue.put(name)
-
-        # with self.__LOCK__:
-        #     if now_run_cmd is not None:
-        #         if now_run_cmd.is_completed:
-        #             for i in self.__f2c.get(now_run_cmd.name, []):
-        #                 self[i].update_depends_completed_num()
-        #         self.is_completed_list.append(now_run_cmd.name)
-        #         self.is_running_list.pop(self.is_running_list.index(now_run_cmd.name))
-        #
-        #     is_all_completed = True
-        #     for name, cmd_obj in self.items():
-        #         is_ready = True
-        #         for dname in cmd_obj.depends:
-        #             # if not self[dname].is_completed:
-        #                 is_ready = False
-        #                 break
-        #         if is_all_completed and not self[name].is_completed:
-        #             is_all_completed = False
-        #         if is_ready: return cmd_obj
-        #     return None if is_all_completed else "waite"
-            # if len(self.__is_waiting_list) > 0:
-            #     for i, item in enumerate(self.__is_waiting_list[:]):
-            #         cmd_obj = self[item]
-            #         if self.__manager.check_resource(cmd_obj=cmd_obj):
-            #             self._signal_queue.put(1)
-            #             self.__is_waiting_list.pop(i)
-            #             print(self.__is_waiting_list, cmd_obj, "self.__is_waiting_list" )
-            #             return cmd_obj
-            #         else:
-            #             return "waite"
-            # elif len(self.__is_waiting_list) == 0 and len(self.is_remain_list) > 0:
-            #     self._signal_queue.put(1)
-            #     return "waite"
-            # elif len(self.__is_waiting_list) == 0 and len(self.is_remain_list) == 0:
-            #     self._signal_queue.put(None)
-            #     return None
-            # else:
-            #     print("******************************************")
 
     def _update_wait_list(self):
         while 1:
@@ -291,7 +283,10 @@ class CmdPool(dict):
                         temp.append(item)
                         self.__is_waiting_list.append(item)
                 for i in temp:
-                    self.is_remain_list.pop(self.is_remain_list.index(i))
+                    try:
+                        self.is_remain_list.pop(i)
+                    except ValueError:
+                        pass
 
     def add_waiting_cmds(self, *cmd_names):
         """
@@ -320,6 +315,13 @@ class CmdPool(dict):
         with self.__LOCK__:
             self.is_running_list.append(name)
 
+    def del_running_cmd(self, name):
+        with self.__LOCK__:
+            try:
+                self.is_running_list.remove(name)
+            except ValueError:
+                pass
+
     def is_ready(self):
         self.__is_ready = True
 
@@ -343,6 +345,7 @@ class Command(object):
         self.is_completed = False
         self.is_waiting = False
         self.is_error = False
+        self.is_in_queue = False
         self.first_is_check = False
         self.__lock__ = threading.Lock()
         self.__depends_completed_num = 0
@@ -350,7 +353,6 @@ class Command(object):
     def update_depends_completed_num(self):
         """
         add 1 to self.__depends_completed_num
-        :param num:
         :return: None
         """
         with self.__lock__:
