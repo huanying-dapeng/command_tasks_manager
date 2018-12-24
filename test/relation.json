@@ -1,0 +1,37 @@
+{
+	"A": {
+		"cpu": 1,
+		"mem": "1G",
+		"depends": []
+	},
+	"B": {
+		"cpu": 1,
+		"mem": "800M",
+		"depends": []
+	},
+	"C": {
+		"cpu": 1,
+		"mem": "1G",
+		"depends": ["A", "B"]
+	},
+	"D": {
+		"cpu": 1,
+		"mem": "500M",
+		"depends": ["C", "B"]
+	},
+	"E": {
+		"cpu": 1,
+		"mem": "1G",
+		"depends": ["D"]
+	},
+	"F": {
+		"cpu": 1,
+		"mem": "1G",
+		"depends": []
+	},
+	"G": {
+		"cpu": 1,
+		"mem": "200M",
+		"depends": ["F", "E"]
+	}
+}
