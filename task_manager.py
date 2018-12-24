@@ -6,25 +6,27 @@
 @author  : zhipeng.zhao
 @contact : 757049042@qq.com
 """
-import atexit
-import os
-import sys
-import queue
-import time
-import json
-import threading
-import psutil
-import weakref
 import argparse
-from subprocess import Popen, PIPE
+import atexit
+import json
+import os
+import queue
+import sys
+import threading
+import time
+import weakref
 from concurrent.futures import ThreadPoolExecutor
+from subprocess import Popen, PIPE
+
+import psutil
 
 """
-1. 资源管理
-2. 运行管理（多线程）
+1. 资源管理: ResourceManagement
+2. 运行管理(多线程): MultiRunManager
 3. 日志管理
-4. 参数获取
-5. pool创建工厂
+4. 参数获取: if main中
+5. pool创建工厂: CmdFactory -> CmdPool
+6. 命令对象: Command
 """
 
 POSIX = os.name == "posix"
