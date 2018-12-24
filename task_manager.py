@@ -239,7 +239,6 @@ class CmdPool(dict):
                     if is_ready and name not in self.is_completed_list:
                         self.__cmd_queue.put(name)
 
-
     def _update_wait_list(self):
         while 1:
             try:
