@@ -52,6 +52,30 @@ def _call_python_exit():
 atexit.register(_call_python_exit)
 
 
+class CommTools(object):
+    @staticmethod
+    def del_list_elements(target_list: list, *elems, del_all=False):
+        if del_all:
+            flag = 0
+            check_dic = {e: 1 for e in elems}
+            list_len = len(target_list)
+            while flag < list_len:
+                if check_dic.get(target_list[flag], 0):
+                    target_list.pop(flag)
+                    list_len -= 1
+                else:
+                    flag += 1
+        else:
+            for elem in elems:
+                try:
+                    target_list.remove(elem)
+                except ValueError:
+                    pass
+
+    def __new__(cls, *args, **kwargs):
+        raise TypeError("CommTools has no instance")
+
+
 class ResourceManagement(object):
     __LOCK__ = threading.Lock()
 
@@ -237,6 +261,7 @@ class CmdPool(dict):
                             is_ready = False
                             break
                     if is_ready and name not in self.is_completed_list:
+                        print(cmd_obj.is_in_queue, name)
                         self.__cmd_queue.put(name)
 
     def _update_wait_list(self):
@@ -258,7 +283,10 @@ class CmdPool(dict):
                         temp.append(item)
                         self.__is_waiting_list.append(item)
                 for i in temp:
-                    self.is_remain_list.pop(self.is_remain_list.index(i))
+                    try:
+                        self.is_remain_list.pop(i)
+                    except ValueError:
+                        pass
 
     def add_waiting_cmds(self, *cmd_names):
         """
@@ -287,6 +315,13 @@ class CmdPool(dict):
         with self.__LOCK__:
             self.is_running_list.append(name)
 
+    def del_running_cmd(self, name):
+        with self.__LOCK__:
+            try:
+                self.is_running_list.remove(name)
+            except ValueError:
+                pass
+
     def is_ready(self):
         self.__is_ready = True
 
@@ -310,6 +345,7 @@ class Command(object):
         self.is_completed = False
         self.is_waiting = False
         self.is_error = False
+        self.is_in_queue = False
         self.first_is_check = False
         self.__lock__ = threading.Lock()
         self.__depends_completed_num = 0
