@@ -84,6 +84,23 @@ class CommTools(object):
         raise TypeError("CommTools has no instance")
 
 
+class TaskLogger(object):
+    __loggers__ = dict()
+    __LOCK__ = threading.Lock()
+
+    def __init__(self, logger_name):
+        self.__outdir = os.path.join(" 待填写 ", logger_name)
+
+    def __new__(cls, *args, **kwargs):
+        logger_name = args[0]
+        # Double-Checked Locking: to increase concurrency
+        if not cls.__loggers__.get(logger_name):
+            with cls.__LOCK__:
+                if not cls.__loggers__.get(logger_name):
+                    cls.__loggers__[logger_name] = super().__new__(cls)
+        return cls.__loggers__[logger_name]
+
+
 class ResourceManagement(object):
     __LOCK__ = threading.Lock()
 
