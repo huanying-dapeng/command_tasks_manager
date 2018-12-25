@@ -88,7 +88,8 @@ class ResourceManagement(object):
     __LOCK__ = threading.Lock()
 
     def __init__(self):
-        self.total_cpu_num = psutil.cpu_count() if WINDOWS else psutil.cpu_count() * 2
+        # self.total_cpu_num = psutil.cpu_count() if WINDOWS else psutil.cpu_count() * 2
+        self.total_cpu_num = psutil.cpu_count()
         self.total_memory = psutil.virtual_memory().total
         # self.available_memory = memory.available
         self.__available_mem_percent = 0.8
@@ -139,8 +140,9 @@ class ResourceManagement(object):
             raise Exception(e.msg)
         res_list = result_list if isinstance(result_list, list) else []
         while p.is_running():
-            cpu = -1 if WINDOWS else p.cpu_num()
-            mem = p.memory_info().vms
+            with p.oneshot():
+                cpu = -1 if WINDOWS else p.cpu_num()
+                mem = p.memory_info().vms
             res_list.append((cpu, mem))
             length = len(res_list)
             if length >= 600: res_list = [tuple(max(i) for i in zip(*res_list))]
@@ -377,8 +379,8 @@ class CmdPool(dict):
             # cmd is not in cmd queue
             # cmd is not in __is_completed_list or cmd_obj.is_completed is True
             cmd_obj = self[name]
-            print(is_ready,is_ready
-                    ,not cmd_obj.is_in_queue, (name not in self.__is_completed_list or not cmd_obj.is_completed),self.__is_completed_list)
+            print(is_ready, not cmd_obj.is_in_queue, (name not in self.__is_completed_list or not cmd_obj.is_completed),
+                  self.__is_completed_list)
             if is_ready \
                     and not cmd_obj.is_in_queue \
                     and (name not in self.__is_completed_list or not cmd_obj.is_completed):
@@ -392,6 +394,41 @@ class CmdPool(dict):
         self.__is_waiting_list.extend(trans_list)
 
     def next(self, now_run_cmd=None):
+        """
+            --> queue.put():
+                <-- self.__is_remain_list
+                --> self.__is_waiting_list
+                    cmd_obj.is_in_queue = True
+
+            <-- queue.get(timeout=2)
+                <-- self.__is_waiting_list
+                if bind_resource is True:
+                        cmd_obj.is_in_queue = False
+                    else:
+                        --> self.__is_waiting_list
+                        --> queue.put()
+                --> self.__is_running_list
+
+            --> run:
+                start:
+                    cmd_obj.is_waiting = False
+                    cmd_obj.is_running = True
+                end:
+                    cmd_obj.is_running = False
+                    cmd_obj.is_completed  = True
+                    -->
+                    if error:
+                        cmd_obj.is_error = True
+                        <-- find all cmds of relying on self
+                            (self.__is_waiting_list, self.__is_running_list, self.__is_remain_list)
+                            cmd_obj.is_completed  = True
+                            cmd_obj.is_error = True
+                            cmd_obj.is_waiting = False
+                        --> self.__is_completed_list
+
+        :param now_run_cmd:
+        :return: "waite", None, cmd_obj
+        """
         # Double-Checked Locking: to increase concurrency
         if not self.__is_ready:
             with self.__LOCK__:
@@ -627,7 +664,7 @@ class MultiRunManager(object):
 
     def run(self):
         with ThreadPoolExecutor(self.__max_thread) as executor:
-                exc_list = [executor.submit(self._cmd_run) for _ in range(self.__max_thread)]
+            exc_list = [executor.submit(self._cmd_run) for _ in range(self.__max_thread)]
         _ = [i.result() for i in exc_list]
 
 
