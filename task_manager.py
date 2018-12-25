@@ -85,7 +85,7 @@ class CommTools(object):
 
 
 class TaskLogger(object):
-    __loggers__ = dict()
+    __loggers_obj = dict()
     __LOCK__ = threading.Lock()
 
     def __init__(self, logger_name):
@@ -94,15 +94,16 @@ class TaskLogger(object):
     def __new__(cls, *args, **kwargs):
         logger_name = args[0]
         # Double-Checked Locking: to increase concurrency
-        if not cls.__loggers__.get(logger_name):
+        if not cls.__loggers_obj.get(logger_name):
             with cls.__LOCK__:
-                if not cls.__loggers__.get(logger_name):
-                    cls.__loggers__[logger_name] = super().__new__(cls)
-        return cls.__loggers__[logger_name]
+                if not cls.__loggers_obj.get(logger_name):
+                    cls.__loggers_obj[logger_name] = super().__new__(cls)
+        return cls.__loggers_obj[logger_name]
 
 
 class ResourceManagement(object):
     __LOCK__ = threading.Lock()
+    __manager_obj = None
 
     def __init__(self):
         # self.total_cpu_num = psutil.cpu_count() if WINDOWS else psutil.cpu_count() * 2
@@ -193,6 +194,13 @@ class ResourceManagement(object):
             mem = (str(g_mem) + "G") if g_mem < 0 else (str(m_mem) + "M")
             temp_list.append(mem)
         return temp_list
+
+    def __new__(cls, *args, **kwargs):
+        if cls.__manager_obj is None:
+            with cls.__LOCK__:
+                if cls.__manager_obj is None:
+                    cls.__manager_obj = object().__new__(cls)
+        return cls.__manager_obj
 
     @property
     def used_cpu(self):
