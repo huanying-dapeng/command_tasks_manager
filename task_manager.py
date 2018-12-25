@@ -9,6 +9,7 @@
 import argparse
 import atexit
 import json
+import logging
 import os
 import queue
 import sys
@@ -34,7 +35,7 @@ WINDOWS = os.name == "nt"
 
 threads_ref_set = weakref.WeakSet()
 processes_ref_set = weakref.WeakSet()
-
+bind_loggers = []
 
 def _call_python_exit():
     """ Callback Function:
@@ -46,7 +47,9 @@ def _call_python_exit():
         t.join()
     for p in processes_ref_set:
         p.kill()
-
+    for logger in bind_loggers:
+        logger.close_all()
+        print("=======================================_______________________________________")
 
 # Functions thus registered are automatically executed upon normal interpreter termination.
 atexit.register(_call_python_exit)
@@ -80,6 +83,12 @@ class CommTools(object):
                 raise FileNotFoundError('"{}" is not exiting, please check it manually')
         return files
 
+    @staticmethod
+    def check_dir(dir_path):
+        if not os.path.isdir(dir_path):
+            os.makedirs(dir_path)
+        return dir_path
+
     def __new__(cls, *args, **kwargs):
         raise TypeError("CommTools has no instance")
 
@@ -88,8 +97,76 @@ class TaskLogger(object):
     __loggers_obj = dict()
     __LOCK__ = threading.Lock()
 
-    def __init__(self, logger_name):
-        self.__outdir = os.path.join(" 待填写 ", logger_name)
+    def __init__(self, logger_name, stream_on=True):
+        self.__cmd_pool = None
+        self.__outdir = CommTools.check_dir(os.path.join(os.getcwd(), logger_name))
+        self.__status_handlers = dict()
+        self.__status_dic = dict()
+        self.__statuses = ['waiting', 'running', 'completed', 'error']
+
+        self.__level = logging.DEBUG
+        self.__streem_on = stream_on
+        self.__format = '%(asctime)s    %(name)s    %(levelname)s : %(message)s'
+        self.__formatter = logging.Formatter(self.__format, "%Y-%m-%d %H:%M:%S")
+
+        self.__log_path = os.path.join(self.__outdir, "log.txt")
+        self.__file_handler = logging.FileHandler(self.__log_path)
+        self.__file_handler.setLevel(self.__level)
+        self.__file_handler.setFormatter(self.__formatter)
+
+        if self.__streem_on:
+            self.__stream_handler = logging.StreamHandler()
+            self.__stream_handler.setLevel(self.__level)
+            self.__stream_handler.setFormatter(self.__formatter)
+
+        self.__logger = None
+
+    def bind_status(self, cmd_pool):
+        self.__cmd_pool = cmd_pool
+        for s in self.__statuses:
+            file = os.path.join(self.__outdir, s + '_cmds.log')
+            self.__status_handlers[s] = open(file, 'w')
+
+    def __update_resource(self):
+        self.__status_dic[self.__statuses[0]] = [self.__cmd_pool.waiting_list, self.__cmd_pool.remain_list]
+        self.__status_dic[self.__statuses[1]] = [self.__cmd_pool.running_list]
+        self.__status_dic[self.__statuses[2]] = [self.__cmd_pool.completed_list]
+        self.__status_dic[self.__statuses[3]] = [self.__cmd_pool.error_list]
+
+    def update_status(self):
+        self.__update_resource()
+        for s in self.__statuses:
+            handler = self.__status_handlers[s]
+            handler.seek(0)
+            handler.truncate()
+
+            for lst in self.__status_dic[s]:
+                for cmd_name in lst:
+                    handler.write(self.__cmd_pool[cmd_name].to_string())
+            handler.flush()
+        print(self.__cmd_pool.waiting_list, self.__cmd_pool.remain_list, self.__cmd_pool.completed_list, "logger")
+
+    def close_all(self):
+        self.__update_resource()
+        self.update_status()
+        print(self.__status_dic['waiting'][0] is self.__cmd_pool.waiting_list, self.__status_dic[self.__statuses[2]][0] is self.__cmd_pool.completed_list)
+        for _, handler in self.__status_handlers.items():
+            handler.close()
+
+    def get_logger(self, name=""):
+        """
+        :param name: logger name
+        """
+        self.__logger = logging.getLogger(name)
+        self.__logger.propagate = 0
+        self._add_handler(self.__logger)
+        return self.__logger
+
+    def _add_handler(self, logger):
+        logger.setLevel(self.__level)
+        logger.addHandler(self.__file_handler)
+        if self.__streem_on:
+            logger.addHandler(self.__stream_handler)
 
     def __new__(cls, *args, **kwargs):
         logger_name = args[0]
@@ -299,7 +376,7 @@ class Command(object):
         self.is_running = False
         self.is_completed = True
         self.__bind_pool.del_running_cmd(self.name)
-
+        print(self.is_waiting, self.is_in_queue, self.is_running, self.is_completed, self.is_error)
         return res if len(result_list) > 0 else "may be error"
 
     def parse_mem(self):
@@ -327,6 +404,27 @@ class Command(object):
             cpu=self.cpu,
             mem=self.mem,
             cmd=self.cmd
+        )
+
+    def __status(self):
+        status = ""
+        print(self.is_waiting, self.is_in_queue, self.is_completed, self.is_error)
+        if self.is_waiting or self.is_in_queue:
+            status = 'waiting'
+        elif self.is_running:
+            status = 'running'
+        elif self.is_completed:
+            if self.is_error:
+                status = 'error'
+            else:
+                status = 'completed'
+        return status
+
+    def to_string(self):
+        return "{name}\t{status}\t{cmd}\n".format(
+            name=self.name,
+            status=self.__status(),
+            cmd=self.cmd,
         )
 
     @property
@@ -406,7 +504,7 @@ class CmdPool(dict):
             cmd_obj = self[name]
             print(is_ready, not cmd_obj.is_in_queue, (name not in self.__is_completed_list or not cmd_obj.is_completed),
                   self.__is_completed_list)
-            if is_ready \
+            if is_ready and cmd_obj.is_waiting\
                     and not cmd_obj.is_in_queue \
                     and (name not in self.__is_completed_list or not cmd_obj.is_completed):
                 cmd_obj.is_in_queue = True
@@ -414,7 +512,7 @@ class CmdPool(dict):
                 trans_list.append(name)
         # self.__cmd_queue.put(name)
         # <-- self.__is_remain_list
-        CommTools.del_list_elements(self.__is_remain_list, *trans_list)
+        CommTools.del_list_elements(self.__is_remain_list, *trans_list, del_all=True)
         # --> self.__is_waiting_list
         self.__is_waiting_list.extend(trans_list)
 
@@ -466,6 +564,7 @@ class CmdPool(dict):
             if isinstance(now_run_cmd, Command):
                 name = now_run_cmd.name
                 if now_run_cmd.is_completed:
+                    print(now_run_cmd.is_completed, now_run_cmd.is_running, now_run_cmd.is_in_queue, now_run_cmd.is_waiting, "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
                     all_relevant_cmds = []
                     # cmd error# cmd error
                     if now_run_cmd.is_error:
@@ -516,11 +615,15 @@ class CmdPool(dict):
                 if flag == 3: return "waite"
                 size = self.__cmd_queue.qsize()
                 if size < 2: self._update_queue()
+                print(size)
                 # if size < 2: self._update_queue()
                 for _ in range(size):
                     cmd_name = self.__cmd_queue.get(timeout=2)
                     cmd_obj = self[cmd_name]
-                    if cmd_obj.is_waiting and self.__manager.check_resource(cmd_obj=cmd_obj):
+                    if cmd_obj.is_waiting and not cmd_obj.is_running and \
+                            not cmd_obj.is_completed and \
+                            self.__manager.check_resource(cmd_obj=cmd_obj):
+                        print("============================")
                         # cmd_name = self.__cmd_queue.get(timeout=2)
                         # <-- self.__is_waiting_list
                         CommTools.del_list_elements(self.__is_waiting_list, cmd_name)
@@ -528,6 +631,7 @@ class CmdPool(dict):
                         self.__is_running_list.append(cmd_name)
                         # queue is False
                         cmd_obj.is_in_queue = False
+                        cmd_obj.is_waiting = False
                         return cmd_obj
                     else:  # not enough resources
                         cmd_obj.is_in_queue = True
@@ -557,13 +661,11 @@ class CmdPool(dict):
         Create dependency network and object and update pool states
         :return:
         """
-        del_list = []
         for k, v in self.items():
             if v.depends:
                 for i in v.depends:
                     if i not in self.__f2c:
                         self.__f2c[i] = []
-                        del_list.append(k)
                     self.__f2c[i].append(k)
             else:
                 self[k].is_in_queue = True
@@ -573,7 +675,8 @@ class CmdPool(dict):
         if len(self.__is_waiting_list) != len(set(self.__is_waiting_list)):
             raise Exception("self.__is_waiting_list has duplication")
 
-        CommTools.del_list_elements(self.__is_remain_list, *del_list, del_all=True)
+        CommTools.del_list_elements(self.__is_remain_list, *self.__is_waiting_list, del_all=True)
+        print(self.waiting_list, self.remain_list, "dep===")
 
     def add_waiting_cmds(self, *cmd_names):
         """
@@ -609,6 +712,26 @@ class CmdPool(dict):
         else:
             raise Exception("the cmd name has duplication, please check them")
         super(CmdPool, self).__setitem__(key, value)
+
+    @property
+    def remain_list(self):
+        return self.__is_remain_list
+
+    @property
+    def waiting_list(self):
+        return self.__is_waiting_list
+
+    @property
+    def running_list(self):
+        return self.__is_running_list
+
+    @property
+    def completed_list(self):
+        return self.__is_completed_list
+
+    @property
+    def error_list(self):
+        return self.__is_error_list
 
 
 class CmdFactory(object):
@@ -663,29 +786,49 @@ class MultiRunManager(object):
         self.__pool = cmd_pool
         self.__max_thread = max_thread
         self.__resource_manager = resource_manager
+        self.__logger = TaskLogger("logger")
+        bind_loggers.append(self.__logger)
+        self.__logger.bind_status(cmd_pool=self.__pool)
+        self.logger = self.__logger.get_logger(" running_log")
 
     def _cmd_run(self):
         cmd_obj = self.__pool.next()
+        thread = threading.current_thread()
+        self.logger.info(thread.name + ' running is starting')
         while True:
             if isinstance(cmd_obj, Command):
                 # bind resource (determine whether the resources meet the cmd requirements)
                 # if the bind is successful, it will run, or else it will add cmd to queue
                 if self.__resource_manager.bind_resource(cmd_obj):
+                    self.logger.info(cmd_obj.name + " start running")
                     resource_stat = cmd_obj.run(self.__resource_manager.monitor_resource)
                     # release resource bound before
                     self.__resource_manager.release_resource(cmd_obj)
+                    print(cmd_obj.is_waiting, cmd_obj.is_in_queue, cmd_obj.is_running, cmd_obj.is_completed, cmd_obj.is_error)
+                    print(self.__pool.waiting_list)
+                    print(self.__pool.remain_list)
+                    print(self.__pool.running_list)
+                    print(self.__pool.completed_list)
+                    print(self.__pool.error_list)
                     print(threading.current_thread().name, cmd_obj, " resource_stat: " + resource_stat)
+                    self.logger.info(cmd_obj.name + " completed")
                     cmd_obj = self.__pool.next(cmd_obj)
+                    self.__logger.update_status()
                 else:
+                    self.logger.info(
+                        cmd_obj.name + " resource binding is unsuccessful, and add it to the queue, and sleep 2s")
                     time.sleep(2)
                     cmd_obj = self.__pool.next(cmd_obj)
                 # self.__pool.add_waiting_cmds(cmd_obj)
             else:
                 if cmd_obj is None:
+                    # self.logger.info(thread.name + ' running is end finally')
                     break
                 else:
                     time.sleep(2)
                     cmd_obj = self.__pool.next()
+        self.__logger.update_status()
+        self.logger.info(thread.name + ' running is end finally')
 
     def run(self):
         with ThreadPoolExecutor(self.__max_thread) as executor:
