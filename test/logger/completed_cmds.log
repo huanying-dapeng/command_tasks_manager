@@ -1,7 +1,7 @@
-B	completed	echo B ===
-A	completed	echo A ===
-F	completed	echo F ===
-C	completed	echo C ===
-D	completed	echo D ===
-E	completed	echo E ===
-G	completed	echo G ===
+A	completed	D:\python\command_tasks_manager\test\run.py
+B	completed	D:\python\command_tasks_manager\test\run.py
+F	completed	D:\python\command_tasks_manager\test\run.py
+C	completed	D:\python\command_tasks_manager\test\run.py
+D	completed	D:\python\command_tasks_manager\test\run.py
+E	completed	D:\python\command_tasks_manager\test\run.py
+G	completed	D:\python\command_tasks_manager\test\run.py
