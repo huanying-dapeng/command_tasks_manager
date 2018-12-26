@@ -53,9 +53,8 @@ def _call_python_exit():
     for logger in bind_loggers:
         logger.close_all()
     logger_.info("all io-handlers are closed")
-    for t in threads_ref_set:
-        # t.join()
-        pass
+    # for t in threads_ref_set:
+    #     t.join()
     logger_.info("stop callback_function, and end the program")
 
 
@@ -531,10 +530,10 @@ class CmdPool(dict):
             # cmd is not in cmd queue
             # cmd is not in __is_completed_list or cmd_obj.is_completed is True
             cmd_obj = self[name]
-            if is_ready and cmd_obj.is_waiting\
+            if is_ready and cmd_obj.is_waiting \
                     and not cmd_obj.is_in_queue \
                     and (name not in trans_list and name in self.remain_list):
-                    # and (not cmd_obj.is_completed and name not in self.__is_completed_list):
+                # and (not cmd_obj.is_completed and name not in self.__is_completed_list):
                 cmd_obj.is_in_queue = True
                 self.__cmd_queue.put(name)
                 trans_list.append(name)
