@@ -1,0 +1,132 @@
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-26 13:30:08    running_log    INFO : A start running
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_2 running is starting
+2018-12-26 13:30:08    running_log    INFO : B start running
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_3 running is starting
+2018-12-26 13:30:08    command_A    INFO : A start running
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_4 running is starting
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_5 running is starting
+2018-12-26 13:30:08    running_log    INFO : F start running
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_6 running is starting
+2018-12-26 13:30:08    command_B    INFO : B start running
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_7 running is starting
+2018-12-26 13:30:08    command_F    INFO : F start running
+2018-12-26 13:30:08    command_A    INFO : A resource monitor start monitoring
+2018-12-26 13:30:08    command_B    INFO : B resource monitor start monitoring
+2018-12-26 13:30:08    command_F    INFO : F resource monitor start monitoring
+2018-12-26 13:30:08    command_B    INFO : B running is stoped
+2018-12-26 13:30:08    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.96094M
+2018-12-26 13:30:08    command_A    INFO : A running is stoped
+2018-12-26 13:30:08    running_log    INFO : B completed
+2018-12-26 13:30:08    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.92188M
+2018-12-26 13:30:08    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-26 13:30:08    running_log    INFO : A completed
+2018-12-26 13:30:08    command_F    INFO : F running is stoped
+2018-12-26 13:30:08    running_log    INFO : C start running
+2018-12-26 13:30:08    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-26 13:30:08    command_C    INFO : C start running
+2018-12-26 13:30:08    running_log    INFO : F completed
+2018-12-26 13:30:08    command_C    INFO : C resource monitor start monitoring
+2018-12-26 13:30:08    command_C    INFO : C running is stoped
+2018-12-26 13:30:08    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-26 13:30:08    running_log    INFO : C completed
+2018-12-26 13:30:08    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-26 13:30:08    running_log    INFO : D start running
+2018-12-26 13:30:08    command_D    INFO : D start running
+2018-12-26 13:30:08    command_D    INFO : D resource monitor start monitoring
+2018-12-26 13:30:08    command_D    INFO : D running is stoped
+2018-12-26 13:30:08    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-26 13:30:08    running_log    INFO : D completed
+2018-12-26 13:30:08    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-26 13:30:08    running_log    INFO : E start running
+2018-12-26 13:30:08    command_E    INFO : E start running
+2018-12-26 13:30:08    command_E    INFO : E resource monitor start monitoring
+2018-12-26 13:30:08    command_E    INFO : E running is stoped
+2018-12-26 13:30:08    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-26 13:30:08    running_log    INFO : E completed
+2018-12-26 13:30:08    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-26 13:30:08    running_log    INFO : G start running
+2018-12-26 13:30:08    command_G    INFO : G start running
+2018-12-26 13:30:08    command_G    INFO : G resource monitor start monitoring
+2018-12-26 13:30:08    command_G    INFO : G running is stoped
+2018-12-26 13:30:08    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-26 13:30:08    running_log    INFO : G completed
+2018-12-26 13:30:08    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-26 13:30:10    running_log    INFO : ThreadPoolExecutor-0_4 running is end finally
+2018-12-26 13:30:10    running_log    INFO : ThreadPoolExecutor-0_5 running is end finally
+2018-12-26 13:30:10    running_log    INFO : ThreadPoolExecutor-0_3 running is end finally
+2018-12-26 13:30:10    running_log    INFO : ThreadPoolExecutor-0_6 running is end finally
+2018-12-26 13:30:10    running_log    INFO : ThreadPoolExecutor-0_7 running is end finally
+2018-12-26 13:30:10    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-26 13:30:10    running_log    INFO : ThreadPoolExecutor-0_2 running is end finally
+2018-12-26 13:30:10    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-26 13:30:10    callback_function    INFO : all processes are closed
+2018-12-26 13:30:10    callback_function    INFO : all io-handlers are closed
+2018-12-26 13:30:10    callback_function    INFO : stop callback_function, and end the program
+2018-12-26 13:31:47    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-26 13:31:47    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-26 13:31:47    running_log    INFO : A start running
+2018-12-26 13:31:47    running_log    INFO : ThreadPoolExecutor-0_2 running is starting
+2018-12-26 13:31:47    running_log    INFO : B start running
+2018-12-26 13:31:47    running_log    INFO : ThreadPoolExecutor-0_3 running is starting
+2018-12-26 13:31:47    command_A    INFO : A start running
+2018-12-26 13:31:47    running_log    INFO : ThreadPoolExecutor-0_4 running is starting
+2018-12-26 13:31:47    running_log    INFO : ThreadPoolExecutor-0_5 running is starting
+2018-12-26 13:31:47    running_log    INFO : F start running
+2018-12-26 13:31:47    running_log    INFO : ThreadPoolExecutor-0_6 running is starting
+2018-12-26 13:31:47    running_log    INFO : ThreadPoolExecutor-0_7 running is starting
+2018-12-26 13:31:47    command_B    INFO : B start running
+2018-12-26 13:31:47    command_F    INFO : F start running
+2018-12-26 13:31:47    command_A    INFO : A resource monitor start monitoring
+2018-12-26 13:31:47    command_B    INFO : B resource monitor start monitoring
+2018-12-26 13:31:47    command_F    INFO : F resource monitor start monitoring
+2018-12-26 13:31:48    command_A    INFO : A running is stoped
+2018-12-26 13:31:48    command_B    INFO : B running is stoped
+2018-12-26 13:31:48    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.90625M
+2018-12-26 13:31:48    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.09766M
+2018-12-26 13:31:48    command_F    INFO : F running is stoped
+2018-12-26 13:31:48    running_log    INFO : B completed
+2018-12-26 13:31:48    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.37109M
+2018-12-26 13:31:48    running_log    INFO : A completed
+2018-12-26 13:31:48    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-26 13:31:48    running_log    INFO : F completed
+2018-12-26 13:31:48    running_log    INFO : C start running
+2018-12-26 13:31:48    command_C    INFO : C start running
+2018-12-26 13:31:48    command_C    INFO : C resource monitor start monitoring
+2018-12-26 13:31:48    command_C    INFO : C running is stoped
+2018-12-26 13:31:48    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-26 13:31:48    running_log    INFO : C completed
+2018-12-26 13:31:48    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-26 13:31:48    running_log    INFO : D start running
+2018-12-26 13:31:48    command_D    INFO : D start running
+2018-12-26 13:31:48    command_D    INFO : D resource monitor start monitoring
+2018-12-26 13:31:48    command_D    INFO : D running is stoped
+2018-12-26 13:31:48    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:1.35547M
+2018-12-26 13:31:48    running_log    INFO : D completed
+2018-12-26 13:31:48    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-26 13:31:48    running_log    INFO : E start running
+2018-12-26 13:31:48    command_E    INFO : E start running
+2018-12-26 13:31:48    command_E    INFO : E resource monitor start monitoring
+2018-12-26 13:31:48    command_E    INFO : E running is stoped
+2018-12-26 13:31:48    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-26 13:31:48    running_log    INFO : E completed
+2018-12-26 13:31:48    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-26 13:31:48    running_log    INFO : G start running
+2018-12-26 13:31:48    command_G    INFO : G start running
+2018-12-26 13:31:48    command_G    INFO : G resource monitor start monitoring
+2018-12-26 13:31:48    command_G    INFO : G running is stoped
+2018-12-26 13:31:48    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-26 13:31:48    running_log    INFO : G completed
+2018-12-26 13:31:48    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-26 13:31:49    running_log    INFO : ThreadPoolExecutor-0_3 running is end finally
+2018-12-26 13:31:49    running_log    INFO : ThreadPoolExecutor-0_4 running is end finally
+2018-12-26 13:31:49    running_log    INFO : ThreadPoolExecutor-0_5 running is end finally
+2018-12-26 13:31:49    running_log    INFO : ThreadPoolExecutor-0_6 running is end finally
+2018-12-26 13:31:49    running_log    INFO : ThreadPoolExecutor-0_7 running is end finally
+2018-12-26 13:31:50    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-26 13:31:50    running_log    INFO : ThreadPoolExecutor-0_2 running is end finally
+2018-12-26 13:31:50    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-26 13:31:50    callback_function    INFO : all processes are closed
+2018-12-26 13:31:50    callback_function    INFO : all io-handlers are closed
+2018-12-26 13:31:50    callback_function    INFO : stop callback_function, and end the program
