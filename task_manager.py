@@ -193,6 +193,8 @@ class ResourceManagement(object):
         # self.total_cpu_num = psutil.cpu_count() if WINDOWS else psutil.cpu_count() * 2
         self.total_cpu_num = psutil.cpu_count()
         self.total_memory = psutil.virtual_memory().total
+        # self.bind_cmds = weakref.WeakKeyDictionary()
+        self.bind_cmds = dict()
         # self.available_memory = memory.available
         self.__available_mem_percent = 0.8
         self.__used_cpu = 0
@@ -205,16 +207,29 @@ class ResourceManagement(object):
             if self.check_resource(cmd_obj):
                 self.__used_cpu += cpu
                 self.__used_mem += mem
+                self.bind_cmds[cmd_obj] = 1
                 return True
             return False
 
     def check_resource(self, cmd_obj) -> bool:
+        def trans(dynamic_mem, initial_mem):
+            val = initial_mem / dynamic_mem
+            diff = initial_mem - dynamic_mem
+            # g_1 = 1024 * 1024 * 1024
+            return diff - val * 0.5
+
         cpu = cmd_obj.cpu
         mem = cmd_obj.mem_byte
+        mem_adjust_value = 0
+        for c_obj in self.bind_cmds:
+            if hasattr(c_obj, 'dynamic_resource_list'):
+                temp_list = c_obj.dynamic_resource_list[:]
+                d_cpu, d_mem = [max(i) for i in zip(*temp_list)]
+                mem_adjust_value += trans(d_mem, mem)
         available_mem = psutil.virtual_memory().available
         cpu_check = self.__used_cpu + cpu <= self.total_cpu_num
-        mem_check = self.__used_mem + mem <= available_mem * self.__available_mem_percent
-        total_mem_check = self.__used_mem + mem <= self.total_memory * self.__available_mem_percent
+        mem_check = self.__used_mem + mem + mem_adjust_value <= available_mem * self.__available_mem_percent
+        total_mem_check = self.__used_mem + mem + mem_adjust_value <= self.total_memory * self.__available_mem_percent
         return cpu_check and mem_check and total_mem_check
 
     @staticmethod
@@ -233,9 +248,11 @@ class ResourceManagement(object):
             mem_ = self.__used_mem - mem
             self.__used_cpu = cpu_ if cpu_ >= 0 else 0
             self.__used_mem = mem_ if mem_ >= 0 else 0
+            self.bind_cmds.pop(cmd_obj, 1)
+            delattr(cmd_obj, 'dynamic_resource_list')
 
     @staticmethod
-    def monitor_resource(pid: int, result_list: list = None) -> str:
+    def monitor_resource(pid, result_list: list = None) -> str:
         try:
             p = psutil.Process(pid=pid)
         except psutil.NoSuchProcess as e:
@@ -355,9 +372,12 @@ class Command(object):
 
         process = Popen(self.__cmd, shell=True, stderr=PIPE, stdout=PIPE, universal_newlines=True)
         result_list = []
+        # bind dynamic resource list to cmd_obj
+        self.dynamic_resource_list = result_list
         # Monitor resource usage of this process
         if callable(monitor):
             self.logger.info(self.name + " resource monitor start monitoring")
+            # def monitor_resource(self, pid, result_list: list = None) -> str:
             thread = threading.Thread(target=monitor, args=(process.pid, result_list))
             thread.setDaemon(True)
             thread.start()
@@ -367,6 +387,7 @@ class Command(object):
 
         # read err, and stdout to avoid pipe blockage
         out, err = [], []
+
         for line in process.stdout:
             out.append(line)
             err_line = process.stderr.readline()
@@ -374,12 +395,16 @@ class Command(object):
         for line in process.stderr:
             err.append(line)
             out_line = process.stdout.readline()
-            if out_line: err.append(out_line)
+            if out_line: out.append(out_line)
 
         process.wait()  # block the process
         # wait and get the computer resources needed
         # if thread is not None: thread.join()
-        if process.returncode != 0: self.is_error = True
+        if process.returncode != 0:
+            self.logger.error(''.join(err).strip())
+            self.is_error = True
+        if out:
+            self.logger.info(self.name + ' cmd STDOUT : ' + ''.join(out).strip())
         cpu, mem = [max(i) for i in zip(*result_list)]
         mem = ResourceManagement.to_human_readable_format(mem)
         res = "max_cpu:{cpu}\tmax_memory:{mem}".format(
@@ -554,6 +579,38 @@ class CmdPool(dict):
                 return False
         return True
 
+    def _solve_error_cmd(self, run_cmd):
+        name = run_cmd.name
+        all_relevant_cmds = self.get_all_deps(run_cmd)
+        all_relevant_cmds.append(name)
+        for i in all_relevant_cmds:
+            cmd_obj = self[i]
+            cmd_obj.is_running = False
+            cmd_obj.is_completed = True
+            cmd_obj.is_waiting = False
+            cmd_obj.is_error = True
+            cmd_obj.is_in_queue = False
+
+        # <----- self.__is_remain_list
+        CommTools.del_list_elements(self.__is_remain_list, *all_relevant_cmds, del_all=True)
+        # <----- self.__is_waiting_list
+        CommTools.del_list_elements(self.__is_waiting_list, *all_relevant_cmds, del_all=True)
+        if all_relevant_cmds:
+            self.logger.warning(
+                " [%s] were added to error queue because of %s's failure"
+                % (', '.join(all_relevant_cmds), name))
+
+    def _solve_retry_cmd(self, run_cmd):
+        run_cmd.is_running = False
+        run_cmd.is_completed = False
+        run_cmd.is_waiting = True
+        run_cmd.is_error = False
+        run_cmd.is_in_queue = True
+        run_cmd.is_ready_to_run = False
+        self.__cmd_queue.put(run_cmd.name)
+        # -----> self.__is_waiting_list
+        self.__is_waiting_list.extend(run_cmd.name)
+
     def next(self, now_run_cmd=None):
         """
             --> queue.put():
@@ -615,33 +672,13 @@ class CmdPool(dict):
                     # cmd error# cmd error
                     if now_run_cmd.is_error and now_run_cmd.attempt_times <= 3:
                         # Give three tries when cmd_obj's running goes wrong
-                        now_run_cmd.is_running = False
-                        now_run_cmd.is_completed = False
-                        now_run_cmd.is_waiting = True
-                        now_run_cmd.is_error = False
-                        now_run_cmd.is_in_queue = True
-                        self.__cmd_queue.put(name)
-
-                        # -----> self.__is_waiting_list
-                        self.__is_waiting_list.extend(name)
+                        self._solve_retry_cmd(run_cmd=now_run_cmd)
                     elif now_run_cmd.is_error:
+                        self.logger.error(
+                            name + ' cmd : %s tries all failed' % now_run_cmd.attempt_times)
                         # -----> self.__is_error_list
                         self.__is_error_list.append(name)
-
-                        all_relevant_cmds = self.get_all_deps(now_run_cmd)
-                        all_relevant_cmds.append(name)
-                        for i in all_relevant_cmds:
-                            cmd_obj = self[i]
-                            cmd_obj.is_running = False
-                            cmd_obj.is_completed = True
-                            cmd_obj.is_waiting = False
-                            cmd_obj.is_error = True
-                            cmd_obj.is_in_queue = False
-
-                        # <----- self.__is_remain_list
-                        CommTools.del_list_elements(self.__is_remain_list, *all_relevant_cmds, del_all=True)
-                        # <----- self.__is_waiting_list
-                        CommTools.del_list_elements(self.__is_waiting_list, *all_relevant_cmds, del_all=True)
+                        self._solve_error_cmd(run_cmd=now_run_cmd)
 
                 # elif not now_run_cmd.is_waiting and not now_run_cmd.is_error:
                 else:
@@ -649,16 +686,8 @@ class CmdPool(dict):
                            and now_run_cmd.is_ready_to_run \
                            and not now_run_cmd.is_error, \
                         'cmd status error[bug], please check program\n' + now_run_cmd.cmd_str_status
-                    now_run_cmd.is_running = False
-                    now_run_cmd.is_completed = False
-                    now_run_cmd.is_waiting = True
-                    now_run_cmd.is_error = False
-                    now_run_cmd.is_in_queue = True
-                    now_run_cmd.is_ready_to_run = False
-                    self.__cmd_queue.put(name)
-
-                    # -----> self.__is_waiting_list
-                    self.__is_waiting_list.extend(name)
+                    # tries when cmd_obj's resource bind error
+                    self._solve_retry_cmd(now_run_cmd)
 
             # termination condition
             # if len(self.__is_completed_list) == self.__total_task or:
@@ -730,7 +759,9 @@ class CmdPool(dict):
                 self.__is_waiting_list.append(k)
 
         if len(self.__is_waiting_list) != len(set(self.__is_waiting_list)):
-            raise Exception("self.__is_waiting_list has duplication")
+            msg = "self.__is_waiting_list has duplication"
+            self.logger.error(msg)
+            raise Exception(msg)
 
         CommTools.del_list_elements(self.__is_remain_list, *self.__is_waiting_list, del_all=True)
 
@@ -865,10 +896,10 @@ class MultiRunManager(object):
                     cmd_obj = self.__pool.next(cmd_obj)
                     self.__logger.update_status()
                 else:
-                    self.logger.info(
+                    self.logger.warning(
                         cmd_obj.name + " resource binding is unsuccessful, and add it to the queue, and sleep 2s")
-                    self.logger.info(cmd_obj)  # write cmd_obj's raw resource to log
-                    self.logger.info(cmd_obj.cmd_str_status)
+                    self.logger.warning(cmd_obj)  # write cmd_obj's raw resource to log
+                    self.logger.warning(cmd_obj.cmd_str_status)
                     time.sleep(2)
                     cmd_obj = self.__pool.next(cmd_obj)
                 # self.__pool.add_waiting_cmds(cmd_obj)
