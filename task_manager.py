@@ -228,7 +228,8 @@ class ResourceManagement(object):
                     mem_adjust_value += trans(d_mem, mem)
         available_mem = psutil.virtual_memory().available
         cpu_check = self.__used_cpu + cpu <= self.total_cpu_num
-        mem_check = self.__used_mem + mem + mem_adjust_value <= available_mem * self.__available_mem_percent
+        # mem_check = self.__used_mem + mem + mem_adjust_value <= available_mem * self.__available_mem_percent
+        mem_check = mem <= available_mem * self.__available_mem_percent
         total_mem_check = self.__used_mem + mem + mem_adjust_value <= self.total_memory * self.__available_mem_percent
         return cpu_check and mem_check and total_mem_check
 
