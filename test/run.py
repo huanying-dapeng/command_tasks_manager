@@ -7,9 +7,12 @@
 @contact : 757049042@qq.com
 """
 
-import time, random
+import random
+import time
 
-print("=============================")
+import psutil
+
+t = random.randint(5, 15)
+print("cmd tool's process ID: " + str(psutil.Process().pid))
+print("========= sleep " + str(t) + 's =========')
 time.sleep(random.randint(5, 15))
-# time.sleep(1)
-print("=============------------------------")

@@ -1,1 +1,1 @@
-python ../task_manager.py -c cmd_json.json -r relation.json -t 2
+python ../task_manager.py -c cmd_json.json -r relation.json -t 7

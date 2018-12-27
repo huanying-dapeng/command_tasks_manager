@@ -101,7 +101,7 @@ class CommTools(object):
 
 class TaskLogger(object):
     __loggers_obj = dict()
-    __LOCK__ = threading.Lock() if WINDOWS else threading.Semaphore(1)
+    __LOCK__ = threading.Lock() if WINDOWS else threading.BoundedSemaphore(1)
 
     def __init__(self, logger_name, stream_on=True):
         self.__cmd_pool = None
@@ -184,7 +184,7 @@ class TaskLogger(object):
 
 
 class ResourceManagement(object):
-    __LOCK__ = threading.Lock()  if WINDOWS else threading.Semaphore(1)
+    __LOCK__ = threading.Lock()  if WINDOWS else threading.BoundedSemaphore(1)
     __manager_obj = None
 
     def __init__(self):
@@ -341,7 +341,7 @@ class Command(object):
         self.is_in_queue = False
         self.is_ready_to_run = False
         self.attempt_times = 0
-        self.__lock__ = threading.Lock()  if WINDOWS else threading.Semaphore(1)
+        self.__lock__ = threading.Lock()  if WINDOWS else threading.BoundedSemaphore(1)
         self.__depends_completed_num = 0
         self.logger = TaskLogger("logger").get_logger("command_" + self.name)
 
@@ -509,7 +509,7 @@ class Command(object):
 
 
 class CmdPool(dict):
-    __LOCK__ = threading.Lock() if WINDOWS else threading.Semaphore(1)
+    __LOCK__ = threading.Lock() if WINDOWS else threading.BoundedSemaphore(1)
 
     def __init__(self, re_manager: ResourceManagement):
         super(CmdPool, self).__init__()

@@ -13,3 +13,4 @@ command_tasks_manager is a command(shell, cmd) tasks and resource management pro
  
  ## 4. example of log
  ![example of log](imgs/log_example.png)
+ 
