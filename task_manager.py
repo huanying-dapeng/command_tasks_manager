@@ -421,7 +421,7 @@ class Command(object):
         self.is_running = False
         # print(self.is_waiting, self.is_in_queue, self.is_running,
         #       self.is_completed, self.is_error, 'running end')
-        self.logger.info(self.name + " running is stoped, in " + thread_name)
+        # self.logger.info(self.name + " running is stoped, in " + thread_name)
         return res if len(result_list) > 0 else "may be error"
 
     def parse_mem(self):
@@ -885,7 +885,7 @@ class MultiRunManager(object):
         self.logger = self.__logger.get_logger("running_log")
 
     def _cmd_run(self):
-        t = threading.current_thread()
+        thread = threading.current_thread()
         cmd_obj = self.__pool.next()
 
         thread = threading.current_thread()
@@ -895,8 +895,8 @@ class MultiRunManager(object):
                 # bind resource (determine whether the resources meet the cmd requirements)
                 # if the bind is successful, it will run, or else it will add cmd to queue
                 if self.__resource_manager.bind_resource(cmd_obj):
-                    self.logger.debug(
-                        " CMD: " + cmd_obj.name + " resource binding is successful and start running")
+                    run_debug = " resource binding is successful and start running in -- "
+                    self.logger.debug(" CMD: " + cmd_obj.name + run_debug + thread.name)
                     resource_stat = cmd_obj.run(self.__resource_manager.monitor_resource)
                     # release resource bound before
                     self.__resource_manager.release_resource(cmd_obj)
