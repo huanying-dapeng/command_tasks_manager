@@ -404,7 +404,7 @@ class Command(object):
         process.wait()  # block the process
         # wait and get the computer resources needed
         if process.returncode != 0:
-            self.logger.error(''.join(err).strip())
+            self.logger.error(self.name + ' cmd STDERR : ' + ''.join(err).strip())
             self.is_error = True
         if out:
             self.logger.info(self.name + ' cmd STDOUT : ' + ''.join(out).strip())
@@ -888,7 +888,6 @@ class MultiRunManager(object):
         thread = threading.current_thread()
         cmd_obj = self.__pool.next()
 
-        thread = threading.current_thread()
         self.logger.info(" THREAD: " + thread.name + ' running is starting')
         while True:
             if isinstance(cmd_obj, Command):
