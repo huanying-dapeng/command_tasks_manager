@@ -1,9 +1,9 @@
 {
-	"A": "echo A ===",
-	"B": "echo B ===",
-	"C": "echo C ===",
-	"D": "echo D ===",
-	"E": "echo E ===",
-	"F": "echo F ===",
-	"G": "echo G ==="
+	"A": "python ./run.py",
+	"B": "python ./run.py",
+	"C": "python ./run.py",
+	"D": "python ./run.py",
+	"E": "python ./run.py",
+	"F": "python ./run.py",
+	"G": "python ./run.py"
 }

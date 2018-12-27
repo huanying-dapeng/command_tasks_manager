@@ -7,4 +7,10 @@ command_tasks_manager is a command(shell, cmd) tasks and resource management pro
 ## 2. needed param example files:
 ### 2.1  [cmd_json.json](test/cmd_json.json)
 ### 2.2  [relation.json](test/relation.json)
+
+## 3. program flow diagram
+![program flow diagram](imgs/flow_diagram.png)
+ 
+ ## 4. example of log
+ ![example of log](imgs/log_example.png)
  
