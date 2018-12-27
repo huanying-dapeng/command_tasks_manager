@@ -52,3 +52,733 @@
 2018-12-27 02:09:03    callback_function    INFO : all processes are closed
 2018-12-27 02:09:03    callback_function    INFO : all io-handlers are closed
 2018-12-27 02:09:03    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 08:38:29    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-27 08:38:29    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-27 08:38:29    running_log    INFO : A start running
+2018-12-27 08:38:29    running_log    INFO : B start running
+2018-12-27 08:38:29    command_A    INFO : A start running
+2018-12-27 08:38:29    command_B    INFO : B start running
+2018-12-27 08:38:29    command_B    INFO : B resource monitor start monitoring
+2018-12-27 08:38:29    command_A    INFO : A resource monitor start monitoring
+2018-12-27 08:38:29    command_B    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:29    command_A    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:29    command_B    INFO : B running is stoped
+2018-12-27 08:38:29    command_A    INFO : A running is stoped
+2018-12-27 08:38:29    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-27 08:38:29    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-27 08:38:29    running_log    INFO : B completed
+2018-12-27 08:38:29    running_log    INFO : A completed
+2018-12-27 08:38:29    running_log    INFO : F start running
+2018-12-27 08:38:29    command_F    INFO : F start running
+2018-12-27 08:38:29    running_log    INFO : B start running
+2018-12-27 08:38:29    command_B    INFO : B start running
+2018-12-27 08:38:29    command_B    INFO : B resource monitor start monitoring
+2018-12-27 08:38:29    command_F    INFO : F resource monitor start monitoring
+2018-12-27 08:38:29    command_F    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:29    command_B    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_F    INFO : F running is stoped
+2018-12-27 08:38:30    command_B    INFO : B running is stoped
+2018-12-27 08:38:30    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 08:38:30    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-27 08:38:30    running_log    INFO : F completed
+2018-12-27 08:38:30    running_log    INFO : B completed
+2018-12-27 08:38:30    running_log    INFO : A start running
+2018-12-27 08:38:30    running_log    INFO : F start running
+2018-12-27 08:38:30    command_A    INFO : A start running
+2018-12-27 08:38:30    command_F    INFO : F start running
+2018-12-27 08:38:30    command_F    INFO : F resource monitor start monitoring
+2018-12-27 08:38:30    command_A    INFO : A resource monitor start monitoring
+2018-12-27 08:38:30    command_A    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_F    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_A    INFO : A running is stoped
+2018-12-27 08:38:30    command_F    INFO : F running is stoped
+2018-12-27 08:38:30    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 08:38:30    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-27 08:38:30    running_log    INFO : F completed
+2018-12-27 08:38:30    running_log    INFO : A completed
+2018-12-27 08:38:30    running_log    INFO : B start running
+2018-12-27 08:38:30    running_log    INFO : F start running
+2018-12-27 08:38:30    command_B    INFO : B start running
+2018-12-27 08:38:30    command_F    INFO : F start running
+2018-12-27 08:38:30    command_F    INFO : F resource monitor start monitoring
+2018-12-27 08:38:30    command_B    INFO : B resource monitor start monitoring
+2018-12-27 08:38:30    command_F    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_B    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_B    INFO : B running is stoped
+2018-12-27 08:38:30    command_F    INFO : F running is stoped
+2018-12-27 08:38:30    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 08:38:30    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.90234M
+2018-12-27 08:38:30    running_log    INFO : F completed
+2018-12-27 08:38:30    running_log    INFO : B completed
+2018-12-27 08:38:30    running_log    INFO : A start running
+2018-12-27 08:38:30    running_log    INFO : F start running
+2018-12-27 08:38:30    command_A    INFO : A start running
+2018-12-27 08:38:30    command_F    INFO : F start running
+2018-12-27 08:38:30    command_F    INFO : F resource monitor start monitoring
+2018-12-27 08:38:30    command_A    INFO : A resource monitor start monitoring
+2018-12-27 08:38:30    command_F    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_A    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_F    INFO : F running is stoped
+2018-12-27 08:38:30    command_A    INFO : A running is stoped
+2018-12-27 08:38:30    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 08:38:30    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 08:38:30    running_log    INFO : F completed
+2018-12-27 08:38:30    running_log    INFO : A completed
+2018-12-27 08:38:30    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-27 08:38:30    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-27 08:38:30    running_log    INFO : B start running
+2018-12-27 08:38:30    running_log    INFO : A start running
+2018-12-27 08:38:30    command_B    INFO : B start running
+2018-12-27 08:38:30    command_A    INFO : A start running
+2018-12-27 08:38:30    command_A    INFO : A resource monitor start monitoring
+2018-12-27 08:38:30    command_B    INFO : B resource monitor start monitoring
+2018-12-27 08:38:30    command_B    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_A    ERROR : 系统找不到指定的路径。
+2018-12-27 08:38:30    command_B    INFO : B running is stoped
+2018-12-27 08:38:30    command_A    INFO : A running is stoped
+2018-12-27 08:38:30    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-27 08:38:30    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.375M
+2018-12-27 08:38:30    running_log    INFO : A completed
+2018-12-27 08:38:30    running_log    INFO : B completed
+2018-12-27 08:38:30    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-27 08:38:30    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-27 08:38:30    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-27 08:38:30    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-27 08:38:30    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-27 08:38:30    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-27 08:38:30    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 08:38:30    callback_function    INFO : all processes are closed
+2018-12-27 08:38:30    callback_function    INFO : all io-handlers are closed
+2018-12-27 08:38:30    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 08:39:32    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-27 08:39:32    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-27 08:39:32    running_log    INFO : A start running
+2018-12-27 08:39:32    running_log    INFO : B start running
+2018-12-27 08:39:32    command_A    INFO : A start running
+2018-12-27 08:39:32    command_B    INFO : B start running
+2018-12-27 08:39:32    command_B    INFO : B resource monitor start monitoring
+2018-12-27 08:39:32    command_A    INFO : A resource monitor start monitoring
+2018-12-27 08:39:32    command_A    INFO : A cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:32    command_B    INFO : B cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:32    command_A    INFO : A running is stoped
+2018-12-27 08:39:32    command_B    INFO : B running is stoped
+2018-12-27 08:39:32    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-27 08:39:32    running_log    INFO : A completed
+2018-12-27 08:39:32    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 08:39:32    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-27 08:39:32    running_log    INFO : B completed
+2018-12-27 08:39:32    running_log    INFO : F start running
+2018-12-27 08:39:32    running_log    INFO : C start running
+2018-12-27 08:39:32    command_F    INFO : F start running
+2018-12-27 08:39:32    command_C    INFO : C start running
+2018-12-27 08:39:32    command_C    INFO : C resource monitor start monitoring
+2018-12-27 08:39:32    command_F    INFO : F resource monitor start monitoring
+2018-12-27 08:39:32    command_C    INFO : C cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:32    command_F    INFO : F cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:32    command_C    INFO : C running is stoped
+2018-12-27 08:39:32    command_F    INFO : F running is stoped
+2018-12-27 08:39:32    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-27 08:39:32    running_log    INFO : C completed
+2018-12-27 08:39:32    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35547M
+2018-12-27 08:39:32    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-27 08:39:32    running_log    INFO : F completed
+2018-12-27 08:39:32    running_log    INFO : D start running
+2018-12-27 08:39:32    command_D    INFO : D start running
+2018-12-27 08:39:32    command_D    INFO : D resource monitor start monitoring
+2018-12-27 08:39:32    command_D    INFO : D cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:32    command_D    INFO : D running is stoped
+2018-12-27 08:39:32    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 08:39:32    running_log    INFO : D completed
+2018-12-27 08:39:32    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-27 08:39:32    running_log    INFO : E start running
+2018-12-27 08:39:32    command_E    INFO : E start running
+2018-12-27 08:39:32    command_E    INFO : E resource monitor start monitoring
+2018-12-27 08:39:32    command_E    INFO : E cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:32    command_E    INFO : E running is stoped
+2018-12-27 08:39:32    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 08:39:32    running_log    INFO : E completed
+2018-12-27 08:39:32    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-27 08:39:32    running_log    INFO : G start running
+2018-12-27 08:39:32    command_G    INFO : G start running
+2018-12-27 08:39:32    command_G    INFO : G resource monitor start monitoring
+2018-12-27 08:39:32    command_G    INFO : G cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:32    command_G    INFO : G running is stoped
+2018-12-27 08:39:32    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 08:39:32    running_log    INFO : G completed
+2018-12-27 08:39:32    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-27 08:39:34    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-27 08:39:34    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 08:39:34    callback_function    INFO : all processes are closed
+2018-12-27 08:39:34    callback_function    INFO : all io-handlers are closed
+2018-12-27 08:39:34    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 08:39:59    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-27 08:39:59    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-27 08:39:59    running_log    INFO : A start running
+2018-12-27 08:39:59    running_log    INFO : B start running
+2018-12-27 08:39:59    command_A    INFO : A start running
+2018-12-27 08:39:59    command_B    INFO : B start running
+2018-12-27 08:39:59    command_B    INFO : B resource monitor start monitoring
+2018-12-27 08:39:59    command_A    INFO : A resource monitor start monitoring
+2018-12-27 08:39:59    command_B    INFO : B cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:59    command_A    INFO : A cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:59    command_B    INFO : B running is stoped
+2018-12-27 08:39:59    command_A    INFO : A running is stoped
+2018-12-27 08:39:59    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 08:39:59    running_log    INFO : B completed
+2018-12-27 08:39:59    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 08:39:59    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-27 08:39:59    running_log    INFO : A completed
+2018-12-27 08:39:59    running_log    INFO : F start running
+2018-12-27 08:39:59    running_log    INFO : C start running
+2018-12-27 08:39:59    command_F    INFO : F start running
+2018-12-27 08:39:59    command_C    INFO : C start running
+2018-12-27 08:39:59    command_C    INFO : C resource monitor start monitoring
+2018-12-27 08:39:59    command_F    INFO : F resource monitor start monitoring
+2018-12-27 08:39:59    command_F    INFO : F cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:59    command_C    INFO : C cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:59    command_F    INFO : F running is stoped
+2018-12-27 08:39:59    command_C    INFO : C running is stoped
+2018-12-27 08:39:59    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 08:39:59    running_log    INFO : F completed
+2018-12-27 08:39:59    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-27 08:39:59    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-27 08:39:59    running_log    INFO : C completed
+2018-12-27 08:39:59    running_log    INFO : D start running
+2018-12-27 08:39:59    command_D    INFO : D start running
+2018-12-27 08:39:59    command_D    INFO : D resource monitor start monitoring
+2018-12-27 08:39:59    command_D    INFO : D cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:39:59    command_D    INFO : D running is stoped
+2018-12-27 08:39:59    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:1.35547M
+2018-12-27 08:39:59    running_log    INFO : D completed
+2018-12-27 08:39:59    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-27 08:39:59    running_log    INFO : E start running
+2018-12-27 08:39:59    command_E    INFO : E start running
+2018-12-27 08:39:59    command_E    INFO : E resource monitor start monitoring
+2018-12-27 08:40:00    command_E    INFO : E cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:40:00    command_E    INFO : E running is stoped
+2018-12-27 08:40:00    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-27 08:40:00    running_log    INFO : E completed
+2018-12-27 08:40:00    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-27 08:40:00    running_log    INFO : G start running
+2018-12-27 08:40:00    command_G    INFO : G start running
+2018-12-27 08:40:00    command_G    INFO : G resource monitor start monitoring
+2018-12-27 08:40:00    command_G    INFO : G cmd STDOUT : =============================
+=============------------------------
+2018-12-27 08:40:00    command_G    INFO : G running is stoped
+2018-12-27 08:40:00    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 08:40:00    running_log    INFO : G completed
+2018-12-27 08:40:00    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-27 08:40:01    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-27 08:40:01    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 08:40:01    callback_function    INFO : all processes are closed
+2018-12-27 08:40:01    callback_function    INFO : all io-handlers are closed
+2018-12-27 08:40:01    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 09:19:43    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-27 09:19:43    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-27 09:19:43    running_log    INFO : A start running
+2018-12-27 09:19:43    running_log    INFO : B start running
+2018-12-27 09:19:43    command_A    INFO : A start running
+2018-12-27 09:19:43    command_B    INFO : B start running
+2018-12-27 09:19:43    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:19:43    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:19:43    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_A    INFO : A running is stoped
+2018-12-27 09:19:43    command_B    INFO : B running is stoped
+2018-12-27 09:19:43    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:19:43    running_log    INFO : A completed
+2018-12-27 09:19:43    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 09:19:43    running_log    INFO : F start running
+2018-12-27 09:19:43    running_log    INFO : B completed
+2018-12-27 09:19:43    command_F    INFO : F start running
+2018-12-27 09:19:43    running_log    INFO : A start running
+2018-12-27 09:19:43    command_A    INFO : A start running
+2018-12-27 09:19:43    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:19:43    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:19:43    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_F    INFO : F running is stoped
+2018-12-27 09:19:43    command_A    INFO : A running is stoped
+2018-12-27 09:19:43    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:19:43    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35547M
+2018-12-27 09:19:43    running_log    INFO : F completed
+2018-12-27 09:19:43    running_log    INFO : A completed
+2018-12-27 09:19:43    running_log    INFO : B start running
+2018-12-27 09:19:43    running_log    INFO : F start running
+2018-12-27 09:19:43    command_B    INFO : B start running
+2018-12-27 09:19:43    command_F    INFO : F start running
+2018-12-27 09:19:43    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:19:43    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:19:43    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_F    INFO : F running is stoped
+2018-12-27 09:19:43    command_B    INFO : B running is stoped
+2018-12-27 09:19:43    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 09:19:43    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:19:43    running_log    INFO : F completed
+2018-12-27 09:19:43    running_log    INFO : B completed
+2018-12-27 09:19:43    running_log    INFO : A start running
+2018-12-27 09:19:43    running_log    INFO : F start running
+2018-12-27 09:19:43    command_A    INFO : A start running
+2018-12-27 09:19:43    command_F    INFO : F start running
+2018-12-27 09:19:43    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:19:43    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:19:43    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_A    INFO : A running is stoped
+2018-12-27 09:19:43    command_F    INFO : F running is stoped
+2018-12-27 09:19:43    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-27 09:19:43    running_log    INFO : A completed
+2018-12-27 09:19:43    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:19:43    running_log    INFO : F completed
+2018-12-27 09:19:43    running_log    INFO : B start running
+2018-12-27 09:19:43    running_log    INFO : A start running
+2018-12-27 09:19:43    command_B    INFO : B start running
+2018-12-27 09:19:43    command_A    INFO : A start running
+2018-12-27 09:19:43    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:19:43    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:19:43    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_A    INFO : A running is stoped
+2018-12-27 09:19:43    command_B    INFO : B running is stoped
+2018-12-27 09:19:43    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-27 09:19:43    running_log    INFO : A completed
+2018-12-27 09:19:43    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:19:43    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-27 09:19:43    running_log    INFO : B completed
+2018-12-27 09:19:43    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-27 09:19:43    running_log    INFO : F start running
+2018-12-27 09:19:43    running_log    INFO : B start running
+2018-12-27 09:19:43    command_F    INFO : F start running
+2018-12-27 09:19:43    command_B    INFO : B start running
+2018-12-27 09:19:43    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:19:43    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:19:43    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:19:43    command_B    INFO : B running is stoped
+2018-12-27 09:19:43    command_F    INFO : F running is stoped
+2018-12-27 09:19:43    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:19:43    running_log    INFO : B completed
+2018-12-27 09:19:43    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:19:43    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-27 09:19:43    running_log    INFO : F completed
+2018-12-27 09:19:43    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-27 09:19:43    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-27 09:19:43    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-27 09:19:43    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-27 09:19:43    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-27 09:19:43    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 09:19:43    callback_function    INFO : all processes are closed
+2018-12-27 09:19:43    callback_function    INFO : all io-handlers are closed
+2018-12-27 09:19:43    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 09:25:27    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-27 09:25:27    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-27 09:25:27    running_log    INFO : A start running
+2018-12-27 09:25:27    running_log    INFO : B start running
+2018-12-27 09:25:27    command_A    INFO : A start running
+2018-12-27 09:25:27    command_B    INFO : B start running
+2018-12-27 09:25:27    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:25:27    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:25:27    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_A    INFO : A running is stoped
+2018-12-27 09:25:27    command_B    INFO : B running is stoped
+2018-12-27 09:25:27    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:25:27    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.63281M
+2018-12-27 09:25:27    running_log    INFO : A completed
+2018-12-27 09:25:27    running_log    INFO : B completed
+2018-12-27 09:25:27    running_log    INFO : F start running
+2018-12-27 09:25:27    running_log    INFO : A start running
+2018-12-27 09:25:27    command_F    INFO : F start running
+2018-12-27 09:25:27    command_A    INFO : A start running
+2018-12-27 09:25:27    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:25:27    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:25:27    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_A    INFO : A running is stoped
+2018-12-27 09:25:27    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
+2018-12-27 09:25:27    running_log    INFO : A completed
+2018-12-27 09:25:27    command_F    INFO : F running is stoped
+2018-12-27 09:25:27    running_log    INFO : B start running
+2018-12-27 09:25:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-27 09:25:27    command_B    INFO : B start running
+2018-12-27 09:25:27    running_log    INFO : F completed
+2018-12-27 09:25:27    running_log    INFO : A start running
+2018-12-27 09:25:27    command_A    INFO : A start running
+2018-12-27 09:25:27    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:25:27    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:25:27    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_B    INFO : B running is stoped
+2018-12-27 09:25:27    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 09:25:27    running_log    INFO : B completed
+2018-12-27 09:25:27    command_A    INFO : A running is stoped
+2018-12-27 09:25:27    running_log    INFO : F start running
+2018-12-27 09:25:27    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32812M
+2018-12-27 09:25:27    command_F    INFO : F start running
+2018-12-27 09:25:27    running_log    INFO : A completed
+2018-12-27 09:25:27    running_log    INFO : B start running
+2018-12-27 09:25:27    command_B    INFO : B start running
+2018-12-27 09:25:27    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:25:27    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:25:27    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_F    INFO : F running is stoped
+2018-12-27 09:25:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.92578M
+2018-12-27 09:25:27    running_log    INFO : F completed
+2018-12-27 09:25:27    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    running_log    INFO : A start running
+2018-12-27 09:25:27    command_A    INFO : A start running
+2018-12-27 09:25:27    command_B    INFO : B running is stoped
+2018-12-27 09:25:27    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.39453M
+2018-12-27 09:25:27    running_log    INFO : B completed
+2018-12-27 09:25:27    running_log    INFO : F start running
+2018-12-27 09:25:27    command_F    INFO : F start running
+2018-12-27 09:25:27    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:25:27    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:25:27    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_A    INFO : A running is stoped
+2018-12-27 09:25:27    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 09:25:27    running_log    INFO : A completed
+2018-12-27 09:25:27    command_F    INFO : F running is stoped
+2018-12-27 09:25:27    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-27 09:25:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.32422M
+2018-12-27 09:25:27    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-27 09:25:27    running_log    INFO : F completed
+2018-12-27 09:25:27    running_log    INFO : B start running
+2018-12-27 09:25:27    running_log    INFO : F start running
+2018-12-27 09:25:27    command_B    INFO : B start running
+2018-12-27 09:25:27    command_F    INFO : F start running
+2018-12-27 09:25:27    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:25:27    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:25:27    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+2018-12-27 09:25:27    command_B    INFO : B running is stoped
+2018-12-27 09:25:27    command_F    INFO : F running is stoped
+2018-12-27 09:25:27    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 09:25:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
+2018-12-27 09:25:27    running_log    INFO : B completed
+2018-12-27 09:25:27    running_log    INFO : F completed
+2018-12-27 09:25:27    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-27 09:25:27    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-27 09:25:27    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-27 09:25:27    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-27 09:25:27    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-27 09:25:27    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-27 09:25:27    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 09:25:27    callback_function    INFO : all processes are closed
+2018-12-27 09:25:27    callback_function    INFO : all io-handlers are closed
+2018-12-27 09:25:27    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 09:26:04    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-27 09:26:04    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-27 09:26:04    running_log    INFO : A start running
+2018-12-27 09:26:04    running_log    INFO : B start running
+2018-12-27 09:26:04    command_A    INFO : A start running
+2018-12-27 09:26:04    command_B    INFO : B start running
+2018-12-27 09:26:04    command_B    INFO : B resource monitor start monitoring
+2018-12-27 09:26:04    command_A    INFO : A resource monitor start monitoring
+2018-12-27 09:26:18    command_A    INFO : A cmd STDOUT : =============================
+=============------------------------
+2018-12-27 09:26:18    command_B    INFO : B cmd STDOUT : =============================
+=============------------------------
+2018-12-27 09:26:18    command_A    INFO : A running is stoped
+2018-12-27 09:26:18    command_B    INFO : B running is stoped
+2018-12-27 09:26:18    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 09:26:18    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.125M
+2018-12-27 09:26:18    running_log    INFO : B completed
+2018-12-27 09:26:18    running_log    INFO : A completed
+2018-12-27 09:26:18    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-27 09:26:18    running_log    INFO : F start running
+2018-12-27 09:26:18    running_log    INFO : C start running
+2018-12-27 09:26:18    command_F    INFO : F start running
+2018-12-27 09:26:18    command_C    INFO : C start running
+2018-12-27 09:26:18    command_F    INFO : F resource monitor start monitoring
+2018-12-27 09:26:18    command_C    INFO : C resource monitor start monitoring
+2018-12-27 09:26:27    command_F    INFO : F cmd STDOUT : =============================
+=============------------------------
+2018-12-27 09:26:27    command_C    INFO : C cmd STDOUT : =============================
+=============------------------------
+2018-12-27 09:26:27    command_F    INFO : F running is stoped
+2018-12-27 09:26:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 09:26:27    command_C    INFO : C running is stoped
+2018-12-27 09:26:27    running_log    INFO : F completed
+2018-12-27 09:26:27    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-27 09:26:27    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 09:26:27    running_log    INFO : D start running
+2018-12-27 09:26:27    running_log    INFO : C completed
+2018-12-27 09:26:27    command_D    INFO : D start running
+2018-12-27 09:26:27    command_D    INFO : D resource monitor start monitoring
+2018-12-27 09:26:35    command_D    INFO : D cmd STDOUT : =============================
+=============------------------------
+2018-12-27 09:26:35    command_D    INFO : D running is stoped
+2018-12-27 09:26:35    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 09:26:35    running_log    INFO : D completed
+2018-12-27 09:26:35    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-27 09:26:35    running_log    INFO : E start running
+2018-12-27 09:26:35    command_E    INFO : E start running
+2018-12-27 09:26:35    command_E    INFO : E resource monitor start monitoring
+2018-12-27 09:26:46    command_E    INFO : E cmd STDOUT : =============================
+=============------------------------
+2018-12-27 09:26:46    command_E    INFO : E running is stoped
+2018-12-27 09:26:46    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 09:26:46    running_log    INFO : E completed
+2018-12-27 09:26:46    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-27 09:26:46    running_log    INFO : G start running
+2018-12-27 09:26:46    command_G    INFO : G start running
+2018-12-27 09:26:46    command_G    INFO : G resource monitor start monitoring
+2018-12-27 09:26:53    command_G    INFO : G cmd STDOUT : =============================
+=============------------------------
+2018-12-27 09:26:53    command_G    INFO : G running is stoped
+2018-12-27 09:26:53    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 09:26:53    running_log    INFO : G completed
+2018-12-27 09:26:53    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-27 09:26:55    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-27 09:26:55    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 09:26:55    callback_function    INFO : all processes are closed
+2018-12-27 09:26:55    callback_function    INFO : all io-handlers are closed
+2018-12-27 09:26:55    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 09:54:11    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 09:54:11    callback_function    INFO : all processes are closed
+2018-12-27 09:54:11    callback_function    INFO : all io-handlers are closed
+2018-12-27 09:54:11    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 10:51:58    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-27 10:51:58    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-27 10:51:58    running_log    INFO : A start running
+2018-12-27 10:51:58    running_log    INFO : B start running
+2018-12-27 10:51:58    command_A    INFO : A start running, in ThreadPoolExecutor-0_0
+2018-12-27 10:51:58    command_B    INFO : B start running, in ThreadPoolExecutor-0_1
+2018-12-27 10:51:58    command_A    INFO : A resource monitor start monitoring
+2018-12-27 10:51:58    command_B    INFO : B resource monitor start monitoring
+2018-12-27 10:52:07    command_B    INFO : B cmd STDOUT : =============================
+=============------------------------
+2018-12-27 10:52:07    command_B    INFO : B running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:07    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 10:52:07    running_log    INFO : B completed
+2018-12-27 10:52:11    command_A    INFO : A cmd STDOUT : =============================
+=============------------------------
+2018-12-27 10:52:11    command_A    INFO : A running is stoped, in ThreadPoolExecutor-0_0
+2018-12-27 10:52:11    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.125M
+2018-12-27 10:52:11    running_log    INFO : A completed
+2018-12-27 10:52:11    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-27 10:52:11    running_log    INFO : F start running
+2018-12-27 10:52:11    command_F    INFO : F start running, in ThreadPoolExecutor-0_0
+2018-12-27 10:52:11    running_log    INFO : C start running
+2018-12-27 10:52:11    command_C    INFO : C start running, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:11    command_F    INFO : F resource monitor start monitoring
+2018-12-27 10:52:11    command_C    INFO : C resource monitor start monitoring
+2018-12-27 10:52:16    command_C    INFO : C cmd STDOUT : =============================
+=============------------------------
+2018-12-27 10:52:16    command_C    INFO : C running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:16    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 10:52:16    running_log    INFO : C completed
+2018-12-27 10:52:16    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-27 10:52:17    running_log    INFO : D start running
+2018-12-27 10:52:17    command_D    INFO : D start running, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:17    command_D    INFO : D resource monitor start monitoring
+2018-12-27 10:52:17    command_F    INFO : F cmd STDOUT : =============================
+=============------------------------
+2018-12-27 10:52:17    command_F    INFO : F running is stoped, in ThreadPoolExecutor-0_0
+2018-12-27 10:52:17    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 10:52:17    running_log    INFO : F completed
+2018-12-27 10:52:27    command_D    INFO : D cmd STDOUT : =============================
+=============------------------------
+2018-12-27 10:52:27    command_D    INFO : D running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:27    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 10:52:27    running_log    INFO : D completed
+2018-12-27 10:52:27    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-27 10:52:27    running_log    INFO : E start running
+2018-12-27 10:52:27    command_E    INFO : E start running, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:27    command_E    INFO : E resource monitor start monitoring
+2018-12-27 10:52:41    command_E    INFO : E cmd STDOUT : =============================
+=============------------------------
+2018-12-27 10:52:41    command_E    INFO : E running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:41    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 10:52:41    running_log    INFO : E completed
+2018-12-27 10:52:41    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-27 10:52:41    running_log    INFO : G start running
+2018-12-27 10:52:41    command_G    INFO : G start running, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:41    command_G    INFO : G resource monitor start monitoring
+2018-12-27 10:52:53    command_G    INFO : G cmd STDOUT : =============================
+=============------------------------
+2018-12-27 10:52:53    command_G    INFO : G running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 10:52:53    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 10:52:53    running_log    INFO : G completed
+2018-12-27 10:52:53    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-27 10:52:54    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-27 10:52:54    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 10:52:54    callback_function    INFO : all processes are closed
+2018-12-27 10:52:54    callback_function    INFO : all io-handlers are closed
+2018-12-27 10:52:54    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 11:29:08    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
+2018-12-27 11:29:08    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
+2018-12-27 11:29:08    running_log    INFO : A start running
+2018-12-27 11:29:08    running_log    INFO : B start running
+2018-12-27 11:29:08    command_A    INFO : A start running, in ThreadPoolExecutor-0_0
+2018-12-27 11:29:08    command_B    INFO : B start running, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:08    command_A    INFO : A resource monitor start monitoring
+2018-12-27 11:29:08    command_B    INFO : B resource monitor start monitoring
+2018-12-27 11:29:19    command_B    INFO : B cmd STDOUT : =============================
+=============------------------------
+2018-12-27 11:29:19    command_A    INFO : A cmd STDOUT : =============================
+=============------------------------
+2018-12-27 11:29:19    command_A    INFO : A running is stoped, in ThreadPoolExecutor-0_0
+2018-12-27 11:29:19    command_B    INFO : B running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:19    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 11:29:19    running_log    INFO : A completed
+2018-12-27 11:29:19    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 11:29:19    running_log    INFO : B completed
+2018-12-27 11:29:19    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-27 11:29:19    running_log    INFO : F start running
+2018-12-27 11:29:19    command_F    INFO : F start running, in ThreadPoolExecutor-0_0
+2018-12-27 11:29:19    command_F    INFO : F resource monitor start monitoring
+2018-12-27 11:29:19    running_log    INFO : C start running
+2018-12-27 11:29:19    command_C    INFO : C start running, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:19    command_C    INFO : C resource monitor start monitoring
+2018-12-27 11:29:32    command_C    INFO : C cmd STDOUT : =============================
+=============------------------------
+2018-12-27 11:29:32    command_C    INFO : C running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:32    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 11:29:32    running_log    INFO : C completed
+2018-12-27 11:29:32    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-27 11:29:32    running_log    INFO : D start running
+2018-12-27 11:29:32    command_D    INFO : D start running, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:32    command_D    INFO : D resource monitor start monitoring
+2018-12-27 11:29:33    command_F    INFO : F cmd STDOUT : =============================
+=============------------------------
+2018-12-27 11:29:33    command_F    INFO : F running is stoped, in ThreadPoolExecutor-0_0
+2018-12-27 11:29:33    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 11:29:33    running_log    INFO : F completed
+2018-12-27 11:29:37    command_D    INFO : D cmd STDOUT : =============================
+=============------------------------
+2018-12-27 11:29:37    command_D    INFO : D running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:37    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:2.125M
+2018-12-27 11:29:37    running_log    INFO : D completed
+2018-12-27 11:29:37    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-27 11:29:37    running_log    INFO : E start running
+2018-12-27 11:29:37    command_E    INFO : E start running, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:37    command_E    INFO : E resource monitor start monitoring
+2018-12-27 11:29:51    command_E    INFO : E cmd STDOUT : =============================
+=============------------------------
+2018-12-27 11:29:51    command_E    INFO : E running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:51    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:2.125M
+2018-12-27 11:29:51    running_log    INFO : E completed
+2018-12-27 11:29:51    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-27 11:29:51    running_log    INFO : G start running
+2018-12-27 11:29:51    command_G    INFO : G start running, in ThreadPoolExecutor-0_1
+2018-12-27 11:29:51    command_G    INFO : G resource monitor start monitoring
+2018-12-27 11:30:02    command_G    INFO : G cmd STDOUT : =============================
+=============------------------------
+2018-12-27 11:30:02    command_G    INFO : G running is stoped, in ThreadPoolExecutor-0_1
+2018-12-27 11:30:02    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 11:30:02    running_log    INFO : G completed
+2018-12-27 11:30:02    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
+2018-12-27 11:30:03    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
+2018-12-27 11:30:03    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 11:30:03    callback_function    INFO : all processes are closed
+2018-12-27 11:30:03    callback_function    INFO : all io-handlers are closed
+2018-12-27 11:30:03    callback_function    INFO : stop callback_function, and end the program
+2018-12-27 12:09:08    running_log    INFO : Thread-1 running is starting
+2018-12-27 12:09:08    running_log    INFO : A start running
+2018-12-27 12:09:08    running_log    INFO : Thread-2 running is starting
+2018-12-27 12:09:08    command_A    INFO : A start running, in Thread-1
+2018-12-27 12:09:08    running_log    INFO : B start running
+2018-12-27 12:09:08    command_B    INFO : B start running, in Thread-2
+2018-12-27 12:09:08    command_A    INFO : A resource monitor start monitoring
+2018-12-27 12:09:08    command_B    INFO : B resource monitor start monitoring
+2018-12-27 12:09:13    command_A    INFO : A cmd STDOUT : =============================
+=============------------------------
+2018-12-27 12:09:13    command_A    INFO : A running is stoped, in Thread-1
+2018-12-27 12:09:13    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 12:09:13    running_log    INFO : A completed
+2018-12-27 12:09:22    command_B    INFO : B cmd STDOUT : =============================
+=============------------------------
+2018-12-27 12:09:22    command_B    INFO : B running is stoped, in Thread-2
+2018-12-27 12:09:22    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 12:09:22    running_log    INFO : B completed
+2018-12-27 12:09:22    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-27 12:09:22    running_log    INFO : F start running
+2018-12-27 12:09:22    command_F    INFO : F start running, in Thread-2
+2018-12-27 12:09:22    command_F    INFO : F resource monitor start monitoring
+2018-12-27 12:09:29    command_F    INFO : F cmd STDOUT : =============================
+=============------------------------
+2018-12-27 12:09:29    command_F    INFO : F running is stoped, in Thread-2
+2018-12-27 12:09:29    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 12:09:29    running_log    INFO : F completed
+2018-12-27 12:09:29    running_log    INFO : C start running
+2018-12-27 12:09:29    command_C    INFO : C start running, in Thread-1
+2018-12-27 12:09:29    command_C    INFO : C resource monitor start monitoring
+2018-12-27 12:09:40    command_C    INFO : C cmd STDOUT : =============================
+=============------------------------
+2018-12-27 12:09:40    command_C    INFO : C running is stoped, in Thread-1
+2018-12-27 12:09:40    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 12:09:40    running_log    INFO : C completed
+2018-12-27 12:09:40    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-27 12:09:40    running_log    INFO : D start running
+2018-12-27 12:09:40    command_D    INFO : D start running, in Thread-1
+2018-12-27 12:09:40    command_D    INFO : D resource monitor start monitoring
+2018-12-27 12:09:47    command_D    INFO : D cmd STDOUT : =============================
+=============------------------------
+2018-12-27 12:09:47    command_D    INFO : D running is stoped, in Thread-1
+2018-12-27 12:09:47    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 12:09:47    running_log    INFO : D completed
+2018-12-27 12:09:47    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-27 12:09:47    running_log    INFO : E start running
+2018-12-27 12:09:47    command_E    INFO : E start running, in Thread-1
+2018-12-27 12:09:48    command_E    INFO : E resource monitor start monitoring
+2018-12-27 12:10:01    command_E    INFO : E cmd STDOUT : =============================
+=============------------------------
+2018-12-27 12:10:01    command_E    INFO : E running is stoped, in Thread-1
+2018-12-27 12:10:01    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 12:10:01    running_log    INFO : E completed
+2018-12-27 12:10:01    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-27 12:10:01    running_log    INFO : G start running
+2018-12-27 12:10:01    command_G    INFO : G start running, in Thread-1
+2018-12-27 12:10:01    command_G    INFO : G resource monitor start monitoring
+2018-12-27 12:10:14    command_G    INFO : G cmd STDOUT : =============================
+=============------------------------
+2018-12-27 12:10:14    command_G    INFO : G running is stoped, in Thread-1
+2018-12-27 12:10:14    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:2.12891M
+2018-12-27 12:10:14    running_log    INFO : G completed
+2018-12-27 12:10:14    running_log    INFO : Thread-1 running is end finally
+2018-12-27 12:10:16    running_log    INFO : Thread-2 running is end finally
+2018-12-27 12:10:16    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-27 12:10:16    callback_function    INFO : all processes are closed
+2018-12-27 12:10:16    callback_function    INFO : all io-handlers are closed
+2018-12-27 12:10:16    callback_function    INFO : stop callback_function, and end the program

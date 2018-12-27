@@ -10,6 +10,6 @@
 import time, random
 
 print("=============================")
-# time.sleep(random.randint(5, 15))
+time.sleep(random.randint(5, 15))
 # time.sleep(1)
 print("=============------------------------")
