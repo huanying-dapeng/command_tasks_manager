@@ -381,7 +381,6 @@ class Command(object):
         self.dynamic_resource_list = result_list
         # Monitor resource usage of this process
         if callable(monitor):
-            self.logger.info(self.name + " resource monitor start monitoring")
             # def monitor_resource(self, name, pid, result_list: list = None) -> str:
             thread = threading.Thread(target=monitor, args=(self.name, process.pid, result_list))
             thread.setDaemon(True)
