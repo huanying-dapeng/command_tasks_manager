@@ -1,1190 +1,692 @@
-2018-12-27 02:09:00    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 02:09:00    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 02:09:00    running_log    INFO : A start running
-2018-12-27 02:09:00    running_log    INFO : B start running
-2018-12-27 02:09:00    command_A    INFO : A start running
-2018-12-27 02:09:00    command_B    INFO : B start running
-2018-12-27 02:09:00    command_A    INFO : A resource monitor start monitoring
-2018-12-27 02:09:00    command_B    INFO : B resource monitor start monitoring
-2018-12-27 02:09:01    command_A    INFO : A running is stoped
-2018-12-27 02:09:01    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.48438M
-2018-12-27 02:09:01    running_log    INFO : A completed
-2018-12-27 02:09:01    command_B    INFO : B running is stoped
-2018-12-27 02:09:01    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 02:09:01    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.47656M
-2018-12-27 02:09:01    running_log    INFO : F start running
-2018-12-27 02:09:01    running_log    INFO : B completed
-2018-12-27 02:09:01    command_F    INFO : F start running
-2018-12-27 02:09:01    running_log    INFO : C start running
-2018-12-27 02:09:01    command_C    INFO : C start running
-2018-12-27 02:09:01    command_F    INFO : F resource monitor start monitoring
-2018-12-27 02:09:01    command_C    INFO : C resource monitor start monitoring
-2018-12-27 02:09:01    command_F    INFO : F running is stoped
-2018-12-27 02:09:01    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.47656M
-2018-12-27 02:09:01    command_C    INFO : C running is stoped
-2018-12-27 02:09:01    running_log    INFO : F completed
-2018-12-27 02:09:01    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 02:09:01    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:1.45312M
-2018-12-27 02:09:01    running_log    INFO : C completed
-2018-12-27 02:09:01    running_log    INFO : D start running
-2018-12-27 02:09:01    command_D    INFO : D start running
-2018-12-27 02:09:01    command_D    INFO : D resource monitor start monitoring
-2018-12-27 02:09:02    command_D    INFO : D running is stoped
-2018-12-27 02:09:02    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:1.47266M
-2018-12-27 02:09:02    running_log    INFO : D completed
-2018-12-27 02:09:02    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 02:09:02    running_log    INFO : E start running
-2018-12-27 02:09:02    command_E    INFO : E start running
-2018-12-27 02:09:02    command_E    INFO : E resource monitor start monitoring
-2018-12-27 02:09:02    command_E    INFO : E running is stoped
-2018-12-27 02:09:02    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:1.47266M
-2018-12-27 02:09:02    running_log    INFO : E completed
-2018-12-27 02:09:02    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 02:09:02    running_log    INFO : G start running
-2018-12-27 02:09:02    command_G    INFO : G start running
-2018-12-27 02:09:02    command_G    INFO : G resource monitor start monitoring
-2018-12-27 02:09:02    command_G    INFO : G running is stoped
-2018-12-27 02:09:02    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:1.47656M
-2018-12-27 02:09:02    running_log    INFO : G completed
-2018-12-27 02:09:02    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 02:09:03    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 02:09:03    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 02:09:03    callback_function    INFO : all processes are closed
-2018-12-27 02:09:03    callback_function    INFO : all io-handlers are closed
-2018-12-27 02:09:03    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 08:38:29    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 08:38:29    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 08:38:29    running_log    INFO : A start running
-2018-12-27 08:38:29    running_log    INFO : B start running
-2018-12-27 08:38:29    command_A    INFO : A start running
-2018-12-27 08:38:29    command_B    INFO : B start running
-2018-12-27 08:38:29    command_B    INFO : B resource monitor start monitoring
-2018-12-27 08:38:29    command_A    INFO : A resource monitor start monitoring
-2018-12-27 08:38:29    command_B    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:29    command_A    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:29    command_B    INFO : B running is stoped
-2018-12-27 08:38:29    command_A    INFO : A running is stoped
-2018-12-27 08:38:29    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.32812M
-2018-12-27 08:38:29    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32812M
-2018-12-27 08:38:29    running_log    INFO : B completed
-2018-12-27 08:38:29    running_log    INFO : A completed
-2018-12-27 08:38:29    running_log    INFO : F start running
-2018-12-27 08:38:29    command_F    INFO : F start running
-2018-12-27 08:38:29    running_log    INFO : B start running
-2018-12-27 08:38:29    command_B    INFO : B start running
-2018-12-27 08:38:29    command_B    INFO : B resource monitor start monitoring
-2018-12-27 08:38:29    command_F    INFO : F resource monitor start monitoring
-2018-12-27 08:38:29    command_F    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:29    command_B    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_F    INFO : F running is stoped
-2018-12-27 08:38:30    command_B    INFO : B running is stoped
-2018-12-27 08:38:30    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 08:38:30    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.32422M
-2018-12-27 08:38:30    running_log    INFO : F completed
-2018-12-27 08:38:30    running_log    INFO : B completed
-2018-12-27 08:38:30    running_log    INFO : A start running
-2018-12-27 08:38:30    running_log    INFO : F start running
-2018-12-27 08:38:30    command_A    INFO : A start running
-2018-12-27 08:38:30    command_F    INFO : F start running
-2018-12-27 08:38:30    command_F    INFO : F resource monitor start monitoring
-2018-12-27 08:38:30    command_A    INFO : A resource monitor start monitoring
-2018-12-27 08:38:30    command_A    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_F    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_A    INFO : A running is stoped
-2018-12-27 08:38:30    command_F    INFO : F running is stoped
-2018-12-27 08:38:30    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 08:38:30    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32422M
-2018-12-27 08:38:30    running_log    INFO : F completed
-2018-12-27 08:38:30    running_log    INFO : A completed
-2018-12-27 08:38:30    running_log    INFO : B start running
-2018-12-27 08:38:30    running_log    INFO : F start running
-2018-12-27 08:38:30    command_B    INFO : B start running
-2018-12-27 08:38:30    command_F    INFO : F start running
-2018-12-27 08:38:30    command_F    INFO : F resource monitor start monitoring
-2018-12-27 08:38:30    command_B    INFO : B resource monitor start monitoring
-2018-12-27 08:38:30    command_F    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_B    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_B    INFO : B running is stoped
-2018-12-27 08:38:30    command_F    INFO : F running is stoped
-2018-12-27 08:38:30    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 08:38:30    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.90234M
-2018-12-27 08:38:30    running_log    INFO : F completed
-2018-12-27 08:38:30    running_log    INFO : B completed
-2018-12-27 08:38:30    running_log    INFO : A start running
-2018-12-27 08:38:30    running_log    INFO : F start running
-2018-12-27 08:38:30    command_A    INFO : A start running
-2018-12-27 08:38:30    command_F    INFO : F start running
-2018-12-27 08:38:30    command_F    INFO : F resource monitor start monitoring
-2018-12-27 08:38:30    command_A    INFO : A resource monitor start monitoring
-2018-12-27 08:38:30    command_F    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_A    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_F    INFO : F running is stoped
-2018-12-27 08:38:30    command_A    INFO : A running is stoped
-2018-12-27 08:38:30    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 08:38:30    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 08:38:30    running_log    INFO : F completed
-2018-12-27 08:38:30    running_log    INFO : A completed
-2018-12-27 08:38:30    cmd_pool    ERROR : F cmd : 4 tries all failed
-2018-12-27 08:38:30    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
-2018-12-27 08:38:30    running_log    INFO : B start running
-2018-12-27 08:38:30    running_log    INFO : A start running
-2018-12-27 08:38:30    command_B    INFO : B start running
-2018-12-27 08:38:30    command_A    INFO : A start running
-2018-12-27 08:38:30    command_A    INFO : A resource monitor start monitoring
-2018-12-27 08:38:30    command_B    INFO : B resource monitor start monitoring
-2018-12-27 08:38:30    command_B    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_A    ERROR : 系统找不到指定的路径。
-2018-12-27 08:38:30    command_B    INFO : B running is stoped
-2018-12-27 08:38:30    command_A    INFO : A running is stoped
-2018-12-27 08:38:30    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32422M
-2018-12-27 08:38:30    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.375M
-2018-12-27 08:38:30    running_log    INFO : A completed
-2018-12-27 08:38:30    running_log    INFO : B completed
-2018-12-27 08:38:30    cmd_pool    ERROR : A cmd : 4 tries all failed
-2018-12-27 08:38:30    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
-2018-12-27 08:38:30    cmd_pool    ERROR : B cmd : 4 tries all failed
-2018-12-27 08:38:30    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
-2018-12-27 08:38:30    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 08:38:30    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 08:38:30    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 08:38:30    callback_function    INFO : all processes are closed
-2018-12-27 08:38:30    callback_function    INFO : all io-handlers are closed
-2018-12-27 08:38:30    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 08:39:32    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 08:39:32    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 08:39:32    running_log    INFO : A start running
-2018-12-27 08:39:32    running_log    INFO : B start running
-2018-12-27 08:39:32    command_A    INFO : A start running
-2018-12-27 08:39:32    command_B    INFO : B start running
-2018-12-27 08:39:32    command_B    INFO : B resource monitor start monitoring
-2018-12-27 08:39:32    command_A    INFO : A resource monitor start monitoring
-2018-12-27 08:39:32    command_A    INFO : A cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:32    command_B    INFO : B cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:32    command_A    INFO : A running is stoped
-2018-12-27 08:39:32    command_B    INFO : B running is stoped
-2018-12-27 08:39:32    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32422M
-2018-12-27 08:39:32    running_log    INFO : A completed
-2018-12-27 08:39:32    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 08:39:32    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 08:39:32    running_log    INFO : B completed
-2018-12-27 08:39:32    running_log    INFO : F start running
-2018-12-27 08:39:32    running_log    INFO : C start running
-2018-12-27 08:39:32    command_F    INFO : F start running
-2018-12-27 08:39:32    command_C    INFO : C start running
-2018-12-27 08:39:32    command_C    INFO : C resource monitor start monitoring
-2018-12-27 08:39:32    command_F    INFO : F resource monitor start monitoring
-2018-12-27 08:39:32    command_C    INFO : C cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:32    command_F    INFO : F cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:32    command_C    INFO : C running is stoped
-2018-12-27 08:39:32    command_F    INFO : F running is stoped
-2018-12-27 08:39:32    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:1.32812M
-2018-12-27 08:39:32    running_log    INFO : C completed
-2018-12-27 08:39:32    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35547M
-2018-12-27 08:39:32    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 08:39:32    running_log    INFO : F completed
-2018-12-27 08:39:32    running_log    INFO : D start running
-2018-12-27 08:39:32    command_D    INFO : D start running
-2018-12-27 08:39:32    command_D    INFO : D resource monitor start monitoring
-2018-12-27 08:39:32    command_D    INFO : D cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:32    command_D    INFO : D running is stoped
-2018-12-27 08:39:32    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 08:39:32    running_log    INFO : D completed
-2018-12-27 08:39:32    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 08:39:32    running_log    INFO : E start running
-2018-12-27 08:39:32    command_E    INFO : E start running
-2018-12-27 08:39:32    command_E    INFO : E resource monitor start monitoring
-2018-12-27 08:39:32    command_E    INFO : E cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:32    command_E    INFO : E running is stoped
-2018-12-27 08:39:32    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 08:39:32    running_log    INFO : E completed
-2018-12-27 08:39:32    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 08:39:32    running_log    INFO : G start running
-2018-12-27 08:39:32    command_G    INFO : G start running
-2018-12-27 08:39:32    command_G    INFO : G resource monitor start monitoring
-2018-12-27 08:39:32    command_G    INFO : G cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:32    command_G    INFO : G running is stoped
-2018-12-27 08:39:32    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 08:39:32    running_log    INFO : G completed
-2018-12-27 08:39:32    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 08:39:34    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 08:39:34    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 08:39:34    callback_function    INFO : all processes are closed
-2018-12-27 08:39:34    callback_function    INFO : all io-handlers are closed
-2018-12-27 08:39:34    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 08:39:59    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 08:39:59    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 08:39:59    running_log    INFO : A start running
-2018-12-27 08:39:59    running_log    INFO : B start running
-2018-12-27 08:39:59    command_A    INFO : A start running
-2018-12-27 08:39:59    command_B    INFO : B start running
-2018-12-27 08:39:59    command_B    INFO : B resource monitor start monitoring
-2018-12-27 08:39:59    command_A    INFO : A resource monitor start monitoring
-2018-12-27 08:39:59    command_B    INFO : B cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:59    command_A    INFO : A cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:59    command_B    INFO : B running is stoped
-2018-12-27 08:39:59    command_A    INFO : A running is stoped
-2018-12-27 08:39:59    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 08:39:59    running_log    INFO : B completed
-2018-12-27 08:39:59    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 08:39:59    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 08:39:59    running_log    INFO : A completed
-2018-12-27 08:39:59    running_log    INFO : F start running
-2018-12-27 08:39:59    running_log    INFO : C start running
-2018-12-27 08:39:59    command_F    INFO : F start running
-2018-12-27 08:39:59    command_C    INFO : C start running
-2018-12-27 08:39:59    command_C    INFO : C resource monitor start monitoring
-2018-12-27 08:39:59    command_F    INFO : F resource monitor start monitoring
-2018-12-27 08:39:59    command_F    INFO : F cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:59    command_C    INFO : C cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:59    command_F    INFO : F running is stoped
-2018-12-27 08:39:59    command_C    INFO : C running is stoped
-2018-12-27 08:39:59    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 08:39:59    running_log    INFO : F completed
-2018-12-27 08:39:59    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:1.32422M
-2018-12-27 08:39:59    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 08:39:59    running_log    INFO : C completed
-2018-12-27 08:39:59    running_log    INFO : D start running
-2018-12-27 08:39:59    command_D    INFO : D start running
-2018-12-27 08:39:59    command_D    INFO : D resource monitor start monitoring
-2018-12-27 08:39:59    command_D    INFO : D cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:39:59    command_D    INFO : D running is stoped
-2018-12-27 08:39:59    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:1.35547M
-2018-12-27 08:39:59    running_log    INFO : D completed
-2018-12-27 08:39:59    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 08:39:59    running_log    INFO : E start running
-2018-12-27 08:39:59    command_E    INFO : E start running
-2018-12-27 08:39:59    command_E    INFO : E resource monitor start monitoring
-2018-12-27 08:40:00    command_E    INFO : E cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:40:00    command_E    INFO : E running is stoped
-2018-12-27 08:40:00    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:1.32812M
-2018-12-27 08:40:00    running_log    INFO : E completed
-2018-12-27 08:40:00    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 08:40:00    running_log    INFO : G start running
-2018-12-27 08:40:00    command_G    INFO : G start running
-2018-12-27 08:40:00    command_G    INFO : G resource monitor start monitoring
-2018-12-27 08:40:00    command_G    INFO : G cmd STDOUT : =============================
-=============------------------------
-2018-12-27 08:40:00    command_G    INFO : G running is stoped
-2018-12-27 08:40:00    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 08:40:00    running_log    INFO : G completed
-2018-12-27 08:40:00    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 08:40:01    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 08:40:01    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 08:40:01    callback_function    INFO : all processes are closed
-2018-12-27 08:40:01    callback_function    INFO : all io-handlers are closed
-2018-12-27 08:40:01    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 09:19:43    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 09:19:43    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 09:19:43    running_log    INFO : A start running
-2018-12-27 09:19:43    running_log    INFO : B start running
-2018-12-27 09:19:43    command_A    INFO : A start running
-2018-12-27 09:19:43    command_B    INFO : B start running
-2018-12-27 09:19:43    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:19:43    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:19:43    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_A    INFO : A running is stoped
-2018-12-27 09:19:43    command_B    INFO : B running is stoped
-2018-12-27 09:19:43    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:19:43    running_log    INFO : A completed
-2018-12-27 09:19:43    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 09:19:43    running_log    INFO : F start running
-2018-12-27 09:19:43    running_log    INFO : B completed
-2018-12-27 09:19:43    command_F    INFO : F start running
-2018-12-27 09:19:43    running_log    INFO : A start running
-2018-12-27 09:19:43    command_A    INFO : A start running
-2018-12-27 09:19:43    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:19:43    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:19:43    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_F    INFO : F running is stoped
-2018-12-27 09:19:43    command_A    INFO : A running is stoped
-2018-12-27 09:19:43    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:19:43    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35547M
-2018-12-27 09:19:43    running_log    INFO : F completed
-2018-12-27 09:19:43    running_log    INFO : A completed
-2018-12-27 09:19:43    running_log    INFO : B start running
-2018-12-27 09:19:43    running_log    INFO : F start running
-2018-12-27 09:19:43    command_B    INFO : B start running
-2018-12-27 09:19:43    command_F    INFO : F start running
-2018-12-27 09:19:43    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:19:43    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:19:43    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_F    INFO : F running is stoped
-2018-12-27 09:19:43    command_B    INFO : B running is stoped
-2018-12-27 09:19:43    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 09:19:43    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:19:43    running_log    INFO : F completed
-2018-12-27 09:19:43    running_log    INFO : B completed
-2018-12-27 09:19:43    running_log    INFO : A start running
-2018-12-27 09:19:43    running_log    INFO : F start running
-2018-12-27 09:19:43    command_A    INFO : A start running
-2018-12-27 09:19:43    command_F    INFO : F start running
-2018-12-27 09:19:43    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:19:43    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:19:43    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_A    INFO : A running is stoped
-2018-12-27 09:19:43    command_F    INFO : F running is stoped
-2018-12-27 09:19:43    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32812M
-2018-12-27 09:19:43    running_log    INFO : A completed
-2018-12-27 09:19:43    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:19:43    running_log    INFO : F completed
-2018-12-27 09:19:43    running_log    INFO : B start running
-2018-12-27 09:19:43    running_log    INFO : A start running
-2018-12-27 09:19:43    command_B    INFO : B start running
-2018-12-27 09:19:43    command_A    INFO : A start running
-2018-12-27 09:19:43    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:19:43    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:19:43    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_A    INFO : A running is stoped
-2018-12-27 09:19:43    command_B    INFO : B running is stoped
-2018-12-27 09:19:43    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32812M
-2018-12-27 09:19:43    running_log    INFO : A completed
-2018-12-27 09:19:43    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:19:43    cmd_pool    ERROR : A cmd : 4 tries all failed
-2018-12-27 09:19:43    running_log    INFO : B completed
-2018-12-27 09:19:43    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
-2018-12-27 09:19:43    running_log    INFO : F start running
-2018-12-27 09:19:43    running_log    INFO : B start running
-2018-12-27 09:19:43    command_F    INFO : F start running
-2018-12-27 09:19:43    command_B    INFO : B start running
-2018-12-27 09:19:43    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:19:43    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:19:43    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:19:43    command_B    INFO : B running is stoped
-2018-12-27 09:19:43    command_F    INFO : F running is stoped
-2018-12-27 09:19:43    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:19:43    running_log    INFO : B completed
-2018-12-27 09:19:43    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:19:43    cmd_pool    ERROR : B cmd : 4 tries all failed
-2018-12-27 09:19:43    running_log    INFO : F completed
-2018-12-27 09:19:43    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
-2018-12-27 09:19:43    cmd_pool    ERROR : F cmd : 4 tries all failed
-2018-12-27 09:19:43    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
-2018-12-27 09:19:43    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 09:19:43    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 09:19:43    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 09:19:43    callback_function    INFO : all processes are closed
-2018-12-27 09:19:43    callback_function    INFO : all io-handlers are closed
-2018-12-27 09:19:43    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 09:25:27    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 09:25:27    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 09:25:27    running_log    INFO : A start running
-2018-12-27 09:25:27    running_log    INFO : B start running
-2018-12-27 09:25:27    command_A    INFO : A start running
-2018-12-27 09:25:27    command_B    INFO : B start running
-2018-12-27 09:25:27    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:25:27    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:25:27    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_A    INFO : A running is stoped
-2018-12-27 09:25:27    command_B    INFO : B running is stoped
-2018-12-27 09:25:27    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:25:27    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.63281M
-2018-12-27 09:25:27    running_log    INFO : A completed
-2018-12-27 09:25:27    running_log    INFO : B completed
-2018-12-27 09:25:27    running_log    INFO : F start running
-2018-12-27 09:25:27    running_log    INFO : A start running
-2018-12-27 09:25:27    command_F    INFO : F start running
-2018-12-27 09:25:27    command_A    INFO : A start running
-2018-12-27 09:25:27    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:25:27    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:25:27    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_A    INFO : A running is stoped
-2018-12-27 09:25:27    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.35938M
-2018-12-27 09:25:27    running_log    INFO : A completed
-2018-12-27 09:25:27    command_F    INFO : F running is stoped
-2018-12-27 09:25:27    running_log    INFO : B start running
-2018-12-27 09:25:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.32812M
-2018-12-27 09:25:27    command_B    INFO : B start running
-2018-12-27 09:25:27    running_log    INFO : F completed
-2018-12-27 09:25:27    running_log    INFO : A start running
-2018-12-27 09:25:27    command_A    INFO : A start running
-2018-12-27 09:25:27    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:25:27    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:25:27    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_B    INFO : B running is stoped
-2018-12-27 09:25:27    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 09:25:27    running_log    INFO : B completed
-2018-12-27 09:25:27    command_A    INFO : A running is stoped
-2018-12-27 09:25:27    running_log    INFO : F start running
-2018-12-27 09:25:27    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.32812M
-2018-12-27 09:25:27    command_F    INFO : F start running
-2018-12-27 09:25:27    running_log    INFO : A completed
-2018-12-27 09:25:27    running_log    INFO : B start running
-2018-12-27 09:25:27    command_B    INFO : B start running
-2018-12-27 09:25:27    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:25:27    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:25:27    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_F    INFO : F running is stoped
-2018-12-27 09:25:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.92578M
-2018-12-27 09:25:27    running_log    INFO : F completed
-2018-12-27 09:25:27    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    running_log    INFO : A start running
-2018-12-27 09:25:27    command_A    INFO : A start running
-2018-12-27 09:25:27    command_B    INFO : B running is stoped
-2018-12-27 09:25:27    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.39453M
-2018-12-27 09:25:27    running_log    INFO : B completed
-2018-12-27 09:25:27    running_log    INFO : F start running
-2018-12-27 09:25:27    command_F    INFO : F start running
-2018-12-27 09:25:27    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:25:27    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:25:27    command_A    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_A    INFO : A running is stoped
-2018-12-27 09:25:27    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 09:25:27    running_log    INFO : A completed
-2018-12-27 09:25:27    command_F    INFO : F running is stoped
-2018-12-27 09:25:27    cmd_pool    ERROR : A cmd : 4 tries all failed
-2018-12-27 09:25:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.32422M
-2018-12-27 09:25:27    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
-2018-12-27 09:25:27    running_log    INFO : F completed
-2018-12-27 09:25:27    running_log    INFO : B start running
-2018-12-27 09:25:27    running_log    INFO : F start running
-2018-12-27 09:25:27    command_B    INFO : B start running
-2018-12-27 09:25:27    command_F    INFO : F start running
-2018-12-27 09:25:27    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:25:27    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:25:27    command_F    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_B    ERROR : 'python3' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
-2018-12-27 09:25:27    command_B    INFO : B running is stoped
-2018-12-27 09:25:27    command_F    INFO : F running is stoped
-2018-12-27 09:25:27    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 09:25:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:1.36328M
-2018-12-27 09:25:27    running_log    INFO : B completed
-2018-12-27 09:25:27    running_log    INFO : F completed
-2018-12-27 09:25:27    cmd_pool    ERROR : B cmd : 4 tries all failed
-2018-12-27 09:25:27    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
-2018-12-27 09:25:27    cmd_pool    ERROR : F cmd : 4 tries all failed
-2018-12-27 09:25:27    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
-2018-12-27 09:25:27    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 09:25:27    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 09:25:27    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 09:25:27    callback_function    INFO : all processes are closed
-2018-12-27 09:25:27    callback_function    INFO : all io-handlers are closed
-2018-12-27 09:25:27    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 09:26:04    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 09:26:04    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 09:26:04    running_log    INFO : A start running
-2018-12-27 09:26:04    running_log    INFO : B start running
-2018-12-27 09:26:04    command_A    INFO : A start running
-2018-12-27 09:26:04    command_B    INFO : B start running
-2018-12-27 09:26:04    command_B    INFO : B resource monitor start monitoring
-2018-12-27 09:26:04    command_A    INFO : A resource monitor start monitoring
-2018-12-27 09:26:18    command_A    INFO : A cmd STDOUT : =============================
-=============------------------------
-2018-12-27 09:26:18    command_B    INFO : B cmd STDOUT : =============================
-=============------------------------
-2018-12-27 09:26:18    command_A    INFO : A running is stoped
-2018-12-27 09:26:18    command_B    INFO : B running is stoped
-2018-12-27 09:26:18    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 09:26:18    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.125M
-2018-12-27 09:26:18    running_log    INFO : B completed
-2018-12-27 09:26:18    running_log    INFO : A completed
-2018-12-27 09:26:18    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 09:26:18    running_log    INFO : F start running
-2018-12-27 09:26:18    running_log    INFO : C start running
-2018-12-27 09:26:18    command_F    INFO : F start running
-2018-12-27 09:26:18    command_C    INFO : C start running
-2018-12-27 09:26:18    command_F    INFO : F resource monitor start monitoring
-2018-12-27 09:26:18    command_C    INFO : C resource monitor start monitoring
-2018-12-27 09:26:27    command_F    INFO : F cmd STDOUT : =============================
-=============------------------------
-2018-12-27 09:26:27    command_C    INFO : C cmd STDOUT : =============================
-=============------------------------
-2018-12-27 09:26:27    command_F    INFO : F running is stoped
-2018-12-27 09:26:27    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 09:26:27    command_C    INFO : C running is stoped
-2018-12-27 09:26:27    running_log    INFO : F completed
-2018-12-27 09:26:27    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 09:26:27    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 09:26:27    running_log    INFO : D start running
-2018-12-27 09:26:27    running_log    INFO : C completed
-2018-12-27 09:26:27    command_D    INFO : D start running
-2018-12-27 09:26:27    command_D    INFO : D resource monitor start monitoring
-2018-12-27 09:26:35    command_D    INFO : D cmd STDOUT : =============================
-=============------------------------
-2018-12-27 09:26:35    command_D    INFO : D running is stoped
-2018-12-27 09:26:35    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 09:26:35    running_log    INFO : D completed
-2018-12-27 09:26:35    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 09:26:35    running_log    INFO : E start running
-2018-12-27 09:26:35    command_E    INFO : E start running
-2018-12-27 09:26:35    command_E    INFO : E resource monitor start monitoring
-2018-12-27 09:26:46    command_E    INFO : E cmd STDOUT : =============================
-=============------------------------
-2018-12-27 09:26:46    command_E    INFO : E running is stoped
-2018-12-27 09:26:46    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 09:26:46    running_log    INFO : E completed
-2018-12-27 09:26:46    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 09:26:46    running_log    INFO : G start running
-2018-12-27 09:26:46    command_G    INFO : G start running
-2018-12-27 09:26:46    command_G    INFO : G resource monitor start monitoring
-2018-12-27 09:26:53    command_G    INFO : G cmd STDOUT : =============================
-=============------------------------
-2018-12-27 09:26:53    command_G    INFO : G running is stoped
-2018-12-27 09:26:53    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 09:26:53    running_log    INFO : G completed
-2018-12-27 09:26:53    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 09:26:55    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 09:26:55    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 09:26:55    callback_function    INFO : all processes are closed
-2018-12-27 09:26:55    callback_function    INFO : all io-handlers are closed
-2018-12-27 09:26:55    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 09:54:11    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 09:54:11    callback_function    INFO : all processes are closed
-2018-12-27 09:54:11    callback_function    INFO : all io-handlers are closed
-2018-12-27 09:54:11    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 10:51:58    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 10:51:58    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 10:51:58    running_log    INFO : A start running
-2018-12-27 10:51:58    running_log    INFO : B start running
-2018-12-27 10:51:58    command_A    INFO : A start running, in ThreadPoolExecutor-0_0
-2018-12-27 10:51:58    command_B    INFO : B start running, in ThreadPoolExecutor-0_1
-2018-12-27 10:51:58    command_A    INFO : A resource monitor start monitoring
-2018-12-27 10:51:58    command_B    INFO : B resource monitor start monitoring
-2018-12-27 10:52:07    command_B    INFO : B cmd STDOUT : =============================
-=============------------------------
-2018-12-27 10:52:07    command_B    INFO : B running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:07    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 10:52:07    running_log    INFO : B completed
-2018-12-27 10:52:11    command_A    INFO : A cmd STDOUT : =============================
-=============------------------------
-2018-12-27 10:52:11    command_A    INFO : A running is stoped, in ThreadPoolExecutor-0_0
-2018-12-27 10:52:11    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.125M
-2018-12-27 10:52:11    running_log    INFO : A completed
-2018-12-27 10:52:11    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 10:52:11    running_log    INFO : F start running
-2018-12-27 10:52:11    command_F    INFO : F start running, in ThreadPoolExecutor-0_0
-2018-12-27 10:52:11    running_log    INFO : C start running
-2018-12-27 10:52:11    command_C    INFO : C start running, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:11    command_F    INFO : F resource monitor start monitoring
-2018-12-27 10:52:11    command_C    INFO : C resource monitor start monitoring
-2018-12-27 10:52:16    command_C    INFO : C cmd STDOUT : =============================
-=============------------------------
-2018-12-27 10:52:16    command_C    INFO : C running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:16    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 10:52:16    running_log    INFO : C completed
-2018-12-27 10:52:16    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 10:52:17    running_log    INFO : D start running
-2018-12-27 10:52:17    command_D    INFO : D start running, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:17    command_D    INFO : D resource monitor start monitoring
-2018-12-27 10:52:17    command_F    INFO : F cmd STDOUT : =============================
-=============------------------------
-2018-12-27 10:52:17    command_F    INFO : F running is stoped, in ThreadPoolExecutor-0_0
-2018-12-27 10:52:17    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 10:52:17    running_log    INFO : F completed
-2018-12-27 10:52:27    command_D    INFO : D cmd STDOUT : =============================
-=============------------------------
-2018-12-27 10:52:27    command_D    INFO : D running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:27    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 10:52:27    running_log    INFO : D completed
-2018-12-27 10:52:27    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 10:52:27    running_log    INFO : E start running
-2018-12-27 10:52:27    command_E    INFO : E start running, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:27    command_E    INFO : E resource monitor start monitoring
-2018-12-27 10:52:41    command_E    INFO : E cmd STDOUT : =============================
-=============------------------------
-2018-12-27 10:52:41    command_E    INFO : E running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:41    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 10:52:41    running_log    INFO : E completed
-2018-12-27 10:52:41    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 10:52:41    running_log    INFO : G start running
-2018-12-27 10:52:41    command_G    INFO : G start running, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:41    command_G    INFO : G resource monitor start monitoring
-2018-12-27 10:52:53    command_G    INFO : G cmd STDOUT : =============================
-=============------------------------
-2018-12-27 10:52:53    command_G    INFO : G running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 10:52:53    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 10:52:53    running_log    INFO : G completed
-2018-12-27 10:52:53    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 10:52:54    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 10:52:54    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 10:52:54    callback_function    INFO : all processes are closed
-2018-12-27 10:52:54    callback_function    INFO : all io-handlers are closed
-2018-12-27 10:52:54    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 11:29:08    running_log    INFO : ThreadPoolExecutor-0_0 running is starting
-2018-12-27 11:29:08    running_log    INFO : ThreadPoolExecutor-0_1 running is starting
-2018-12-27 11:29:08    running_log    INFO : A start running
-2018-12-27 11:29:08    running_log    INFO : B start running
-2018-12-27 11:29:08    command_A    INFO : A start running, in ThreadPoolExecutor-0_0
-2018-12-27 11:29:08    command_B    INFO : B start running, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:08    command_A    INFO : A resource monitor start monitoring
-2018-12-27 11:29:08    command_B    INFO : B resource monitor start monitoring
-2018-12-27 11:29:19    command_B    INFO : B cmd STDOUT : =============================
-=============------------------------
-2018-12-27 11:29:19    command_A    INFO : A cmd STDOUT : =============================
-=============------------------------
-2018-12-27 11:29:19    command_A    INFO : A running is stoped, in ThreadPoolExecutor-0_0
-2018-12-27 11:29:19    command_B    INFO : B running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:19    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 11:29:19    running_log    INFO : A completed
-2018-12-27 11:29:19    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 11:29:19    running_log    INFO : B completed
-2018-12-27 11:29:19    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 11:29:19    running_log    INFO : F start running
-2018-12-27 11:29:19    command_F    INFO : F start running, in ThreadPoolExecutor-0_0
-2018-12-27 11:29:19    command_F    INFO : F resource monitor start monitoring
-2018-12-27 11:29:19    running_log    INFO : C start running
-2018-12-27 11:29:19    command_C    INFO : C start running, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:19    command_C    INFO : C resource monitor start monitoring
-2018-12-27 11:29:32    command_C    INFO : C cmd STDOUT : =============================
-=============------------------------
-2018-12-27 11:29:32    command_C    INFO : C running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:32    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 11:29:32    running_log    INFO : C completed
-2018-12-27 11:29:32    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 11:29:32    running_log    INFO : D start running
-2018-12-27 11:29:32    command_D    INFO : D start running, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:32    command_D    INFO : D resource monitor start monitoring
-2018-12-27 11:29:33    command_F    INFO : F cmd STDOUT : =============================
-=============------------------------
-2018-12-27 11:29:33    command_F    INFO : F running is stoped, in ThreadPoolExecutor-0_0
-2018-12-27 11:29:33    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 11:29:33    running_log    INFO : F completed
-2018-12-27 11:29:37    command_D    INFO : D cmd STDOUT : =============================
-=============------------------------
-2018-12-27 11:29:37    command_D    INFO : D running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:37    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:2.125M
-2018-12-27 11:29:37    running_log    INFO : D completed
-2018-12-27 11:29:37    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 11:29:37    running_log    INFO : E start running
-2018-12-27 11:29:37    command_E    INFO : E start running, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:37    command_E    INFO : E resource monitor start monitoring
-2018-12-27 11:29:51    command_E    INFO : E cmd STDOUT : =============================
-=============------------------------
-2018-12-27 11:29:51    command_E    INFO : E running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:51    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:2.125M
-2018-12-27 11:29:51    running_log    INFO : E completed
-2018-12-27 11:29:51    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 11:29:51    running_log    INFO : G start running
-2018-12-27 11:29:51    command_G    INFO : G start running, in ThreadPoolExecutor-0_1
-2018-12-27 11:29:51    command_G    INFO : G resource monitor start monitoring
-2018-12-27 11:30:02    command_G    INFO : G cmd STDOUT : =============================
-=============------------------------
-2018-12-27 11:30:02    command_G    INFO : G running is stoped, in ThreadPoolExecutor-0_1
-2018-12-27 11:30:02    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 11:30:02    running_log    INFO : G completed
-2018-12-27 11:30:02    running_log    INFO : ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 11:30:03    running_log    INFO : ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 11:30:03    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 11:30:03    callback_function    INFO : all processes are closed
-2018-12-27 11:30:03    callback_function    INFO : all io-handlers are closed
-2018-12-27 11:30:03    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 12:09:08    running_log    INFO : Thread-1 running is starting
-2018-12-27 12:09:08    running_log    INFO : A start running
-2018-12-27 12:09:08    running_log    INFO : Thread-2 running is starting
-2018-12-27 12:09:08    command_A    INFO : A start running, in Thread-1
-2018-12-27 12:09:08    running_log    INFO : B start running
-2018-12-27 12:09:08    command_B    INFO : B start running, in Thread-2
-2018-12-27 12:09:08    command_A    INFO : A resource monitor start monitoring
-2018-12-27 12:09:08    command_B    INFO : B resource monitor start monitoring
-2018-12-27 12:09:13    command_A    INFO : A cmd STDOUT : =============================
-=============------------------------
-2018-12-27 12:09:13    command_A    INFO : A running is stoped, in Thread-1
-2018-12-27 12:09:13    running_log    INFO : A resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 12:09:13    running_log    INFO : A completed
-2018-12-27 12:09:22    command_B    INFO : B cmd STDOUT : =============================
-=============------------------------
-2018-12-27 12:09:22    command_B    INFO : B running is stoped, in Thread-2
-2018-12-27 12:09:22    running_log    INFO : B resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 12:09:22    running_log    INFO : B completed
-2018-12-27 12:09:22    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 12:09:22    running_log    INFO : F start running
-2018-12-27 12:09:22    command_F    INFO : F start running, in Thread-2
-2018-12-27 12:09:22    command_F    INFO : F resource monitor start monitoring
-2018-12-27 12:09:29    command_F    INFO : F cmd STDOUT : =============================
-=============------------------------
-2018-12-27 12:09:29    command_F    INFO : F running is stoped, in Thread-2
-2018-12-27 12:09:29    running_log    INFO : F resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 12:09:29    running_log    INFO : F completed
-2018-12-27 12:09:29    running_log    INFO : C start running
-2018-12-27 12:09:29    command_C    INFO : C start running, in Thread-1
-2018-12-27 12:09:29    command_C    INFO : C resource monitor start monitoring
-2018-12-27 12:09:40    command_C    INFO : C cmd STDOUT : =============================
-=============------------------------
-2018-12-27 12:09:40    command_C    INFO : C running is stoped, in Thread-1
-2018-12-27 12:09:40    running_log    INFO : C resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 12:09:40    running_log    INFO : C completed
-2018-12-27 12:09:40    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 12:09:40    running_log    INFO : D start running
-2018-12-27 12:09:40    command_D    INFO : D start running, in Thread-1
-2018-12-27 12:09:40    command_D    INFO : D resource monitor start monitoring
-2018-12-27 12:09:47    command_D    INFO : D cmd STDOUT : =============================
-=============------------------------
-2018-12-27 12:09:47    command_D    INFO : D running is stoped, in Thread-1
-2018-12-27 12:09:47    running_log    INFO : D resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 12:09:47    running_log    INFO : D completed
-2018-12-27 12:09:47    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 12:09:47    running_log    INFO : E start running
-2018-12-27 12:09:47    command_E    INFO : E start running, in Thread-1
-2018-12-27 12:09:48    command_E    INFO : E resource monitor start monitoring
-2018-12-27 12:10:01    command_E    INFO : E cmd STDOUT : =============================
-=============------------------------
-2018-12-27 12:10:01    command_E    INFO : E running is stoped, in Thread-1
-2018-12-27 12:10:01    running_log    INFO : E resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 12:10:01    running_log    INFO : E completed
-2018-12-27 12:10:01    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 12:10:01    running_log    INFO : G start running
-2018-12-27 12:10:01    command_G    INFO : G start running, in Thread-1
-2018-12-27 12:10:01    command_G    INFO : G resource monitor start monitoring
-2018-12-27 12:10:14    command_G    INFO : G cmd STDOUT : =============================
-=============------------------------
-2018-12-27 12:10:14    command_G    INFO : G running is stoped, in Thread-1
-2018-12-27 12:10:14    running_log    INFO : G resource stat: max_cpu:not stat in win	max_memory:2.12891M
-2018-12-27 12:10:14    running_log    INFO : G completed
-2018-12-27 12:10:14    running_log    INFO : Thread-1 running is end finally
-2018-12-27 12:10:16    running_log    INFO : Thread-2 running is end finally
-2018-12-27 12:10:16    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 12:10:16    callback_function    INFO : all processes are closed
-2018-12-27 12:10:16    callback_function    INFO : all io-handlers are closed
-2018-12-27 12:10:16    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 19:39:38    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is starting
-2018-12-27 19:39:38    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:39:38    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is starting
-2018-12-27 19:39:38    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:39:38    resource_manager    DEBUG :  CMD: A start monitoring
-2018-12-27 19:39:38    resource_manager    DEBUG :  CMD: B start monitoring
-2018-12-27 19:39:53    command_A    INFO : A cmd STDOUT : =============================
-=============------------------------
-2018-12-27 19:39:53    command_B    INFO : B cmd STDOUT : =============================
-=============------------------------
-2018-12-27 19:39:53    running_log    INFO :  CMD: A completed and resource is released successfully
-2018-12-27 19:39:53    running_log    INFO :  CMD: B completed and resource is released successfully
-2018-12-27 19:39:53    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91016M
-2018-12-27 19:39:53    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.92188M
-2018-12-27 19:39:53    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 19:39:53    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:39:53    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:39:53    resource_manager    DEBUG :  CMD: F start monitoring
-2018-12-27 19:39:53    resource_manager    DEBUG :  CMD: C start monitoring
-2018-12-27 19:39:53    resource_manager    DEBUG :  CMD: A monitoring is ended
-2018-12-27 19:39:53    resource_manager    DEBUG :  CMD: B monitoring is ended
-2018-12-27 19:40:04    resource_manager    DEBUG :  CMD: F monitoring is ended
-2018-12-27 19:40:06    command_F    INFO : F cmd STDOUT : =============================
-=============------------------------
-2018-12-27 19:40:06    command_C    INFO : C cmd STDOUT : =============================
-=============------------------------
-2018-12-27 19:40:06    running_log    INFO :  CMD: F completed and resource is released successfully
-2018-12-27 19:40:06    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:3.12109M
-2018-12-27 19:40:06    running_log    INFO :  CMD: C completed and resource is released successfully
-2018-12-27 19:40:06    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 19:40:06    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:3.11719M
-2018-12-27 19:40:06    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:40:06    resource_manager    DEBUG :  CMD: D start monitoring
-2018-12-27 19:40:07    resource_manager    DEBUG :  CMD: C monitoring is ended
-2018-12-27 19:40:19    command_D    INFO : D cmd STDOUT : =============================
-=============------------------------
-2018-12-27 19:40:19    running_log    INFO :  CMD: D completed and resource is released successfully
-2018-12-27 19:40:19    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91016M
-2018-12-27 19:40:19    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 19:40:19    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:40:19    resource_manager    DEBUG :  CMD: E start monitoring
-2018-12-27 19:40:20    resource_manager    DEBUG :  CMD: D monitoring is ended
-2018-12-27 19:40:32    command_E    INFO : E cmd STDOUT : =============================
-=============------------------------
-2018-12-27 19:40:32    running_log    INFO :  CMD: E completed and resource is released successfully
-2018-12-27 19:40:32    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91406M
-2018-12-27 19:40:32    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 19:40:32    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:40:32    resource_manager    DEBUG :  CMD: G start monitoring
-2018-12-27 19:40:33    resource_manager    DEBUG :  CMD: E monitoring is ended
-2018-12-27 19:40:43    command_G    INFO : G cmd STDOUT : =============================
-=============------------------------
-2018-12-27 19:40:43    running_log    INFO :  CMD: G completed and resource is released successfully
-2018-12-27 19:40:43    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.90234M
-2018-12-27 19:40:43    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 19:40:44    resource_manager    DEBUG :  CMD: G monitoring is ended
-2018-12-27 19:40:45    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 19:40:45    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 19:40:45    callback_function    INFO : all processes are closed
-2018-12-27 19:40:45    callback_function    INFO : all io-handlers are closed
-2018-12-27 19:40:45    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 19:44:25    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is starting
-2018-12-27 19:44:25    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is starting
-2018-12-27 19:44:25    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:44:25    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:44:25    resource_manager    DEBUG :  CMD: B start monitoring
-2018-12-27 19:44:25    resource_manager    DEBUG :  CMD: A start monitoring
-2018-12-27 19:44:39    resource_manager    DEBUG :  CMD: A monitoring is ended
-2018-12-27 19:44:41    command_A    INFO : A cmd STDOUT : cmd tool's process: python.exe
+2018-12-29 01:44:03    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 01:44:03    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 01:44:03    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 01:44:03    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 01:44:03    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 01:44:03    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 01:44:03    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 01:44:03    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 01:44:03    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 01:44:03    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 01:44:03    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 01:44:06    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 01:44:06    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 7608
+========= sleep 2s =========
+2018-12-29 01:44:06    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 3596
+========= sleep 3s =========
+2018-12-29 01:44:06    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 01:44:06    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 01:44:06    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 01:44:06    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 01:44:06    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:44:06    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-2
+2018-12-29 01:44:07    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 01:44:07    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 01:44:09    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 8132
+========= sleep 2s =========
+2018-12-29 01:44:09    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 01:44:09    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:44:09    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-29 01:44:09    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-2
+2018-12-29 01:44:09    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 01:44:10    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 01:44:12    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 7444
+========= sleep 3s =========
+2018-12-29 01:44:12    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 01:44:12    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-29 01:44:12    cmd_pool    INFO : [E, F] has/have being add to the cmd_queue
+2018-12-29 01:44:12    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-4
+2018-12-29 01:44:12    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-2
+2018-12-29 01:44:12    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 01:44:12    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 01:44:13    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 01:44:15    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 01:44:15    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 684
+========= sleep 2s =========
+2018-12-29 01:44:15    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 5816
+========= sleep 3s =========
+2018-12-29 01:44:15    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 01:44:15    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 01:44:15    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 01:44:15    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-29 01:44:15    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 01:44:15    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Thread-4
+2018-12-29 01:44:15    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-29 01:44:16    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 01:44:20    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 2784
+========= sleep 4s =========
+2018-12-29 01:44:20    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-29 01:44:20    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 01:44:20    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 01:44:20    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-29 01:44:20    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 01:44:20    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 01:44:20    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-29 01:44:20    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 01:44:20    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 01:44:20    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:44:20    callback_function    INFO : all processes are closed
+2018-12-29 01:44:20    callback_function    INFO : all threads are closed
+2018-12-29 01:44:20    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-29 01:44:20    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:44:20    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:45:05    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 01:45:05    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 01:45:05    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 01:45:05    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:05    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 01:45:05    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 01:45:05    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 01:45:05    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 01:45:05    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 01:45:05    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 01:45:05    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 01:45:09    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 01:45:11    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 2436
+========= sleep 3s =========
+2018-12-29 01:45:11    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 10728
 ========= sleep 6s =========
-2018-12-27 19:44:41    command_B    INFO : B cmd STDOUT : cmd tool's process: python.exe
+2018-12-29 01:45:11    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 01:45:11    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 01:45:11    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.92188M
+2018-12-29 01:45:11    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:45:11    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 01:45:11    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:11    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 01:45:12    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 01:45:14    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 12308
+========= sleep 3s =========
+2018-12-29 01:45:14    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 01:45:14    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 01:45:14    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-29 01:45:14    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:14    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 01:45:15    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 01:45:17    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 14660
+========= sleep 2s =========
+2018-12-29 01:45:17    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 01:45:17    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:45:17    cmd_pool    INFO : [E, F] has/have being add to the cmd_queue
+2018-12-29 01:45:17    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-6
+2018-12-29 01:45:17    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:17    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 01:45:17    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 01:45:17    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 01:45:22    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 01:45:23    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 13760
+========= sleep 4s =========
+2018-12-29 01:45:23    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 3068
+========= sleep 6s =========
+2018-12-29 01:45:23    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 01:45:23    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 01:45:23    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-29 01:45:23    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 01:45:23    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-29 01:45:23    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Thread-6
+2018-12-29 01:45:23    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-29 01:45:24    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 01:45:27    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 4308
+========= sleep 4s =========
+2018-12-29 01:45:27    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-29 01:45:27    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.92578M
+2018-12-29 01:45:27    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 01:45:27    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 01:45:27    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 01:45:27    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 01:45:27    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-29 01:45:27    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 01:45:27    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-29 01:45:27    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:45:27    callback_function    INFO : all processes are closed
+2018-12-29 01:45:27    callback_function    INFO : all threads are closed
+2018-12-29 01:45:28    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-29 01:45:28    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:45:28    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:45:36    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 01:45:36    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 01:45:36    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 01:45:36    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:36    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 01:45:36    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 01:45:36    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 01:45:36    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 01:45:36    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 01:45:36    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 01:45:36    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 01:45:42    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 01:45:43    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 6076
 ========= sleep 5s =========
-2018-12-27 19:44:41    running_log    INFO :  CMD: A completed and resource is released successfully
-2018-12-27 19:44:41    running_log    INFO :  CMD: B completed and resource is released successfully
-2018-12-27 19:44:41    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
-2018-12-27 19:44:41    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.92188M
-2018-12-27 19:44:41    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 19:44:41    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:44:41    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:44:41    resource_manager    DEBUG :  CMD: C start monitoring
-2018-12-27 19:44:41    resource_manager    DEBUG :  CMD: F start monitoring
-2018-12-27 19:44:42    resource_manager    DEBUG :  CMD: B monitoring is ended
-2018-12-27 19:44:54    command_F    INFO : F cmd STDOUT : cmd tool's process: python.exe
+2018-12-29 01:45:43    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 1748
+========= sleep 6s =========
+2018-12-29 01:45:43    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 01:45:43    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 01:45:43    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.92188M
+2018-12-29 01:45:43    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:45:43    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 01:45:43    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:43    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 01:45:43    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 01:45:48    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 8100
 ========= sleep 5s =========
-2018-12-27 19:44:54    running_log    INFO :  CMD: F completed and resource is released successfully
-2018-12-27 19:44:54    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 19:44:54    resource_manager    DEBUG :  CMD: F monitoring is ended
-2018-12-27 19:44:54    command_C    INFO : C cmd STDOUT : cmd tool's process: python.exe
-========= sleep 13s =========
-2018-12-27 19:44:54    running_log    INFO :  CMD: C completed and resource is released successfully
-2018-12-27 19:44:54    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.92188M
-2018-12-27 19:44:54    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 19:44:54    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:44:54    resource_manager    DEBUG :  CMD: D start monitoring
-2018-12-27 19:44:55    resource_manager    DEBUG :  CMD: C monitoring is ended
-2018-12-27 19:45:00    command_D    INFO : D cmd STDOUT : cmd tool's process: python.exe
+2018-12-29 01:45:48    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 01:45:48    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:45:48    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-29 01:45:48    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:48    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 01:45:49    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 01:45:53    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 3568
+========= sleep 5s =========
+2018-12-29 01:45:53    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 01:45:53    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 01:45:53    cmd_pool    INFO : [E, F] has/have being add to the cmd_queue
+2018-12-29 01:45:53    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-4
+2018-12-29 01:45:53    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:53    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 01:45:53    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 01:45:54    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 01:45:58    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 01:45:59    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 11420
+========= sleep 4s =========
+2018-12-29 01:45:59    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 11492
+========= sleep 6s =========
+2018-12-29 01:45:59    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 01:45:59    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 01:45:59    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 01:45:59    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-29 01:45:59    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:45:59    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Thread-2
+2018-12-29 01:45:59    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-29 01:46:00    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 01:46:04    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 3952
+========= sleep 4s =========
+2018-12-29 01:46:04    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-29 01:46:04    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:46:04    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 01:46:04    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 01:46:04    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-29 01:46:04    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 01:46:04    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-29 01:46:04    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 01:46:04    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 01:46:04    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:46:04    callback_function    INFO : all processes are closed
+2018-12-29 01:46:04    callback_function    INFO : all threads are closed
+2018-12-29 01:46:04    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-29 01:46:04    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:46:04    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:49:23    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 01:49:23    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 01:49:23    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 01:49:23    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 01:49:23    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 01:49:23    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 01:49:23    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 01:49:23    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 01:49:23    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 01:49:23    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 01:49:23    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 01:49:25    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 01:49:25    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:49:25    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 01:49:25    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 01:49:25    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 01:49:25    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 01:49:25    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 01:49:25    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-29 01:49:25    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 01:49:25    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 01:49:25    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-29 01:49:25    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:49:25    callback_function    INFO : all processes are closed
+2018-12-29 01:49:25    callback_function    INFO : all threads are closed
+2018-12-29 01:49:26    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 01:49:26    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 01:49:26    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:49:26    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:51:22    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:51:22    callback_function    INFO : all processes are closed
+2018-12-29 01:51:22    callback_function    INFO : all threads are closed
+2018-12-29 01:51:22    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:51:22    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:51:25    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:51:25    callback_function    INFO : all processes are closed
+2018-12-29 01:51:25    callback_function    INFO : all threads are closed
+2018-12-29 01:51:25    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:51:25    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:51:27    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:51:27    callback_function    INFO : all processes are closed
+2018-12-29 01:51:27    callback_function    INFO : all threads are closed
+2018-12-29 01:51:27    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:51:27    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:51:35    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:51:35    callback_function    INFO : all processes are closed
+2018-12-29 01:51:35    callback_function    INFO : all threads are closed
+2018-12-29 01:51:35    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:51:35    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:52:36    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 01:52:36    callback_function    INFO : all processes are closed
+2018-12-29 01:52:36    callback_function    INFO : all threads are closed
+2018-12-29 01:52:36    callback_function    INFO : all io-handlers are closed
+2018-12-29 01:52:36    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 01:53:11    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 01:53:11    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 01:53:11    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 01:53:11    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 01:53:11    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 01:53:11    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 01:53:11    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 01:53:11    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 01:53:11    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 01:53:11    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 01:53:11    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 01:53:14    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 01:53:17    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 1868
+========= sleep 2s =========
+2018-12-29 01:53:17    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 15264
+========= sleep 5s =========
+2018-12-29 01:53:17    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 01:53:17    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 01:53:17    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 01:53:17    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.92188M
+2018-12-29 01:53:17    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 01:53:17    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 01:56:36    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 01:56:36    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 01:56:36    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 01:56:36    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 01:56:36    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 01:56:36    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 01:56:36    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 01:56:36    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 01:56:36    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 01:56:36    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 01:56:36    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 01:56:39    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 01:56:40    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 9124
+========= sleep 2s =========
+2018-12-29 01:56:40    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 7012
+========= sleep 3s =========
+2018-12-29 01:56:40    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 01:56:40    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 01:56:40    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 01:56:40    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.88281M
+2018-12-29 01:56:40    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 01:56:40    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 01:57:54    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 01:57:54    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 01:57:54    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 01:57:54    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 01:57:54    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 01:57:54    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 01:57:54    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 01:57:54    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 01:57:54    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 01:57:54    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 01:57:54    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 01:57:58    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 13532
+========= sleep 4s =========
+2018-12-29 01:57:58    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 15080
+========= sleep 4s =========
+2018-12-29 01:57:58    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 01:57:58    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 01:57:58    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 01:57:58    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 01:57:58    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 01:57:59    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 01:57:59    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 01:59:22    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 01:59:22    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 01:59:22    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 01:59:22    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 01:59:22    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 01:59:22    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 01:59:22    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 01:59:22    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 01:59:22    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 01:59:22    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 01:59:22    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 01:59:26    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 01:59:27    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 5096
+========= sleep 3s =========
+2018-12-29 01:59:27    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 1624
+========= sleep 5s =========
+2018-12-29 01:59:27    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 01:59:27    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.92188M
+2018-12-29 01:59:27    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 01:59:27    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 01:59:27    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 01:59:28    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:00:31    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is starting
+2018-12-29 02:00:31    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- ThreadPoolExecutor-0_0
+2018-12-29 02:00:31    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is starting
+2018-12-29 02:00:31    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is starting
+2018-12-29 02:00:31    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- ThreadPoolExecutor-0_1
+2018-12-29 02:00:31    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is starting
+2018-12-29 02:00:31    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is starting
+2018-12-29 02:00:31    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is starting
+2018-12-29 02:00:31    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is starting
+2018-12-29 02:00:31    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 02:00:31    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 02:00:35    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:00:36    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 4444
+========= sleep 3s =========
+2018-12-29 02:00:36    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 15204
+========= sleep 5s =========
+2018-12-29 02:00:36    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 02:00:36    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 02:00:36    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 02:00:36    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.875M
+2018-12-29 02:00:36    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 02:00:37    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 02:03:55    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 02:03:55    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 02:03:55    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 02:03:55    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 02:03:55    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 02:03:55    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 02:03:55    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 02:03:55    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 02:03:55    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 02:03:55    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 02:03:55    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 02:03:58    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 02:04:00    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 2288
+========= sleep 2s =========
+2018-12-29 02:04:00    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 9404
+========= sleep 5s =========
+2018-12-29 02:04:00    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 02:04:00    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 02:04:00    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:04:00    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.87891M
+2018-12-29 02:04:00    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 02:04:01    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:05:18    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 02:05:18    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 02:05:18    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 02:05:18    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 02:05:18    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 02:05:18    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 02:05:18    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 02:05:18    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 02:05:18    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 02:05:18    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 02:05:18    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 02:05:21    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:05:22    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 4072
+========= sleep 2s =========
+2018-12-29 02:05:22    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 02:05:22    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:05:22    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 3952
+========= sleep 4s =========
+2018-12-29 02:05:22    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 02:05:22    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 02:05:22    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 02:05:23    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 02:13:15    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 02:13:15    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 02:13:15    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 02:13:15    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 02:13:15    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 02:13:15    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 02:13:15    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 02:13:15    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 02:13:15    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 02:13:15    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 02:13:15    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 02:13:20    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 02:13:20    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 14192
+========= sleep 4s =========
+2018-12-29 02:13:20    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 5112
+========= sleep 5s =========
+2018-12-29 02:13:20    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 02:13:20    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 02:13:20    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 02:13:20    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 02:13:20    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 02:13:21    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:14:23    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 02:14:23    callback_function    INFO : all processes are closed
+2018-12-29 02:14:23    callback_function    INFO : all threads are closed
+2018-12-29 02:14:23    callback_function    INFO : all io-handlers are closed
+2018-12-29 02:14:23    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 02:17:05    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 02:17:05    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 02:17:05    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 02:17:05    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 02:17:05    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 02:17:05    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 02:17:05    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 02:17:05    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 02:17:05    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 02:17:05    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 02:17:05    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 02:17:09    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:17:10    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 15064
+========= sleep 3s =========
+2018-12-29 02:17:10    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 1716
+========= sleep 5s =========
+2018-12-29 02:17:10    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 02:17:10    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 02:17:10    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 02:17:10    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:17:10    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 02:17:10    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-1
+2018-12-29 02:17:10    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 02:17:11    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 02:17:16    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 2024
+========= sleep 6s =========
+2018-12-29 02:17:16    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 02:17:16    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:17:16    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-29 02:17:16    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-1
+2018-12-29 02:17:16    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 02:17:17    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 02:17:18    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 3220
+========= sleep 2s =========
+2018-12-29 02:17:18    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 02:17:18    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-29 02:17:18    cmd_pool    INFO : [E, F] has/have being add to the cmd_queue
+2018-12-29 02:17:18    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-4
+2018-12-29 02:17:18    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-1
+2018-12-29 02:17:18    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 02:17:18    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 02:17:19    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 02:17:21    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 1280
+========= sleep 2s =========
+2018-12-29 02:17:21    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 02:17:21    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 02:17:21    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 02:17:24    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 1796
+========= sleep 5s =========
+2018-12-29 02:17:24    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 02:17:24    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:17:24    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-29 02:17:24    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Thread-4
+2018-12-29 02:17:24    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-29 02:17:24    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 02:17:27    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 14660
+========= sleep 3s =========
+2018-12-29 02:17:27    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-29 02:17:27    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:17:27    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 02:17:27    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 02:17:27    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 02:17:27    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 02:17:27    callback_function    INFO : all processes are closed
+2018-12-29 02:17:27    callback_function    INFO : all threads are closed
+2018-12-29 02:17:28    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-29 02:17:28    callback_function    INFO : all io-handlers are closed
+2018-12-29 02:17:28    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 02:18:17    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 02:18:17    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 02:18:17    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 02:18:17    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 02:18:17    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 02:18:17    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 02:18:17    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 02:18:17    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 02:18:17    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 02:18:17    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 02:18:17    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 02:18:17    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 02:18:17    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 02:18:38    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 02:18:39    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:18:57    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 3000
+========= sleep 21s =========
+2018-12-29 02:18:57    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 4236
+========= sleep 20s =========
+2018-12-29 02:18:57    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 1776
+========= sleep 40s =========
+2018-12-29 02:18:57    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 02:18:57    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 02:18:57    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-29 02:18:57    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 02:18:57    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:18:57    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 02:18:57    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 02:18:57    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-3
+2018-12-29 02:18:57    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 02:18:58    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 02:19:29    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 7612
+========= sleep 32s =========
+2018-12-29 02:19:29    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 02:19:29    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:19:29    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-29 02:19:29    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-3
+2018-12-29 02:19:29    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 02:19:30    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 02:19:52    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 13536
+========= sleep 23s =========
+2018-12-29 02:19:52    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 02:19:52    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.90234M
+2018-12-29 02:19:52    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-29 02:19:52    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-3
+2018-12-29 02:19:52    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 02:19:53    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 02:20:13    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 6864
+========= sleep 20s =========
+2018-12-29 02:20:13    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 02:20:13    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:20:13    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-29 02:20:13    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Thread-3
+2018-12-29 02:20:13    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-29 02:20:13    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 02:20:46    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 5864
+========= sleep 33s =========
+2018-12-29 02:20:46    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-29 02:20:46    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:20:46    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 02:20:46    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 02:20:46    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 02:20:46    callback_function    INFO : all processes are closed
+2018-12-29 02:20:46    callback_function    INFO : all threads are closed
+2018-12-29 02:20:47    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-29 02:20:47    callback_function    INFO : all io-handlers are closed
+2018-12-29 02:20:47    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 02:23:40    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 02:23:40    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 02:23:40    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 02:23:40    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 02:23:40    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 02:23:40    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 02:23:40    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 02:23:40    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 02:23:40    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 02:23:40    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 02:23:40    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 02:23:40    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 02:23:40    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 02:23:44    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 02:23:44    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 02:23:44    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 02:23:44    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 02:23:44    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-29 02:23:44    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.92188M
+2018-12-29 02:23:44    callback_function    INFO : all processes are closed
+2018-12-29 02:23:44    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.90234M
+2018-12-29 02:23:44    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 02:23:44    callback_function    INFO : all threads are closed
+2018-12-29 02:23:44    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 02:23:44    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-29 02:23:44    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 02:23:44    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 02:23:44    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-29 02:23:44    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 02:23:45    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:23:45    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 02:23:45    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 02:23:45    callback_function    INFO : all io-handlers are closed
+2018-12-29 02:23:45    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 02:25:07    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 02:25:07    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 02:25:07    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 02:25:07    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 02:25:07    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 02:25:07    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 02:25:07    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 02:25:07    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 02:25:07    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 02:25:07    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 02:25:07    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 02:25:08    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 02:25:08    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 02:25:15    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 02:25:17    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 02:25:18    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 10060
+========= sleep 6s =========
+2018-12-29 02:25:18    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 1140
 ========= sleep 8s =========
-2018-12-27 19:45:00    running_log    INFO :  CMD: D completed and resource is released successfully
-2018-12-27 19:45:00    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 19:45:00    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 19:45:00    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:45:00    resource_manager    DEBUG :  CMD: E start monitoring
-2018-12-27 19:45:00    resource_manager    DEBUG :  CMD: D monitoring is ended
-2018-12-27 19:45:08    command_E    INFO : E cmd STDOUT : cmd tool's process: python.exe
-========= sleep 15s =========
-2018-12-27 19:45:08    running_log    INFO :  CMD: E completed and resource is released successfully
-2018-12-27 19:45:08    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91406M
-2018-12-27 19:45:08    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 19:45:08    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:45:08    resource_manager    DEBUG :  CMD: G start monitoring
-2018-12-27 19:45:09    resource_manager    DEBUG :  CMD: E monitoring is ended
-2018-12-27 19:45:19    command_G    INFO : G cmd STDOUT : cmd tool's process: python.exe
-========= sleep 5s =========
-2018-12-27 19:45:19    running_log    INFO :  CMD: G completed and resource is released successfully
-2018-12-27 19:45:19    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.92578M
-2018-12-27 19:45:19    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 19:45:20    resource_manager    DEBUG :  CMD: G monitoring is ended
-2018-12-27 19:45:20    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 19:45:20    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 19:45:20    callback_function    INFO : all processes are closed
-2018-12-27 19:45:20    callback_function    INFO : all io-handlers are closed
-2018-12-27 19:45:20    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 19:46:09    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is starting
-2018-12-27 19:46:09    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is starting
-2018-12-27 19:46:09    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:46:09    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is starting
-2018-12-27 19:46:09    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:46:09    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is starting
-2018-12-27 19:46:09    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is starting
-2018-12-27 19:46:09    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is starting
-2018-12-27 19:46:09    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- ThreadPoolExecutor-0_2
-2018-12-27 19:46:09    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is starting
-2018-12-27 19:46:09    resource_manager    DEBUG :  CMD: A start monitoring
-2018-12-27 19:46:09    resource_manager    DEBUG :  CMD: B start monitoring
-2018-12-27 19:46:09    resource_manager    DEBUG :  CMD: F start monitoring
-2018-12-27 19:46:17    command_F    INFO : F cmd STDOUT : cmd tool's process: python.exe
-========= sleep 7s =========
-2018-12-27 19:46:17    running_log    INFO :  CMD: F completed and resource is released successfully
-2018-12-27 19:46:17    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.92188M
-2018-12-27 19:46:17    resource_manager    DEBUG :  CMD: F monitoring is ended
-2018-12-27 19:46:21    resource_manager    DEBUG :  CMD: A monitoring is ended
-2018-12-27 19:46:21    command_A    INFO : A cmd STDOUT : cmd tool's process: python.exe
-========= sleep 7s =========
-2018-12-27 19:46:21    command_B    INFO : B cmd STDOUT : cmd tool's process: python.exe
-========= sleep 8s =========
-2018-12-27 19:46:21    running_log    INFO :  CMD: A completed and resource is released successfully
-2018-12-27 19:46:21    running_log    INFO :  CMD: B completed and resource is released successfully
-2018-12-27 19:46:21    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
-2018-12-27 19:46:21    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91406M
-2018-12-27 19:46:21    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 19:46:21    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:46:21    resource_manager    DEBUG :  CMD: C start monitoring
-2018-12-27 19:46:22    resource_manager    DEBUG :  CMD: B monitoring is ended
-2018-12-27 19:46:37    command_C    INFO : C cmd STDOUT : cmd tool's process: python.exe
-========= sleep 14s =========
-2018-12-27 19:46:37    running_log    INFO :  CMD: C completed and resource is released successfully
-2018-12-27 19:46:37    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91016M
-2018-12-27 19:46:37    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 19:46:37    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:46:37    resource_manager    DEBUG :  CMD: D start monitoring
-2018-12-27 19:46:38    resource_manager    DEBUG :  CMD: C monitoring is ended
-2018-12-27 19:46:47    command_D    INFO : D cmd STDOUT : cmd tool's process: python.exe
-========= sleep 12s =========
-2018-12-27 19:46:47    running_log    INFO :  CMD: D completed and resource is released successfully
-2018-12-27 19:46:47    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.90625M
-2018-12-27 19:46:47    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 19:46:47    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:46:47    resource_manager    DEBUG :  CMD: E start monitoring
-2018-12-27 19:46:48    resource_manager    DEBUG :  CMD: D monitoring is ended
-2018-12-27 19:46:57    command_E    INFO : E cmd STDOUT : cmd tool's process: python.exe
-========= sleep 5s =========
-2018-12-27 19:46:57    running_log    INFO :  CMD: E completed and resource is released successfully
-2018-12-27 19:46:57    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 19:46:57    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 19:46:57    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:46:57    resource_manager    DEBUG :  CMD: G start monitoring
-2018-12-27 19:46:57    resource_manager    DEBUG :  CMD: E monitoring is ended
-2018-12-27 19:47:09    command_G    INFO : G cmd STDOUT : cmd tool's process: python.exe
-========= sleep 14s =========
-2018-12-27 19:47:09    running_log    INFO :  CMD: G completed and resource is released successfully
-2018-12-27 19:47:09    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 19:47:09    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 19:47:10    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 19:47:10    resource_manager    DEBUG :  CMD: G monitoring is ended
-2018-12-27 19:47:11    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is end finally
-2018-12-27 19:47:11    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is end finally
-2018-12-27 19:47:11    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is end finally
-2018-12-27 19:47:11    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is end finally
-2018-12-27 19:47:11    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is end finally
-2018-12-27 19:47:11    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 19:47:11    callback_function    INFO : all processes are closed
-2018-12-27 19:47:11    callback_function    INFO : all io-handlers are closed
-2018-12-27 19:47:11    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 19:48:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is starting
-2018-12-27 19:48:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is starting
-2018-12-27 19:48:36    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:48:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is starting
-2018-12-27 19:48:36    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:48:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is starting
-2018-12-27 19:48:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is starting
-2018-12-27 19:48:36    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- ThreadPoolExecutor-0_2
-2018-12-27 19:48:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is starting
-2018-12-27 19:48:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is starting
-2018-12-27 19:48:36    resource_manager    DEBUG :  CMD: A start monitoring
-2018-12-27 19:48:36    resource_manager    DEBUG :  CMD: B start monitoring
-2018-12-27 19:48:36    resource_manager    DEBUG :  CMD: F start monitoring
-2018-12-27 19:48:42    resource_manager    DEBUG :  CMD: B monitoring is ended
-2018-12-27 19:48:43    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 10400
-========= sleep 13s =========
-2018-12-27 19:48:43    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 1532
-========= sleep 9s =========
-2018-12-27 19:48:43    running_log    INFO :  CMD: B completed and resource is released successfully
-2018-12-27 19:48:43    running_log    INFO :  CMD: F completed and resource is released successfully
-2018-12-27 19:48:43    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.92578M
-2018-12-27 19:48:43    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91406M
-2018-12-27 19:48:43    resource_manager    DEBUG :  CMD: F monitoring is ended
-2018-12-27 19:48:50    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 12908
-========= sleep 8s =========
-2018-12-27 19:48:50    running_log    INFO :  CMD: A completed and resource is released successfully
-2018-12-27 19:48:50    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 19:48:50    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 19:48:50    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:48:50    resource_manager    DEBUG :  CMD: C start monitoring
-2018-12-27 19:48:50    resource_manager    DEBUG :  CMD: A monitoring is ended
-2018-12-27 19:49:00    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 6968
-========= sleep 7s =========
-2018-12-27 19:49:00    running_log    INFO :  CMD: C completed and resource is released successfully
-2018-12-27 19:49:00    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 19:49:00    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 19:49:00    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:49:00    resource_manager    DEBUG :  CMD: D start monitoring
-2018-12-27 19:49:01    resource_manager    DEBUG :  CMD: C monitoring is ended
-2018-12-27 19:49:05    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 6256
-========= sleep 9s =========
-2018-12-27 19:49:05    running_log    INFO :  CMD: D completed and resource is released successfully
-2018-12-27 19:49:05    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 19:49:05    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 19:49:06    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:49:06    resource_manager    DEBUG :  CMD: E start monitoring
-2018-12-27 19:49:06    resource_manager    DEBUG :  CMD: D monitoring is ended
-2018-12-27 19:49:21    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 3712
-========= sleep 15s =========
-2018-12-27 19:49:21    running_log    INFO :  CMD: E completed and resource is released successfully
-2018-12-27 19:49:21    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.9375M
-2018-12-27 19:49:21    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 19:49:21    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:49:21    resource_manager    DEBUG :  CMD: G start monitoring
-2018-12-27 19:49:22    resource_manager    DEBUG :  CMD: E monitoring is ended
-2018-12-27 19:49:35    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 12740
-========= sleep 15s =========
-2018-12-27 19:49:35    running_log    INFO :  CMD: G completed and resource is released successfully
-2018-12-27 19:49:35    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 19:49:35    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 19:49:35    resource_manager    DEBUG :  CMD: G monitoring is ended
-2018-12-27 19:49:35    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is end finally
-2018-12-27 19:49:35    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 19:49:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is end finally
-2018-12-27 19:49:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is end finally
-2018-12-27 19:49:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is end finally
-2018-12-27 19:49:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is end finally
-2018-12-27 19:49:36    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 19:49:36    callback_function    INFO : all processes are closed
-2018-12-27 19:49:36    callback_function    INFO : all io-handlers are closed
-2018-12-27 19:49:36    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 19:59:40    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is starting
-2018-12-27 19:59:40    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is starting
-2018-12-27 19:59:40    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:59:40    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is starting
-2018-12-27 19:59:40    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 19:59:40    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is starting
-2018-12-27 19:59:40    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- ThreadPoolExecutor-0_2
-2018-12-27 19:59:40    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is starting
-2018-12-27 19:59:40    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is starting
-2018-12-27 19:59:40    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is starting
-2018-12-27 19:59:40    resource_manager    DEBUG :  CMD: A start monitoring
-2018-12-27 19:59:40    resource_manager    DEBUG :  CMD: B start monitoring
-2018-12-27 19:59:40    resource_manager    DEBUG :  CMD: F start monitoring
-2018-12-27 19:59:50    resource_manager    DEBUG :  CMD: B monitoring is ended
-2018-12-27 19:59:52    resource_manager    DEBUG :  CMD: A monitoring is ended
-2018-12-27 19:59:55    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 1212
+2018-12-29 02:25:18    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 14456
 ========= sleep 10s =========
-2018-12-27 19:59:55    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 5360
-========= sleep 15s =========
-2018-12-27 19:59:55    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 8748
+2018-12-29 02:25:18    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 02:25:18    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 02:25:18    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 02:25:18    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 02:25:18    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:25:18    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:25:18    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 02:25:18    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-3
+2018-12-29 02:25:18    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 02:25:19    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 02:25:30    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 15196
 ========= sleep 12s =========
-2018-12-27 19:59:55    running_log    INFO :  CMD: A completed and resource is released successfully
-2018-12-27 19:59:55    running_log    INFO :  CMD: F completed and resource is released successfully
-2018-12-27 19:59:55    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
-2018-12-27 19:59:55    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.92969M
-2018-12-27 19:59:55    running_log    INFO :  CMD: B completed and resource is released successfully
-2018-12-27 19:59:55    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 19:59:55    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 19:59:55    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.92188M
-2018-12-27 19:59:55    resource_manager    DEBUG :  CMD: C start monitoring
-2018-12-27 19:59:56    resource_manager    DEBUG :  CMD: F monitoring is ended
-2018-12-27 20:00:07    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 2380
-========= sleep 12s =========
-2018-12-27 20:00:07    running_log    INFO :  CMD: C completed and resource is released successfully
-2018-12-27 20:00:07    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91016M
-2018-12-27 20:00:07    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 20:00:07    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 20:00:07    resource_manager    DEBUG :  CMD: D start monitoring
-2018-12-27 20:00:07    resource_manager    DEBUG :  CMD: C monitoring is ended
-2018-12-27 20:00:20    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 4344
-========= sleep 9s =========
-2018-12-27 20:00:20    running_log    INFO :  CMD: D completed and resource is released successfully
-2018-12-27 20:00:20    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.92188M
-2018-12-27 20:00:20    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 20:00:20    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 20:00:20    resource_manager    DEBUG :  CMD: E start monitoring
-2018-12-27 20:00:21    resource_manager    DEBUG :  CMD: D monitoring is ended
-2018-12-27 20:00:27    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 6672
-========= sleep 12s =========
-2018-12-27 20:00:27    running_log    INFO :  CMD: E completed and resource is released successfully
-2018-12-27 20:00:27    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.92578M
-2018-12-27 20:00:27    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 20:00:27    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 20:00:27    resource_manager    DEBUG :  CMD: G start monitoring
-2018-12-27 20:00:28    resource_manager    DEBUG :  CMD: E monitoring is ended
-2018-12-27 20:00:36    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 5356
-========= sleep 5s =========
-2018-12-27 20:00:36    running_log    INFO :  CMD: G completed and resource is released successfully
-2018-12-27 20:00:36    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.92188M
-2018-12-27 20:00:36    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 20:00:37    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is end finally
-2018-12-27 20:00:37    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is end finally
-2018-12-27 20:00:37    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is end finally
-2018-12-27 20:00:37    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is end finally
-2018-12-27 20:00:37    resource_manager    DEBUG :  CMD: G monitoring is ended
-2018-12-27 20:00:37    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is end finally
-2018-12-27 20:00:37    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 20:00:37    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 20:00:37    callback_function    INFO : all processes are closed
-2018-12-27 20:00:37    callback_function    INFO : all io-handlers are closed
-2018-12-27 20:00:37    callback_function    INFO : stop callback_function, and end the program
-2018-12-27 20:07:57    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is starting
-2018-12-27 20:07:57    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is starting
-2018-12-27 20:07:57    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 20:07:57    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is starting
-2018-12-27 20:07:57    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- ThreadPoolExecutor-0_1
-2018-12-27 20:07:57    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is starting
-2018-12-27 20:07:57    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is starting
-2018-12-27 20:07:57    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- ThreadPoolExecutor-0_2
-2018-12-27 20:07:57    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is starting
-2018-12-27 20:07:57    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is starting
-2018-12-27 20:07:57    resource_manager    DEBUG :  CMD: A start monitoring
-2018-12-27 20:07:57    resource_manager    DEBUG :  CMD: B start monitoring
-2018-12-27 20:07:57    resource_manager    DEBUG :  CMD: F start monitoring
-2018-12-27 20:08:06    resource_manager    DEBUG :  CMD: A monitoring is ended
-2018-12-27 20:08:06    resource_manager    DEBUG :  CMD: B monitoring is ended
-2018-12-27 20:08:12    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 8720
-========= sleep 9s =========
-2018-12-27 20:08:12    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 7300
-========= sleep 8s =========
-2018-12-27 20:08:12    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 12520
-========= sleep 8s =========
-2018-12-27 20:08:12    running_log    INFO :  CMD: A completed and resource is released successfully
-2018-12-27 20:08:12    running_log    INFO :  CMD: B completed and resource is released successfully
-2018-12-27 20:08:12    running_log    INFO :  CMD: F completed and resource is released successfully
-2018-12-27 20:08:12    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.92188M
-2018-12-27 20:08:12    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91016M
-2018-12-27 20:08:12    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91406M
-2018-12-27 20:08:12    cmd_pool    INFO : [C] has/have being add to the cmd_queue
-2018-12-27 20:08:12    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 20:08:12    resource_manager    DEBUG :  CMD: C start monitoring
-2018-12-27 20:08:12    resource_manager    DEBUG :  CMD: F monitoring is ended
-2018-12-27 20:08:24    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 1240
+2018-12-29 02:25:30    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 02:25:30    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-29 02:25:30    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-29 02:25:30    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-3
+2018-12-29 02:25:30    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 02:25:31    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 02:25:40    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 5212
+========= sleep 10s =========
+2018-12-29 02:25:40    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 02:25:40    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 02:25:40    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-29 02:25:40    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-3
+2018-12-29 02:25:40    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 02:25:41    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 02:25:55    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 5732
 ========= sleep 14s =========
-2018-12-27 20:08:24    running_log    INFO :  CMD: C completed and resource is released successfully
-2018-12-27 20:08:24    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 20:08:24    cmd_pool    INFO : [D] has/have being add to the cmd_queue
-2018-12-27 20:08:24    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 20:08:24    resource_manager    DEBUG :  CMD: D start monitoring
-2018-12-27 20:08:25    resource_manager    DEBUG :  CMD: C monitoring is ended
-2018-12-27 20:08:40    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 12176
-========= sleep 15s =========
-2018-12-27 20:08:40    running_log    INFO :  CMD: D completed and resource is released successfully
-2018-12-27 20:08:40    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.90625M
-2018-12-27 20:08:40    cmd_pool    INFO : [E] has/have being add to the cmd_queue
-2018-12-27 20:08:40    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 20:08:40    resource_manager    DEBUG :  CMD: E start monitoring
-2018-12-27 20:08:41    resource_manager    DEBUG :  CMD: D monitoring is ended
-2018-12-27 20:08:53    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 8452
+2018-12-29 02:25:55    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 02:25:55    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-29 02:25:55    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-29 02:25:55    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Thread-3
+2018-12-29 02:25:55    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-29 02:25:55    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 02:26:00    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 12060
 ========= sleep 5s =========
-2018-12-27 20:08:53    running_log    INFO :  CMD: E completed and resource is released successfully
-2018-12-27 20:08:53    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 20:08:53    cmd_pool    INFO : [G] has/have being add to the cmd_queue
-2018-12-27 20:08:53    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- ThreadPoolExecutor-0_0
-2018-12-27 20:08:53    resource_manager    DEBUG :  CMD: G start monitoring
-2018-12-27 20:08:54    resource_manager    DEBUG :  CMD: E monitoring is ended
-2018-12-27 20:09:07    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 13108
-========= sleep 8s =========
-2018-12-27 20:09:07    running_log    INFO :  CMD: G completed and resource is released successfully
-2018-12-27 20:09:07    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91797M
-2018-12-27 20:09:07    running_log    INFO :  THREAD: ThreadPoolExecutor-0_0 running is end finally
-2018-12-27 20:09:08    running_log    INFO :  THREAD: ThreadPoolExecutor-0_4 running is end finally
-2018-12-27 20:09:08    running_log    INFO :  THREAD: ThreadPoolExecutor-0_3 running is end finally
-2018-12-27 20:09:08    resource_manager    DEBUG :  CMD: G monitoring is ended
-2018-12-27 20:09:08    running_log    INFO :  THREAD: ThreadPoolExecutor-0_6 running is end finally
-2018-12-27 20:09:08    running_log    INFO :  THREAD: ThreadPoolExecutor-0_5 running is end finally
-2018-12-27 20:09:08    running_log    INFO :  THREAD: ThreadPoolExecutor-0_2 running is end finally
-2018-12-27 20:09:08    running_log    INFO :  THREAD: ThreadPoolExecutor-0_1 running is end finally
-2018-12-27 20:09:08    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
-2018-12-27 20:09:08    callback_function    INFO : all processes are closed
-2018-12-27 20:09:08    callback_function    INFO : all io-handlers are closed
-2018-12-27 20:09:08    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 02:26:00    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-29 02:26:00    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-29 02:26:00    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-29 02:26:00    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 02:26:00    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 02:26:00    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 02:26:00    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 02:26:00    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-29 02:26:00    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 02:26:00    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 02:26:00    callback_function    INFO : all processes are closed
+2018-12-29 02:26:00    callback_function    INFO : all threads are closed
+2018-12-29 02:26:01    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-29 02:26:01    callback_function    INFO : all io-handlers are closed
+2018-12-29 02:26:01    callback_function    INFO : stop callback_function, and end the program

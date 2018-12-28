@@ -1,0 +1,1146 @@
+2018-12-29 00:39:40    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 00:39:40    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 00:39:40    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 00:39:40    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 00:39:40    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 00:39:40    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 00:39:40    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 00:39:40    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 00:39:40    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:39:40    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:39:40    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:39:40    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:39:40    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:39:41    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:41    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:41    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:39:41    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.40234M
+2018-12-29 00:39:41    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:41    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:39:41    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.38281M
+2018-12-29 00:39:41    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:39:41    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.51562M
+2018-12-29 00:39:41    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 00:39:41    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 00:39:41    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 00:39:41    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:39:41    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:39:41    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:39:41    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:39:41    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:39:41    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:39:42    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:42    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:42    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:39:42    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.39062M
+2018-12-29 00:39:42    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:42    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:39:42    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.39062M
+2018-12-29 00:39:42    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:39:42    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.50391M
+2018-12-29 00:39:42    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 00:39:42    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 00:39:42    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 00:39:42    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:39:42    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:39:42    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:39:42    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:39:42    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:39:42    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:39:43    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:43    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:43    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:39:43    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:43    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.39453M
+2018-12-29 00:39:43    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:39:43    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.38672M
+2018-12-29 00:39:43    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:39:43    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.39062M
+2018-12-29 00:39:43    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 00:39:43    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 00:39:43    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 00:39:43    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:39:43    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:39:43    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:39:43    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:39:43    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:39:43    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:39:44    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:44    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:44    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:44    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:39:44    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.38672M
+2018-12-29 00:39:44    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:39:44    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:39:44    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:39:44    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.38672M
+2018-12-29 00:39:44    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:39:44    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:39:44    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:39:44    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.51953M
+2018-12-29 00:39:44    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:39:44    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:39:44    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-29 00:39:44    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:39:44    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 00:39:44    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 00:39:44    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-29 00:39:44    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:39:44    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 00:39:44    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:39:44    callback_function    INFO : all processes are closed
+2018-12-29 00:39:44    callback_function    INFO : all threads are closed
+2018-12-29 00:39:44    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:39:44    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:39:44    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:39:44    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:39:44    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:39:49    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-29 00:39:49    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 00:39:49    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-29 00:39:49    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 00:39:49    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-29 00:39:49    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 00:39:49    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-29 00:39:49    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-29 00:39:49    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:39:49    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:39:49    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:39:49    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:39:49    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:39:50    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:50    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:50    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:39:50    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:39:50    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.39844M
+2018-12-29 00:39:50    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.40234M
+2018-12-29 00:39:50    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:39:50    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.39844M
+2018-12-29 00:39:50    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 00:39:50    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 00:39:50    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 00:39:50    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:39:50    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:39:50    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:39:50    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:39:50    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:39:50    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:39:51    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:51    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:51    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:39:51    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.38672M
+2018-12-29 00:39:51    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:39:51    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.39844M
+2018-12-29 00:39:51    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:51    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 00:39:51    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:39:51    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.39453M
+2018-12-29 00:39:51    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 00:39:51    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 00:39:51    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:39:51    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:39:51    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:39:51    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:39:51    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:39:51    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:39:52    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:52    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:52    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:52    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:39:52    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:39:52    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.39453M
+2018-12-29 00:39:52    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.39453M
+2018-12-29 00:39:52    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:39:52    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.38672M
+2018-12-29 00:39:52    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-29 00:39:52    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-29 00:39:52    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-29 00:39:52    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:39:52    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:39:52    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:39:52    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:39:52    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:39:52    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:39:53    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:53    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:53    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:39:53    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:39:53    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:39:53    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.39453M
+2018-12-29 00:39:53    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.39844M
+2018-12-29 00:39:53    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:39:53    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:39:53    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:39:53    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.40234M
+2018-12-29 00:39:53    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:39:53    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:39:53    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:39:53    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:39:53    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:39:53    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-29 00:39:53    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-29 00:39:53    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-29 00:39:53    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:39:53    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-29 00:39:53    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-29 00:39:53    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:39:53    callback_function    INFO : all processes are closed
+2018-12-29 00:39:53    callback_function    INFO : all threads are closed
+2018-12-29 00:39:53    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:39:53    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:39:53    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:39:53    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:39:53    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:40:13    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:40:13    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:40:13    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:40:13    running_log    INFO :  THREAD: Thread-8 running is starting
+2018-12-29 00:40:13    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:40:13    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:40:13    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:40:13    running_log    INFO :  THREAD: Thread-10 running is starting
+2018-12-29 00:40:13    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:40:13    running_log    INFO :  THREAD: Thread-12 running is starting
+2018-12-29 00:40:13    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:40:13    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:40:13    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:40:14    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:14    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:14    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:14    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:40:14    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.57031M
+2018-12-29 00:40:14    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:40:14    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:40:14    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.47656M
+2018-12-29 00:40:14    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.47656M
+2018-12-29 00:40:14    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:40:14    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:40:14    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:40:14    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:40:14    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:40:14    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:40:14    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:40:14    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:40:14    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:40:15    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:15    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:15    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:15    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:40:15    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:40:15    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:40:15    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:40:15    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:40:15    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:40:15    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:40:15    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:40:15    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:40:15    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:15    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:15    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:15    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:40:15    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:40:15    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:40:15    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.53125M
+2018-12-29 00:40:15    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:40:15    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:40:15    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:40:15    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:40:15    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:40:15    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:40:16    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:40:16    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:40:16    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:40:16    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:16    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:16    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:16    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:40:16    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:40:16    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:40:16    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.53125M
+2018-12-29 00:40:16    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:40:16    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:40:16    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:40:16    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.49219M
+2018-12-29 00:40:16    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 00:40:16    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:40:16    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:40:16    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:40:16    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:40:16    running_log    INFO :  THREAD: Thread-10 running is end finally
+2018-12-29 00:40:16    running_log    INFO :  THREAD: Thread-12 running is end finally
+2018-12-29 00:40:16    running_log    INFO :  THREAD: Thread-8 running is end finally
+2018-12-29 00:40:16    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:40:16    running_log    INFO :  THREAD: Thread-9 running is end finally
+2018-12-29 00:40:16    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:40:16    running_log    INFO :  THREAD: Thread-11 running is end finally
+2018-12-29 00:40:16    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:40:16    callback_function    INFO : all processes are closed
+2018-12-29 00:40:16    callback_function    INFO : all threads are closed
+2018-12-29 00:40:16    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:40:16    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:40:16    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:40:16    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:40:16    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:40:38    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:40:38    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:40:38    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:40:38    running_log    INFO :  THREAD: Thread-8 running is starting
+2018-12-29 00:40:38    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:40:38    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:40:38    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:40:38    running_log    INFO :  THREAD: Thread-10 running is starting
+2018-12-29 00:40:38    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:40:38    running_log    INFO :  THREAD: Thread-12 running is starting
+2018-12-29 00:40:38    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:40:38    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:40:38    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:40:39    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:39    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:39    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:39    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:40:39    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:40:39    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:40:39    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:40:39    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:40:39    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:40:39    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:40:39    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:40:39    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:40:39    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:39    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:39    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:39    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:40:39    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:40:39    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:40:39    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:40:39    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:40:39    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:40:39    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:40:39    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:40:39    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:40:39    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:40:40    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:40    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:40    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:40    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:40:40    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:40:40    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:40:40    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 00:40:40    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:40:40    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:40:40    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:40:40    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:40:40    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:40:40    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:40:40    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:40:41    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:41    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:41    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:40:41    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:40:41    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:40:41    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:40:41    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.54297M
+2018-12-29 00:40:41    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:40:41    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:40:41    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:40:41    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:40:41    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:40:41    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:40:41    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:40:41    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:40:41    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:40:41    running_log    INFO :  THREAD: Thread-8 running is end finally
+2018-12-29 00:40:41    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:40:41    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:40:41    callback_function    INFO : all processes are closed
+2018-12-29 00:40:41    callback_function    INFO : all threads are closed
+2018-12-29 00:40:41    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:40:41    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:40:41    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:40:41    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:40:41    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:44:22    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:44:22    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:44:22    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:44:22    running_log    INFO :  THREAD: Thread-8 running is starting
+2018-12-29 00:44:22    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:44:22    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:44:22    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:44:22    running_log    INFO :  THREAD: Thread-10 running is starting
+2018-12-29 00:44:22    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:44:22    running_log    INFO :  THREAD: Thread-12 running is starting
+2018-12-29 00:44:22    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:44:22    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:44:22    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:44:22    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:22    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:22    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:22    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:44:22    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:44:22    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:44:22    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:22    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.57031M
+2018-12-29 00:44:22    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:22    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:44:22    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:44:22    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:44:23    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:23    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:23    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:23    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:44:23    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:44:23    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:23    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:44:23    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:44:23    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:44:23    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:44:23    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:44:23    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:44:23    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:44:24    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:24    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:24    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:24    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:44:24    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:44:24    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:44:24    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.52344M
+2018-12-29 00:44:24    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:44:24    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:24    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:44:24    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:44:24    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:44:24    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:44:24    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:24    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:24    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:24    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:44:24    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:44:24    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:44:24    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.53516M
+2018-12-29 00:44:24    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.53516M
+2018-12-29 00:44:24    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:44:24    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:3.03125M
+2018-12-29 00:44:24    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:44:24    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 00:44:24    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:44:24    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:44:24    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:44:24    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:44:24    running_log    INFO :  THREAD: Thread-9 running is end finally
+2018-12-29 00:44:24    running_log    INFO :  THREAD: Thread-11 running is end finally
+2018-12-29 00:44:24    running_log    INFO :  THREAD: Thread-12 running is end finally
+2018-12-29 00:44:24    running_log    INFO :  THREAD: Thread-10 running is end finally
+2018-12-29 00:44:24    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:44:24    running_log    INFO :  THREAD: Thread-8 running is end finally
+2018-12-29 00:44:24    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:44:24    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:44:24    callback_function    INFO : all processes are closed
+2018-12-29 00:44:24    callback_function    INFO : all threads are closed
+2018-12-29 00:44:25    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:44:25    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:44:25    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:44:25    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:44:25    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:44:29    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:44:29    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:44:29    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:44:29    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:44:29    running_log    INFO :  THREAD: Thread-8 running is starting
+2018-12-29 00:44:29    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:44:29    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:44:29    running_log    INFO :  THREAD: Thread-10 running is starting
+2018-12-29 00:44:29    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:44:29    running_log    INFO :  THREAD: Thread-12 running is starting
+2018-12-29 00:44:29    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:44:30    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:44:30    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:44:30    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:30    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:30    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:30    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:44:30    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:44:30    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:30    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.47656M
+2018-12-29 00:44:30    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:44:30    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:30    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:44:30    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:44:30    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:44:30    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:44:30    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:44:30    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:44:30    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:44:31    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:44:31    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:44:31    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:31    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:31    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:31    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:44:31    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:44:31    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:44:31    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.47656M
+2018-12-29 00:44:31    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:31    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:44:31    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:44:31    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:44:31    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:44:31    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:44:31    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:44:31    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:44:31    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:44:31    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:44:31    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:44:31    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:31    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:31    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:31    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:44:31    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:44:31    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.57812M
+2018-12-29 00:44:31    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:31    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:44:31    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.49219M
+2018-12-29 00:44:31    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:44:31    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:44:31    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:44:32    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:44:32    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:44:32    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:44:32    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:44:32    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:44:32    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:44:32    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:32    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:32    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:44:32    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:44:32    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:44:32    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:44:32    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:44:32    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:44:32    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:44:32    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:44:32    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:44:32    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:44:32    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:44:32    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:44:32    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:44:32    running_log    INFO :  THREAD: Thread-9 running is end finally
+2018-12-29 00:44:32    running_log    INFO :  THREAD: Thread-11 running is end finally
+2018-12-29 00:44:32    running_log    INFO :  THREAD: Thread-10 running is end finally
+2018-12-29 00:44:32    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:44:32    running_log    INFO :  THREAD: Thread-12 running is end finally
+2018-12-29 00:44:32    running_log    INFO :  THREAD: Thread-8 running is end finally
+2018-12-29 00:44:32    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:44:32    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:44:32    callback_function    INFO : all processes are closed
+2018-12-29 00:44:32    callback_function    INFO : all threads are closed
+2018-12-29 00:44:33    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:44:33    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:44:33    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:44:33    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:44:33    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:45:41    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:45:41    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:45:41    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:41    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:45:41    running_log    INFO :  THREAD: Thread-8 running is starting
+2018-12-29 00:45:41    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:45:41    running_log    INFO :  THREAD: Thread-10 running is starting
+2018-12-29 00:45:41    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:45:41    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:45:41    running_log    INFO :  THREAD: Thread-12 running is starting
+2018-12-29 00:45:41    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:45:41    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:45:41    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:45:42    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:42    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:42    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:42    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:45:42    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:45:42    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:45:42    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.51562M
+2018-12-29 00:45:42    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.53516M
+2018-12-29 00:45:42    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.53516M
+2018-12-29 00:45:42    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:45:42    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:45:42    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:42    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:45:42    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:45:42    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:45:42    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:45:42    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:45:42    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:45:43    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:43    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:43    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:43    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:45:43    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:43    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:45:43    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:43    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:45:43    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:45:43    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:43    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:45:43    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:45:43    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:43    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:43    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:43    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:45:43    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:43    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:45:43    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:45:43    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:45:43    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:45:43    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:45:43    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:45:43    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:45:43    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:45:44    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:45:44    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:45:44    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:45:44    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:44    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:44    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:44    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:45:44    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.47656M
+2018-12-29 00:45:44    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:45:44    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:45:44    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:44    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:45:44    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:45:44    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:45:44    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:44    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:45:44    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:45:44    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:45:44    running_log    INFO :  THREAD: Thread-9 running is end finally
+2018-12-29 00:45:44    running_log    INFO :  THREAD: Thread-11 running is end finally
+2018-12-29 00:45:44    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:45:44    running_log    INFO :  THREAD: Thread-12 running is end finally
+2018-12-29 00:45:44    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:45:44    running_log    INFO :  THREAD: Thread-10 running is end finally
+2018-12-29 00:45:44    running_log    INFO :  THREAD: Thread-8 running is end finally
+2018-12-29 00:45:44    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:45:44    callback_function    INFO : all processes are closed
+2018-12-29 00:45:44    callback_function    INFO : all threads are closed
+2018-12-29 00:45:44    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:45:44    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:45:44    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:45:44    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:45:44    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:45:50    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:45:50    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:45:50    running_log    INFO :  THREAD: Thread-8 running is starting
+2018-12-29 00:45:50    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:50    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:45:50    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:45:50    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:45:50    running_log    INFO :  THREAD: Thread-10 running is starting
+2018-12-29 00:45:50    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:45:50    running_log    INFO :  THREAD: Thread-12 running is starting
+2018-12-29 00:45:50    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:45:50    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:45:50    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:45:51    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:51    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:51    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:51    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:45:51    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:45:51    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:45:51    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:45:51    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:51    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-29 00:45:51    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:51    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-9
+2018-12-29 00:45:51    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:45:51    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:51    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:45:51    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:45:51    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:45:51    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 00:45:51    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:45:51    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:45:51    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:45:51    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:45:52    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    command_C    ERROR : C cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:45:52    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:45:52    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:45:52    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:45:52    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-29 00:45:52    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 00:45:52    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:45:52    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:45:52    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.53516M
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-10
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-9
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:45:52    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    command_D    ERROR : D cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    command_C    ERROR : C cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:52    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:45:52    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:45:52    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 00:45:52    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-29 00:45:52    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:45:52    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 00:45:52    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:45:52    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:52    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-11
+2018-12-29 00:45:52    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.57422M
+2018-12-29 00:45:52    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-10
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:52    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-9
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:45:52    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:45:53    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 00:45:54    command_E    ERROR : E cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 00:45:54    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:45:54    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-11
+2018-12-29 00:45:54    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 00:45:54    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    command_C    ERROR : C cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    command_D    ERROR : D cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:45:54    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 00:45:54    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:45:54    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.9375M
+2018-12-29 00:45:54    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:45:54    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:45:54    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 00:45:54    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:45:54    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.92969M
+2018-12-29 00:45:54    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.9375M
+2018-12-29 00:45:54    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.92969M
+2018-12-29 00:45:54    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.92969M
+2018-12-29 00:45:54    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:45:54    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:45:54    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:45:54    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:45:54    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-6
+2018-12-29 00:45:54    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-10
+2018-12-29 00:45:54    running_log    INFO :  THREAD: Thread-9 running is end finally
+2018-12-29 00:45:54    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:45:54    running_log    INFO :  THREAD: Thread-8 running is end finally
+2018-12-29 00:45:54    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-29 00:45:54    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 00:45:54    command_E    ERROR : E cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 00:45:54    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:45:54    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-11
+2018-12-29 00:45:54    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 00:45:54    command_C    ERROR : C cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    command_D    ERROR : D cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:54    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-29 00:45:54    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:54    cmd_pool    ERROR : C cmd : 4 tries all failed
+2018-12-29 00:45:54    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 00:45:54    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.53516M
+2018-12-29 00:45:54    cmd_pool    WARNING :  [D, E, G, C] were added to error queue because of C's failure
+2018-12-29 00:45:54    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-10
+2018-12-29 00:45:54    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:45:54    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-29 00:45:54    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:45:54    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 00:45:55    command_E    ERROR : E cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:55    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 00:45:55    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.5625M
+2018-12-29 00:45:55    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-11
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-29 00:45:55    command_D    ERROR : D cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:55    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-29 00:45:55    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.56641M
+2018-12-29 00:45:55    cmd_pool    ERROR : D cmd : 4 tries all failed
+2018-12-29 00:45:55    cmd_pool    WARNING :  [E, G, D] were added to error queue because of D's failure
+2018-12-29 00:45:55    running_log    INFO :  THREAD: Thread-12 running is end finally
+2018-12-29 00:45:55    running_log    INFO :  THREAD: Thread-10 running is end finally
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 00:45:55    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-29 00:45:55    command_E    ERROR : E cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:45:55    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-29 00:45:55    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:45:55    cmd_pool    ERROR : E cmd : 4 tries all failed
+2018-12-29 00:45:55    cmd_pool    WARNING :  [G, E] were added to error queue because of E's failure
+2018-12-29 00:45:55    running_log    INFO :  THREAD: Thread-11 running is end finally
+2018-12-29 00:45:55    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:45:55    callback_function    INFO : all processes are closed
+2018-12-29 00:45:55    callback_function    INFO : all threads are closed
+2018-12-29 00:45:56    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-29 00:45:56    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:45:56    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:48:44    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:48:44    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:48:44    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:48:44    running_log    INFO :  THREAD: Thread-8 running is starting
+2018-12-29 00:48:44    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:48:44    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:48:44    running_log    INFO :  THREAD: Thread-10 running is starting
+2018-12-29 00:48:44    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:48:44    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:48:44    running_log    INFO :  THREAD: Thread-12 running is starting
+2018-12-29 00:48:44    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:48:44    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:48:44    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:48:45    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:45    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:45    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:45    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:48:45    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:48:45    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:48:45    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:48:45    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.5625M
+2018-12-29 00:48:45    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:48:45    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:48:45    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:48:45    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:48:45    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:48:45    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:48:45    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:48:45    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:48:45    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:48:45    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:48:46    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:46    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:46    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:46    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:48:46    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:48:46    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:48:46    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:48:46    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.47656M
+2018-12-29 00:48:46    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:48:46    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:48:46    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:48:46    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:48:46    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:46    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:46    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:46    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:48:46    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:48:46    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:48:46    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.52734M
+2018-12-29 00:48:46    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:48:46    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:48:46    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:48:46    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-7
+2018-12-29 00:48:46    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-8
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:48:46    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:48:47    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:48:47    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:48:47    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:48:47    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:47    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:47    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:48:47    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:48:47    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.46875M
+2018-12-29 00:48:47    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:48:47    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:48:47    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:48:47    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:48:47    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.49219M
+2018-12-29 00:48:47    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:48:47    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:48:47    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:48:47    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:48:47    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:48:47    running_log    INFO :  THREAD: Thread-9 running is end finally
+2018-12-29 00:48:47    running_log    INFO :  THREAD: Thread-12 running is end finally
+2018-12-29 00:48:47    running_log    INFO :  THREAD: Thread-10 running is end finally
+2018-12-29 00:48:47    running_log    INFO :  THREAD: Thread-11 running is end finally
+2018-12-29 00:48:47    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:48:47    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:48:47    running_log    INFO :  THREAD: Thread-8 running is end finally
+2018-12-29 00:48:47    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:48:47    callback_function    INFO : all processes are closed
+2018-12-29 00:48:47    callback_function    INFO : all threads are closed
+2018-12-29 00:48:47    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:48:47    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:48:47    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:48:47    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:48:47    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:56:47    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-29 00:56:47    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:56:47    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:56:48    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:48    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:56:48    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:56:48    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-6
+2018-12-29 00:56:48    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:56:48    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-29 00:56:48    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-7
+2018-12-29 00:56:48    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:56:48    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:56:48    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:48    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:56:48    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.58203M
+2018-12-29 00:56:48    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:56:48    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:56:49    running_log    INFO :  THREAD: Thread-8 running is starting
+2018-12-29 00:56:49    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-8
+2018-12-29 00:56:49    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:56:49    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:49    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:56:49    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:56:49    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-7
+2018-12-29 00:56:49    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:56:49    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:56:49    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:49    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:56:49    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.60547M
+2018-12-29 00:56:49    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:56:49    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:56:49    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:56:49    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:56:49    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:49    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:56:49    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.58203M
+2018-12-29 00:56:49    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-8
+2018-12-29 00:56:49    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:56:49    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:49    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:56:49    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.57812M
+2018-12-29 00:56:49    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-7
+2018-12-29 00:56:49    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:56:50    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:50    running_log    INFO :  THREAD: Thread-10 running is starting
+2018-12-29 00:56:50    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:56:50    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48828M
+2018-12-29 00:56:50    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-6
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:56:50    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:50    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:56:50    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.58984M
+2018-12-29 00:56:50    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-8
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:56:50    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:50    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:56:50    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.57422M
+2018-12-29 00:56:50    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-7
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:56:50    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:56:50    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:50    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:56:50    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:56:50    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:56:50    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:56:51    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:51    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:56:51    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.49219M
+2018-12-29 00:56:51    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:56:51    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:56:51    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:56:51    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:56:51    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.57812M
+2018-12-29 00:56:51    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:56:51    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:56:51    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-29 00:56:51    running_log    INFO :  THREAD: Thread-9 running is end finally
+2018-12-29 00:56:51    running_log    INFO :  THREAD: Thread-8 running is end finally
+2018-12-29 00:56:51    running_log    INFO :  THREAD: Thread-10 running is end finally
+2018-12-29 00:56:51    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-29 00:56:51    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:56:51    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:56:51    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:56:51    running_log    INFO :  THREAD: Thread-11 running is end finally
+2018-12-29 00:56:51    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:57:04    running_log    INFO :  THREAD: Thread-12 running is starting
+2018-12-29 00:57:04    running_log    INFO :  THREAD: Thread-12 running is end finally
+2018-12-29 00:57:38    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:57:38    callback_function    INFO : all processes are closed
+2018-12-29 00:57:38    callback_function    INFO : all threads are closed
+2018-12-29 00:57:38    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:57:38    callback_function    INFO : stop callback_function, and end the program
+2018-12-29 00:58:28    running_log    INFO :  THREAD: Thread-9 running is starting
+2018-12-29 00:58:28    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-9
+2018-12-29 00:58:28    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:58:29    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:29    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:58:29    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:58:29    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-9
+2018-12-29 00:58:29    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:58:29    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:58:29    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:29    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:58:29    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:58:29    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-9
+2018-12-29 00:58:29    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:58:30    running_log    INFO :  THREAD: Thread-11 running is starting
+2018-12-29 00:58:30    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-11
+2018-12-29 00:58:30    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:58:30    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:58:30    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:30    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:58:30    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:58:30    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-9
+2018-12-29 00:58:30    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:58:30    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:30    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:58:30    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.53125M
+2018-12-29 00:58:30    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-11
+2018-12-29 00:58:30    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:58:30    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:58:31    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:58:31    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:31    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:58:31    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:58:31    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-9
+2018-12-29 00:58:31    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:58:31    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:31    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:58:31    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:1.48047M
+2018-12-29 00:58:31    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-11
+2018-12-29 00:58:31    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:58:31    running_log    INFO :  THREAD: Thread-13 running is starting
+2018-12-29 00:58:31    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-13
+2018-12-29 00:58:31    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:58:31    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:58:31    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:58:31    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:31    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:58:31    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.47656M
+2018-12-29 00:58:31    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-9
+2018-12-29 00:58:31    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-29 00:58:31    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:31    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:58:31    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:1.48438M
+2018-12-29 00:58:31    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-11
+2018-12-29 00:58:31    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-29 00:58:32    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:32    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:58:32    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.57031M
+2018-12-29 00:58:32    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-13
+2018-12-29 00:58:32    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-29 00:58:32    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:58:32    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:58:32    command_A    ERROR : A cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:32    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-29 00:58:32    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:1.49219M
+2018-12-29 00:58:32    cmd_pool    ERROR : A cmd : 4 tries all failed
+2018-12-29 00:58:32    cmd_pool    WARNING :  [C, D, E, G, A] were added to error queue because of A's failure
+2018-12-29 00:58:32    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:58:32    command_B    ERROR : B cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:32    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-29 00:58:32    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.53516M
+2018-12-29 00:58:32    cmd_pool    ERROR : B cmd : 4 tries all failed
+2018-12-29 00:58:32    cmd_pool    WARNING :  [C, D, E, G, D, E, G, B] were added to error queue because of B's failure
+2018-12-29 00:58:32    command_F    ERROR : F cmd STDERR : python: can't open file './run.py': [Errno 2] No such file or directory ===== 2
+2018-12-29 00:58:32    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-29 00:58:32    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.58594M
+2018-12-29 00:58:32    cmd_pool    ERROR : F cmd : 4 tries all failed
+2018-12-29 00:58:32    cmd_pool    WARNING :  [G, F] were added to error queue because of F's failure
+2018-12-29 00:58:32    running_log    INFO :  THREAD: Thread-11 running is end finally
+2018-12-29 00:58:32    running_log    INFO :  THREAD: Thread-9 running is end finally
+2018-12-29 00:58:32    running_log    INFO :  THREAD: Thread-13 running is end finally
+2018-12-29 00:58:32    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-29 00:58:32    running_log    INFO :  THREAD: Thread-15 running is starting
+2018-12-29 00:58:32    running_log    INFO :  THREAD: Thread-15 running is end finally
+2018-12-29 00:58:32    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-29 00:58:33    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-29 00:58:34    running_log    INFO :  THREAD: Thread-17 running is starting
+2018-12-29 00:58:34    running_log    INFO :  THREAD: Thread-17 running is end finally
+2018-12-29 00:58:41    running_log    INFO :  THREAD: Thread-19 running is starting
+2018-12-29 00:58:41    running_log    INFO :  THREAD: Thread-19 running is end finally
+2018-12-29 00:58:50    running_log    INFO :  THREAD: Thread-21 running is starting
+2018-12-29 00:58:50    running_log    INFO :  THREAD: Thread-21 running is end finally
+2018-12-29 00:58:57    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-29 00:58:57    callback_function    INFO : all processes are closed
+2018-12-29 00:58:57    callback_function    INFO : all threads are closed
+2018-12-29 00:58:57    callback_function    INFO : all io-handlers are closed
+2018-12-29 00:58:57    callback_function    INFO : stop callback_function, and end the program
