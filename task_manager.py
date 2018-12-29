@@ -52,15 +52,19 @@ def _python_exit():
     logger_ = TaskLogger("logger").get_logger("callback_function")
     logger_.info("start closing all threads, all process, and io-handler"
                  " (those were not closed normally)")
+
     for p in _processes_ref_set:
         p.kill()
     logger_.info("all processes are closed")
+
     for logger in _bind_loggers:
         logger.close_all()
-    logger_.info("all threads are closed")
+    logger_.info("all io-handlers are closed")
+
     for thread in _threads_ref_set:
         thread.join()
-    logger_.info("all io-handlers are closed")
+    logger_.info("all threads are closed")
+
     logger_.info("stop callback_function, and end the program")
 
 
@@ -77,6 +81,8 @@ def _signal_exit(signum, frame):
     :param frame:
     :return:
     """
+    logger_ = TaskLogger("logger").get_logger("signal_processing")
+    logger_.warning(" receive terminate signal and program will terminate")
     global _terminate
     _terminate = True
     # _python_exit()
