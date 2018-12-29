@@ -185,17 +185,16 @@ class TaskLogger(object):
     def update_status(self):
         self.__update_resource()
         for s in self.__statuses:
-            try:
-                handler = self.__status_handlers[s]
-                handler.seek(0)
-                handler.truncate()
-
-                for lst in self.__status_dic[s]:
-                    for cmd_name in lst:
+            handler = self.__status_handlers.get(s, None)
+            if handler is None:
+                continue
+            handler.seek(0)
+            handler.truncate()
+            for lst in self.__status_dic.get(s, []):
+                for cmd_name in lst:
+                    if self.__cmd_pool and cmd_name in self.__cmd_pool:
                         handler.write(self.__cmd_pool[cmd_name].to_string())
-                handler.flush()
-            except KeyError:
-                pass
+            handler.flush()
 
     def close_all(self):
         if self.__status_dic:
@@ -449,11 +448,13 @@ class Command(object):
         process.wait()  # block the process
         # wait and get the computer resources needed
         if process.returncode == 0:
-            self.logger.info(self.name + ' cmd STDOUT : ' + ''.join(out).strip())
+            if out:
+                self.logger.info(self.name + ' cmd STDOUT : ' + ''.join(out).strip())
         elif process.returncode == 1:
             # catch KeyboardInterrupt and terminate the program
             # release the main thread block (event.wait() in MultiRunManager.run() function)
             _set_event()
+            self.logger.warning(self.name + ' CMD RUNNING PROCESS receive KeyboardInterrupt : program will terminate')
         else:
             self.logger.error(self.name + ' cmd STDERR : ' + ''.join(err).strip() +" ===== "+ str(process.returncode))
             self.is_error = True
@@ -961,13 +962,24 @@ class MultiRunManager(object):
                 if self.__resource_manager.bind_resource(cmd_obj):
                     run_debug = " resource binding is successful and start running in -- "
                     self.logger.debug(" CMD: " + cmd_obj.name + run_debug + thread.name)
-                    resource_stat = cmd_obj.run(self.__resource_manager.monitor_resource)
+                    try:
+                        resource_stat = cmd_obj.run(self.__resource_manager.monitor_resource)
+                        self.logger.info(" CMD: " + cmd_obj.name + " resource stat: " + resource_stat)
+                    except Exception as e:
+                        cmd_obj.is_error = True
+                        cmd_obj.is_completed = True
+                        global _terminate
+                        _terminate = True
+                        if not _thread_run_flag.is_set():
+                            _thread_run_flag.set()
+                        self.logger.warning(" EXCEPTION : " + thread.name +
+                                            " receive exception, program will terminate, Traceback: " +
+                                            str(e))
                     # release resource bound before
                     self.__resource_manager.release_resource(cmd_obj)
                     self.logger.info(
                         " CMD: " + cmd_obj.name + " completed and resource is released successfully")
-                    self.logger.info(" CMD: " + cmd_obj.name + " resource stat: " + resource_stat)
-                    cmd_obj = self.__pool.next(cmd_obj, )
+                    cmd_obj = self.__pool.next(cmd_obj)
                     self.__logger.update_status()
                 else:
                     warning = " resource binding is unsuccessful, and add it to the queue, and sleep 2s"
@@ -976,7 +988,7 @@ class MultiRunManager(object):
                     self.logger.warning(" CMD RUNNING STATUS: " + cmd_obj.cmd_str_status)
                     # time.sleep(2)
                     _thread_run_flag.wait(5)
-                    cmd_obj = self.__pool.next(cmd_obj, )
+                    cmd_obj = self.__pool.next(cmd_obj)
             else:
                 if cmd_obj is None:
                     if not _thread_run_flag.is_set():
@@ -986,7 +998,7 @@ class MultiRunManager(object):
                 else:
                     _thread_run_flag.wait(50)
                     # time.sleep(2)
-                    cmd_obj = self.__pool.next(cmd_obj, )
+                    cmd_obj = self.__pool.next(cmd_obj)
         self.__logger.update_status()
         self.logger.info(" THREAD: " + thread.name + ' running is end finally')
 
