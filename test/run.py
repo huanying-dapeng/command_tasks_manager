@@ -13,6 +13,6 @@ import time
 import psutil
 
 t = random.randint(5, 15)
+time.sleep(t)
 print("cmd tool's process ID: " + str(psutil.Process().pid))
 print("========= sleep " + str(t) + 's =========')
-time.sleep(random.randint(5, 15))
