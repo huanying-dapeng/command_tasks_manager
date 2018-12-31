@@ -969,9 +969,11 @@ class CmdFactory(object):
         """
         pool = CmdPool(resource_manager)
         for k, v in self.__cmd_dict.items():
+            if not isinstance(v, (str, type)):
+                raise Exception('cmd must be str or byte type')
             cmd_obj = Command(
                 k, v,
-                cpu=self.__rel_dict[k]["cpu"],
+                cpu=int(self.__rel_dict[k]["cpu"]),
                 mem=self.__rel_dict[k]["mem"],
                 depends=self.__rel_dict[k]["depends"],
                 bind_pool=pool

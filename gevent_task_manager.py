@@ -24,7 +24,7 @@ import gevent
 
 if WINDOWS: gevent.config.loop = "libuv"
 
-from gevent import monkey, event, threading, queue
+from gevent import monkey, event, threading, queue, lock
 from gevent.subprocess import Popen, PIPE
 
 monkey.patch_all()
@@ -153,7 +153,7 @@ class CommTools(object):
 
 class TaskLogger(object):
     __loggers_obj = dict()
-    __LOCK__ = threading.Lock()
+    __LOCK__ = lock.RLock() if WINDOWS else lock.BoundedSemaphore(1)
 
     def __init__(self, logger_name, stream_on=True):
         self.__is_writing = False
@@ -209,7 +209,7 @@ class TaskLogger(object):
                     return
                 self.__is_writing = True
 
-        with threading.Lock():
+        with lock.RLock() if WINDOWS else lock.BoundedSemaphore(1):
             self.__is_writing = True
             self.__update_resource()
             for s in self.__statuses:
@@ -256,7 +256,7 @@ class TaskLogger(object):
 
 
 class ResourceManagement(object):
-    __LOCK__ = threading.Lock()
+    __LOCK__ = lock.RLock() if WINDOWS else lock.BoundedSemaphore(1)
     __manager_obj = None
 
     def __init__(self):
@@ -418,7 +418,7 @@ class Command(object):
         self.is_in_queue = False
         self.is_ready_to_run = False
         self.attempt_times = 0
-        self.__lock__ = threading.Lock()
+        self.__lock__ = lock.RLock() if WINDOWS else lock.BoundedSemaphore(1)
         self.__depends_completed_num = 0
         self.logger = TaskLogger("logger").get_logger("command_" + self.name)
 
@@ -452,7 +452,7 @@ class Command(object):
                          and not self.is_error
         assert cmd_obj_status, self.cmd_str_status
         # self.is_waiting = False  # this is set in cmd_pool.next() function
-        with threading.Lock():
+        with lock.RLock() if WINDOWS else lock.BoundedSemaphore(1):
             self.logger.debug(' ===== CMD running start status ===== [ ' + self.cmd_str_status + ']')
             self.is_running = True
             self.is_ready_to_run = False
@@ -510,7 +510,7 @@ class Command(object):
 
         # ----------------- update state -----------------
         self.__bind_pool.del_running_cmd(self.name)
-        with threading.Lock():
+        with lock.RLock() if WINDOWS else lock.BoundedSemaphore(1):
             self.is_completed = True
             self.is_running = False
             self.logger.debug(' ===== CMD running end status ===== [ ' + self.cmd_str_status + ']')
@@ -605,7 +605,7 @@ class Command(object):
 
 
 class CmdPool(dict):
-    __LOCK__ = threading.Lock()
+    __LOCK__ = lock.RLock() if WINDOWS else lock.BoundedSemaphore(1)
 
     def __init__(self, re_manager: ResourceManagement):
         super(CmdPool, self).__init__()
@@ -974,7 +974,7 @@ class CmdFactory(object):
         for k, v in self.__cmd_dict.items():
             cmd_obj = Command(
                 k, v,
-                cpu=self.__rel_dict[k]["cpu"],
+                cpu=int(self.__rel_dict[k]["cpu"]),
                 mem=self.__rel_dict[k]["mem"],
                 depends=self.__rel_dict[k]["depends"],
                 bind_pool=pool
