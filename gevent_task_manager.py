@@ -12,9 +12,7 @@ import json
 import logging
 import os
 import signal
-# import queue
 import sys
-# import threading
 import time
 import traceback
 import weakref
@@ -22,8 +20,6 @@ import weakref
 import psutil
 import gevent
 from gevent import monkey, event, threading, queue
-# from concurrent.futures import ThreadPoolExecutor
-# from subprocess import Popen, PIPE
 from gevent.subprocess import Popen, PIPE
 
 monkey.patch_all()
