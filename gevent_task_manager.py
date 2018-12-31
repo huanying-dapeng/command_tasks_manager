@@ -11,17 +11,22 @@ import atexit
 import json
 import logging
 import os
-import queue
-import sys
-import threading
-import time
-import weakref
-# from concurrent.futures import ThreadPoolExecutor
-from subprocess import Popen, PIPE
 import signal
-
+# import queue
+import sys
+# import threading
+import time
 import traceback
+import weakref
+
 import psutil
+import gevent
+from gevent import monkey, event, threading, queue
+# from concurrent.futures import ThreadPoolExecutor
+# from subprocess import Popen, PIPE
+from gevent.subprocess import Popen, PIPE
+
+monkey.patch_all()
 
 """
 1. 资源管理: ResourceManagement
@@ -39,8 +44,8 @@ _threads_ref_set = weakref.WeakSet()
 _processes_ref_set = weakref.WeakSet()
 _bind_loggers = []
 _terminate = False
-_event = threading.Event()
-_thread_run_flag = threading.Event()
+_event = event.Event()
+_thread_run_flag = event.Event()
 _thread_run_flag.set()
 
 
@@ -150,7 +155,7 @@ class CommTools(object):
 
 class TaskLogger(object):
     __loggers_obj = dict()
-    __LOCK__ = threading.RLock() if WINDOWS else threading.BoundedSemaphore(1)
+    __LOCK__ = threading.Lock()
 
     def __init__(self, logger_name, stream_on=True):
         self.__is_writing = False
@@ -253,7 +258,7 @@ class TaskLogger(object):
 
 
 class ResourceManagement(object):
-    __LOCK__ = threading.RLock() if WINDOWS else threading.BoundedSemaphore(1)
+    __LOCK__ = threading.Lock()
     __manager_obj = None
 
     def __init__(self):
@@ -415,7 +420,7 @@ class Command(object):
         self.is_in_queue = False
         self.is_ready_to_run = False
         self.attempt_times = 0
-        self.__lock__ = threading.RLock() if WINDOWS else threading.BoundedSemaphore(1)
+        self.__lock__ = threading.Lock()
         self.__depends_completed_num = 0
         self.logger = TaskLogger("logger").get_logger("command_" + self.name)
 
@@ -449,7 +454,7 @@ class Command(object):
                          and not self.is_error
         assert cmd_obj_status, self.cmd_str_status
         # self.is_waiting = False  # this is set in cmd_pool.next() function
-        with threading.RLock():
+        with threading.Lock():
             self.logger.debug(' ===== CMD running start status ===== [ ' + self.cmd_str_status + ']')
             self.is_running = True
             self.is_ready_to_run = False
@@ -507,7 +512,7 @@ class Command(object):
 
         # ----------------- update state -----------------
         self.__bind_pool.del_running_cmd(self.name)
-        with threading.RLock():
+        with threading.Lock():
             self.is_completed = True
             self.is_running = False
             self.logger.debug(' ===== CMD running end status ===== [ ' + self.cmd_str_status + ']')
@@ -602,7 +607,7 @@ class Command(object):
 
 
 class CmdPool(dict):
-    __LOCK__ = threading.Lock() if WINDOWS else threading.BoundedSemaphore(1)
+    __LOCK__ = threading.Lock()
 
     def __init__(self, re_manager: ResourceManagement):
         super(CmdPool, self).__init__()
@@ -1002,7 +1007,7 @@ class MultiRunManager(object):
         self.logger = self.__logger.get_logger("running_log")
 
     def _cmd_run(self):
-        thread = threading.current_thread()
+        thread = gevent.getcurrent()
         cmd_obj = self.__pool.next()
 
         self.logger.info(" THREAD: " + thread.name + ' running is starting')
@@ -1064,8 +1069,7 @@ class MultiRunManager(object):
         # res = [i.result() for i in exc_list]
         # if any(res):
         #     self.logger.debug('threads returns: ' + '\n'.join(res))
-        exc_list = [threading.Thread(target=self._cmd_run) for _ in range(self.__max_thread)]
-        _ = [t.setDaemon(True) for t in exc_list]
+        exc_list = [gevent.spawn(self._cmd_run) for _ in range(self.__max_thread)]
         _ = [t.start() for t in exc_list]
         global _event
         _threads_ref_set.update(exc_list)
