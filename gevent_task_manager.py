@@ -13,12 +13,17 @@ import logging
 import os
 import signal
 import sys
-import time
 import traceback
 import weakref
 
+POSIX = os.name == "posix"
+WINDOWS = os.name == "nt"
+
 import psutil
 import gevent
+
+if WINDOWS: gevent.config.loop = "libuv"
+
 from gevent import monkey, event, threading, queue
 from gevent.subprocess import Popen, PIPE
 
@@ -32,9 +37,6 @@ monkey.patch_all()
 5. pool创建工厂: CmdFactory -> CmdPool
 6. 命令对象: Command
 """
-
-POSIX = os.name == "posix"
-WINDOWS = os.name == "nt"
 
 _threads_ref_set = weakref.WeakSet()
 _processes_ref_set = weakref.WeakSet()
@@ -1067,8 +1069,11 @@ class MultiRunManager(object):
         #     self.logger.debug('threads returns: ' + '\n'.join(res))
         exc_list = [gevent.spawn(self._cmd_run) for _ in range(self.__max_thread)]
         gevent.joinall(exc_list, raise_error=True)
-        # _ = [t.start() for t in exc_list]
         global _event
+        exc_infos = [t.exc_info for t in exc_list]
+        if all(exc_list):
+            exc_infos = [t for t in exc_infos if t]
+            self.logger.error(' gevent exception: %s\n' % exc_infos)
         _threads_ref_set.update(exc_list)
         _event.wait()
         gevent.sleep(1)
