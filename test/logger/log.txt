@@ -1550,3 +1550,603 @@
 2018-12-31 18:50:49    callback_function    INFO : all processes are closed
 2018-12-31 18:50:49    callback_function    INFO : all threads are closed
 2018-12-31 18:50:49    callback_function    INFO : stop callback_function, and end the program
+2018-12-31 19:18:18    running_log    INFO :  THREAD: Greenlet-0 running is starting
+2018-12-31 19:18:18    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:18:18    command_A    DEBUG :  ===== CMD running start status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:18:18    running_log    INFO :  THREAD: Greenlet-1 running is starting
+2018-12-31 19:18:18    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:18:18    command_B    DEBUG :  ===== CMD running start status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:18:18    running_log    INFO :  THREAD: Greenlet-2 running is starting
+2018-12-31 19:18:18    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Greenlet-2
+2018-12-31 19:18:18    command_F    DEBUG :  ===== CMD running start status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:18:18    running_log    INFO :  THREAD: Greenlet-3 running is starting
+2018-12-31 19:18:18    running_log    INFO :  THREAD: Greenlet-4 running is starting
+2018-12-31 19:18:18    running_log    INFO :  THREAD: Greenlet-5 running is starting
+2018-12-31 19:18:18    running_log    INFO :  THREAD: Greenlet-6 running is starting
+2018-12-31 19:18:18    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-31 19:18:18    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-31 19:18:18    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-31 19:18:35    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 20764
+========= sleep 16s =========
+2018-12-31 19:18:35    command_F    DEBUG :  ===== CMD running end status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:18:35    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:18:35    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-31 19:18:35    cmd_pool    DEBUG :  COMPLETED CMDs: [ F]
+2018-12-31 19:18:35    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-31 19:18:38    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 20124
+========= sleep 19s =========
+2018-12-31 19:18:38    command_B    DEBUG :  ===== CMD running end status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:18:38    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:3.10547M
+2018-12-31 19:18:38    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-31 19:18:38    cmd_pool    DEBUG :  COMPLETED CMDs: [ F, B]
+2018-12-31 19:18:38    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-31 19:18:49    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 20380
+========= sleep 30s =========
+2018-12-31 19:18:49    command_A    DEBUG :  ===== CMD running end status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:18:49    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-31 19:18:49    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-31 19:18:49    cmd_pool    DEBUG :  COMPLETED CMDs: [ F, B, A]
+2018-12-31 19:18:49    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-31 19:18:49    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:18:49    command_C    DEBUG :  ===== CMD running start status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:18:49    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-31 19:18:49    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-31 19:19:06    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 20808
+========= sleep 17s =========
+2018-12-31 19:19:06    command_C    DEBUG :  ===== CMD running end status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:19:06    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-31 19:19:06    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-31 19:19:06    cmd_pool    DEBUG :  COMPLETED CMDs: [ F, B, A, C]
+2018-12-31 19:19:06    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-31 19:19:06    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:19:06    command_D    DEBUG :  ===== CMD running start status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:19:06    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-31 19:19:07    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-31 19:19:29    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 4408
+========= sleep 23s =========
+2018-12-31 19:19:29    command_D    DEBUG :  ===== CMD running end status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:19:29    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:19:29    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-31 19:19:29    cmd_pool    DEBUG :  COMPLETED CMDs: [ F, B, A, C, D]
+2018-12-31 19:19:29    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-31 19:19:29    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:19:29    command_E    DEBUG :  ===== CMD running start status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:19:29    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-31 19:19:30    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-31 19:19:52    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 23392
+========= sleep 23s =========
+2018-12-31 19:19:52    command_E    DEBUG :  ===== CMD running end status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:19:52    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.90234M
+2018-12-31 19:19:52    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-31 19:19:52    cmd_pool    DEBUG :  COMPLETED CMDs: [ F, B, A, C, D, E]
+2018-12-31 19:19:52    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-31 19:19:52    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:19:52    command_G    DEBUG :  ===== CMD running start status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:19:52    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-31 19:19:53    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-31 19:20:14    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 23252
+========= sleep 21s =========
+2018-12-31 19:21:45    command_G    DEBUG :  ===== CMD running end status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:21:45    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:21:45    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-31 19:21:45    cmd_pool    DEBUG :  COMPLETED CMDs: [ F, B, A, C, D, E, G]
+2018-12-31 19:21:45    running_log    INFO :  THREAD: Greenlet-0 running is end finally
+2018-12-31 19:21:45    running_log    INFO :  THREAD: Greenlet-4 running is end finally
+2018-12-31 19:21:45    running_log    INFO :  THREAD: Greenlet-6 running is end finally
+2018-12-31 19:21:45    running_log    INFO :  THREAD: Greenlet-2 running is end finally
+2018-12-31 19:21:45    running_log    INFO :  THREAD: Greenlet-5 running is end finally
+2018-12-31 19:21:45    running_log    INFO :  THREAD: Greenlet-3 running is end finally
+2018-12-31 19:21:45    running_log    INFO :  THREAD: Greenlet-1 running is end finally
+2018-12-31 19:21:45    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-31 19:21:46    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-31 19:21:46    callback_function    INFO : all io-handlers are closed
+2018-12-31 19:21:46    callback_function    INFO : all processes are closed
+2018-12-31 19:21:46    callback_function    INFO : all threads are closed
+2018-12-31 19:21:46    callback_function    INFO : stop callback_function, and end the program
+2018-12-31 19:24:42    running_log    INFO :  THREAD: Greenlet-0 running is starting
+2018-12-31 19:24:42    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:24:42    command_A    DEBUG :  ===== CMD running start status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:24:42    running_log    INFO :  THREAD: Greenlet-1 running is starting
+2018-12-31 19:24:42    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:24:42    command_B    DEBUG :  ===== CMD running start status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:24:42    running_log    INFO :  THREAD: Greenlet-2 running is starting
+2018-12-31 19:24:42    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Greenlet-2
+2018-12-31 19:24:42    command_F    DEBUG :  ===== CMD running start status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:24:42    running_log    INFO :  THREAD: Greenlet-3 running is starting
+2018-12-31 19:24:42    running_log    INFO :  THREAD: Greenlet-4 running is starting
+2018-12-31 19:24:42    running_log    INFO :  THREAD: Greenlet-5 running is starting
+2018-12-31 19:24:42    running_log    INFO :  THREAD: Greenlet-6 running is starting
+2018-12-31 19:24:42    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-31 19:24:42    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-31 19:24:42    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-31 19:24:59    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 21572
+========= sleep 17s =========
+2018-12-31 19:24:59    command_F    DEBUG :  ===== CMD running end status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:24:59    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:24:59    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-31 19:24:59    cmd_pool    DEBUG :  COMPLETED CMDs: [ F]
+2018-12-31 19:25:00    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-31 19:25:03    signal_processing    WARNING :  receive terminate signal and program will terminate
+2018-12-31 19:25:03    command_B    WARNING : B CMD RUNNING PROCESS receive KeyboardInterrupt : program will terminate
+2018-12-31 19:25:03    command_B    DEBUG :  ===== CMD running end status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:25:03    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.89844M
+2018-12-31 19:25:03    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-31 19:25:03    running_log    INFO :  THREAD: Greenlet-1 running is end finally
+2018-12-31 19:25:03    running_log    INFO :  THREAD: Greenlet-4 running is end finally
+2018-12-31 19:25:03    running_log    INFO :  THREAD: Greenlet-6 running is end finally
+2018-12-31 19:25:03    running_log    INFO :  THREAD: Greenlet-2 running is end finally
+2018-12-31 19:25:03    running_log    INFO :  THREAD: Greenlet-3 running is end finally
+2018-12-31 19:25:03    running_log    INFO :  THREAD: Greenlet-5 running is end finally
+2018-12-31 19:25:03    command_A    WARNING : A CMD RUNNING PROCESS receive KeyboardInterrupt : program will terminate
+2018-12-31 19:25:03    command_A    DEBUG :  ===== CMD running end status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:25:03    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:25:03    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-31 19:25:03    running_log    INFO :  THREAD: Greenlet-0 running is end finally
+2018-12-31 19:25:04    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-31 19:25:04    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-31 19:25:05    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-31 19:25:05    callback_function    INFO : all io-handlers are closed
+2018-12-31 19:25:05    callback_function    INFO : all processes are closed
+2018-12-31 19:25:05    callback_function    INFO : all threads are closed
+2018-12-31 19:25:06    callback_function    INFO : stop callback_function, and end the program
+2018-12-31 19:25:29    running_log    INFO :  THREAD: Greenlet-0 running is starting
+2018-12-31 19:25:29    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:25:29    command_A    DEBUG :  ===== CMD running start status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:25:29    running_log    INFO :  THREAD: Greenlet-1 running is starting
+2018-12-31 19:25:29    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:25:29    command_B    DEBUG :  ===== CMD running start status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:25:29    running_log    INFO :  THREAD: Greenlet-2 running is starting
+2018-12-31 19:25:29    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Greenlet-2
+2018-12-31 19:25:29    command_F    DEBUG :  ===== CMD running start status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:25:29    running_log    INFO :  THREAD: Greenlet-3 running is starting
+2018-12-31 19:25:29    running_log    INFO :  THREAD: Greenlet-4 running is starting
+2018-12-31 19:25:29    running_log    INFO :  THREAD: Greenlet-5 running is starting
+2018-12-31 19:25:29    running_log    INFO :  THREAD: Greenlet-6 running is starting
+2018-12-31 19:25:30    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-31 19:25:30    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-31 19:25:30    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-31 19:25:45    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 17160
+========= sleep 15s =========
+2018-12-31 19:25:45    command_A    DEBUG :  ===== CMD running end status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:25:45    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:25:45    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-31 19:25:45    cmd_pool    DEBUG :  COMPLETED CMDs: [ A]
+2018-12-31 19:25:45    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 23236
+========= sleep 15s =========
+2018-12-31 19:25:45    command_B    DEBUG :  ===== CMD running end status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:25:45    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.92188M
+2018-12-31 19:25:45    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-31 19:25:45    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B]
+2018-12-31 19:25:45    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-31 19:25:45    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:25:45    command_C    DEBUG :  ===== CMD running start status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:25:45    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-31 19:25:45    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 3552
+========= sleep 15s =========
+2018-12-31 19:25:45    command_F    DEBUG :  ===== CMD running end status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:25:45    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:25:45    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-31 19:25:45    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F]
+2018-12-31 19:25:46    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-31 19:25:46    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-31 19:25:46    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-31 19:26:00    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 17716
+========= sleep 15s =========
+2018-12-31 19:26:00    command_C    DEBUG :  ===== CMD running end status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:26:00    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.90234M
+2018-12-31 19:26:00    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-31 19:26:00    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C]
+2018-12-31 19:26:00    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-31 19:26:00    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:26:00    command_D    DEBUG :  ===== CMD running start status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:26:00    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-31 19:26:01    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-31 19:26:15    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 5848
+========= sleep 15s =========
+2018-12-31 19:26:15    command_D    DEBUG :  ===== CMD running end status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:26:15    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.90234M
+2018-12-31 19:26:15    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-31 19:26:15    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D]
+2018-12-31 19:26:15    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-31 19:26:15    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:26:15    command_E    DEBUG :  ===== CMD running start status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:26:15    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-31 19:26:16    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-31 19:26:31    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 19104
+========= sleep 15s =========
+2018-12-31 19:26:31    command_E    DEBUG :  ===== CMD running end status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:26:31    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:26:31    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-31 19:26:31    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D, E]
+2018-12-31 19:26:31    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-31 19:26:31    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:26:31    command_G    DEBUG :  ===== CMD running start status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:26:31    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-31 19:26:31    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-31 19:26:46    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 16584
+========= sleep 15s =========
+2018-12-31 19:26:46    command_G    DEBUG :  ===== CMD running end status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:26:46    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:26:46    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-31 19:26:46    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D, E, G]
+2018-12-31 19:26:46    running_log    INFO :  THREAD: Greenlet-1 running is end finally
+2018-12-31 19:26:46    running_log    INFO :  THREAD: Greenlet-4 running is end finally
+2018-12-31 19:26:46    running_log    INFO :  THREAD: Greenlet-6 running is end finally
+2018-12-31 19:26:46    running_log    INFO :  THREAD: Greenlet-0 running is end finally
+2018-12-31 19:26:46    running_log    INFO :  THREAD: Greenlet-2 running is end finally
+2018-12-31 19:26:46    running_log    INFO :  THREAD: Greenlet-3 running is end finally
+2018-12-31 19:26:46    running_log    INFO :  THREAD: Greenlet-5 running is end finally
+2018-12-31 19:26:47    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-31 19:26:48    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-31 19:26:48    callback_function    INFO : all io-handlers are closed
+2018-12-31 19:26:48    callback_function    INFO : all processes are closed
+2018-12-31 19:26:48    callback_function    INFO : all threads are closed
+2018-12-31 19:26:48    callback_function    INFO : stop callback_function, and end the program
+2018-12-31 19:28:01    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-31 19:28:01    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-31 19:28:01    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-31 19:28:01    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-31 19:28:01    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-31 19:28:01    command_A    DEBUG :  ===== CMD running start status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:28:01    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-31 19:28:01    command_B    DEBUG :  ===== CMD running start status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:28:01    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-31 19:28:01    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-31 19:28:01    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-31 19:28:01    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-31 19:28:01    command_F    DEBUG :  ===== CMD running start status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:28:01    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-31 19:28:01    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-31 19:28:01    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-31 19:28:16    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 21152
+========= sleep 15s =========
+2018-12-31 19:28:16    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 3984
+========= sleep 15s =========
+2018-12-31 19:28:16    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 8664
+========= sleep 15s =========
+2018-12-31 19:28:16    command_A    DEBUG :  ===== CMD running end status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:28:16    command_F    DEBUG :  ===== CMD running end status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:28:16    command_B    DEBUG :  ===== CMD running end status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:28:16    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:28:16    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-31 19:28:16    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-31 19:28:16    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:28:16    cmd_pool    DEBUG :  COMPLETED CMDs: [ A]
+2018-12-31 19:28:16    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-31 19:28:16    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-31 19:28:16    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-31 19:28:16    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B]
+2018-12-31 19:28:16    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-1
+2018-12-31 19:28:16    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F]
+2018-12-31 19:28:16    command_C    DEBUG :  ===== CMD running start status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:28:16    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-31 19:28:17    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-31 19:28:17    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-31 19:28:17    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-31 19:28:31    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 9820
+========= sleep 15s =========
+2018-12-31 19:28:31    command_C    DEBUG :  ===== CMD running end status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:28:31    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-31 19:28:31    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-31 19:28:31    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C]
+2018-12-31 19:28:31    cmd_pool    INFO : [D] has/have being add to the cmd_queue
+2018-12-31 19:28:31    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-1
+2018-12-31 19:28:31    command_D    DEBUG :  ===== CMD running start status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:28:31    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-31 19:28:32    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-31 19:28:47    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 18792
+========= sleep 15s =========
+2018-12-31 19:28:47    command_D    DEBUG :  ===== CMD running end status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:28:47    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:28:47    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-31 19:28:47    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D]
+2018-12-31 19:28:47    cmd_pool    INFO : [E] has/have being add to the cmd_queue
+2018-12-31 19:28:47    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-1
+2018-12-31 19:28:47    command_E    DEBUG :  ===== CMD running start status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:28:47    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-31 19:28:47    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-31 19:29:02    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 15308
+========= sleep 15s =========
+2018-12-31 19:29:02    command_E    DEBUG :  ===== CMD running end status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:29:02    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.90234M
+2018-12-31 19:29:02    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-31 19:29:02    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D, E]
+2018-12-31 19:29:02    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-31 19:29:02    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Thread-1
+2018-12-31 19:29:02    command_G    DEBUG :  ===== CMD running start status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:29:02    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-31 19:29:03    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-31 19:29:17    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 22908
+========= sleep 15s =========
+2018-12-31 19:29:17    command_G    DEBUG :  ===== CMD running end status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:29:17    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:29:17    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-31 19:29:17    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D, E, G]
+2018-12-31 19:29:17    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-31 19:29:17    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-31 19:29:17    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-31 19:29:17    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-31 19:29:17    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-31 19:29:17    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-31 19:29:17    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-31 19:29:18    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-31 19:29:18    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-31 19:29:18    callback_function    INFO : all io-handlers are closed
+2018-12-31 19:29:18    callback_function    INFO : all processes are closed
+2018-12-31 19:29:18    callback_function    INFO : all threads are closed
+2018-12-31 19:29:18    callback_function    INFO : stop callback_function, and end the program
+2018-12-31 19:31:24    running_log    INFO :  THREAD: Thread-1 running is starting
+2018-12-31 19:31:24    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Thread-1
+2018-12-31 19:31:24    running_log    INFO :  THREAD: Thread-2 running is starting
+2018-12-31 19:31:24    command_A    DEBUG :  ===== CMD running start status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:31:24    running_log    INFO :  THREAD: Thread-3 running is starting
+2018-12-31 19:31:24    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Thread-2
+2018-12-31 19:31:24    running_log    INFO :  THREAD: Thread-4 running is starting
+2018-12-31 19:31:24    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Thread-3
+2018-12-31 19:31:24    command_B    DEBUG :  ===== CMD running start status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:31:24    running_log    INFO :  THREAD: Thread-5 running is starting
+2018-12-31 19:31:24    running_log    INFO :  THREAD: Thread-6 running is starting
+2018-12-31 19:31:24    running_log    INFO :  THREAD: Thread-7 running is starting
+2018-12-31 19:31:24    command_F    DEBUG :  ===== CMD running start status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:31:24    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-31 19:31:24    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-31 19:31:24    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-31 19:32:24    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 17644
+========= sleep 60s =========
+2018-12-31 19:32:24    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 8184
+========= sleep 60s =========
+2018-12-31 19:32:24    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 22532
+========= sleep 60s =========
+2018-12-31 19:32:24    command_A    DEBUG :  ===== CMD running end status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:32:24    command_B    DEBUG :  ===== CMD running end status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:32:24    command_F    DEBUG :  ===== CMD running end status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:32:24    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:32:24    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:32:24    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-31 19:32:24    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-31 19:32:24    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-31 19:32:24    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-31 19:32:26    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-31 19:32:26    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B]
+2018-12-31 19:32:26    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Thread-1
+2018-12-31 19:32:26    command_C    DEBUG :  ===== CMD running start status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:32:26    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F]
+2018-12-31 19:32:26    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-31 19:32:32    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-31 19:32:32    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-31 19:32:32    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-31 19:33:26    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 23176
+========= sleep 60s =========
+2018-12-31 19:33:26    command_C    DEBUG :  ===== CMD running end status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:33:26    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-31 19:33:26    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-31 19:33:26    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C]
+2018-12-31 19:33:26    cmd_pool    INFO : [D, E] has/have being add to the cmd_queue
+2018-12-31 19:33:26    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Thread-4
+2018-12-31 19:33:26    command_E    DEBUG :  ===== CMD running start status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:33:26    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Thread-1
+2018-12-31 19:33:26    command_D    DEBUG :  ===== CMD running start status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:33:26    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-31 19:33:26    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-31 19:33:34    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-31 19:34:26    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 19796
+========= sleep 60s =========
+2018-12-31 19:34:26    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 14344
+========= sleep 60s =========
+2018-12-31 19:34:26    command_E    DEBUG :  ===== CMD running end status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:34:26    command_D    DEBUG :  ===== CMD running end status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:34:26    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:34:26    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-31 19:34:26    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:34:26    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, E]
+2018-12-31 19:34:26    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-31 19:34:26    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-31 19:34:26    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, E, D]
+2018-12-31 19:34:26    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Thread-4
+2018-12-31 19:34:26    command_G    DEBUG :  ===== CMD running start status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:34:26    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-31 19:34:34    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-31 19:34:34    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-31 19:35:27    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 19928
+========= sleep 60s =========
+2018-12-31 19:35:27    command_G    DEBUG :  ===== CMD running end status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:35:27    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:35:27    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-31 19:35:27    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, E, D, G]
+2018-12-31 19:35:27    running_log    INFO :  THREAD: Thread-3 running is end finally
+2018-12-31 19:35:27    running_log    INFO :  THREAD: Thread-6 running is end finally
+2018-12-31 19:35:27    running_log    INFO :  THREAD: Thread-2 running is end finally
+2018-12-31 19:35:27    running_log    INFO :  THREAD: Thread-7 running is end finally
+2018-12-31 19:35:27    running_log    INFO :  THREAD: Thread-5 running is end finally
+2018-12-31 19:35:27    running_log    INFO :  THREAD: Thread-1 running is end finally
+2018-12-31 19:35:27    running_log    INFO :  THREAD: Thread-4 running is end finally
+2018-12-31 19:35:29    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-31 19:35:29    callback_function    INFO : all io-handlers are closed
+2018-12-31 19:35:29    callback_function    INFO : all processes are closed
+2018-12-31 19:35:34    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-31 19:35:34    callback_function    INFO : all threads are closed
+2018-12-31 19:35:34    callback_function    INFO : stop callback_function, and end the program
+2018-12-31 19:36:16    running_log    INFO :  THREAD: Greenlet-0 running is starting
+2018-12-31 19:36:16    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:36:16    command_A    DEBUG :  ===== CMD running start status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:36:16    running_log    INFO :  THREAD: Greenlet-1 running is starting
+2018-12-31 19:36:16    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:36:16    command_B    DEBUG :  ===== CMD running start status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:36:16    running_log    INFO :  THREAD: Greenlet-2 running is starting
+2018-12-31 19:36:16    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Greenlet-2
+2018-12-31 19:36:16    command_F    DEBUG :  ===== CMD running start status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:36:16    running_log    INFO :  THREAD: Greenlet-3 running is starting
+2018-12-31 19:36:16    running_log    INFO :  THREAD: Greenlet-4 running is starting
+2018-12-31 19:36:16    running_log    INFO :  THREAD: Greenlet-5 running is starting
+2018-12-31 19:36:16    running_log    INFO :  THREAD: Greenlet-6 running is starting
+2018-12-31 19:36:16    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-31 19:36:16    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-31 19:36:16    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-31 19:37:16    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 19240
+========= sleep 60s =========
+2018-12-31 19:37:16    command_A    DEBUG :  ===== CMD running end status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:37:16    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.90234M
+2018-12-31 19:37:16    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-31 19:37:16    cmd_pool    DEBUG :  COMPLETED CMDs: [ A]
+2018-12-31 19:37:16    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 18216
+========= sleep 60s =========
+2018-12-31 19:37:16    command_B    DEBUG :  ===== CMD running end status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:37:16    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:3.09766M
+2018-12-31 19:37:16    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-31 19:37:16    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B]
+2018-12-31 19:37:16    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-31 19:37:16    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:37:16    command_C    DEBUG :  ===== CMD running start status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:37:16    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-31 19:37:16    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 21640
+========= sleep 60s =========
+2018-12-31 19:37:16    command_F    DEBUG :  ===== CMD running end status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:37:16    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:37:16    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-31 19:37:16    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F]
+2018-12-31 19:37:24    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-31 19:37:24    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-31 19:37:24    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-31 19:38:17    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 22564
+========= sleep 60s =========
+2018-12-31 19:38:17    command_C    DEBUG :  ===== CMD running end status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:38:17    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:38:17    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-31 19:38:17    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C]
+2018-12-31 19:38:17    cmd_pool    INFO : [D, E] has/have being add to the cmd_queue
+2018-12-31 19:38:17    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:38:17    command_D    DEBUG :  ===== CMD running start status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:38:17    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Greenlet-4
+2018-12-31 19:38:17    command_E    DEBUG :  ===== CMD running start status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:38:17    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-31 19:38:17    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-31 19:38:24    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-31 19:39:17    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 22684
+========= sleep 60s =========
+2018-12-31 19:39:17    command_D    DEBUG :  ===== CMD running end status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:39:17    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:3.11719M
+2018-12-31 19:39:17    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-31 19:39:17    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D]
+2018-12-31 19:39:17    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 21196
+========= sleep 60s =========
+2018-12-31 19:39:17    command_E    DEBUG :  ===== CMD running end status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:39:17    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:39:17    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-31 19:39:17    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D, E]
+2018-12-31 19:39:17    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-31 19:39:17    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Greenlet-4
+2018-12-31 19:39:17    command_G    DEBUG :  ===== CMD running start status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:39:17    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-31 19:39:25    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-31 19:39:25    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-31 19:40:17    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 21472
+========= sleep 60s =========
+2018-12-31 19:42:17    command_G    DEBUG :  ===== CMD running end status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:42:17    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:42:17    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-31 19:42:17    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D, E, G]
+2018-12-31 19:42:17    running_log    INFO :  THREAD: Greenlet-4 running is end finally
+2018-12-31 19:42:17    running_log    INFO :  THREAD: Greenlet-0 running is end finally
+2018-12-31 19:42:17    running_log    INFO :  THREAD: Greenlet-6 running is end finally
+2018-12-31 19:42:17    running_log    INFO :  THREAD: Greenlet-2 running is end finally
+2018-12-31 19:42:17    running_log    INFO :  THREAD: Greenlet-3 running is end finally
+2018-12-31 19:42:17    running_log    INFO :  THREAD: Greenlet-5 running is end finally
+2018-12-31 19:42:17    running_log    INFO :  THREAD: Greenlet-1 running is end finally
+2018-12-31 19:42:17    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-31 19:42:18    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-31 19:42:18    callback_function    INFO : all io-handlers are closed
+2018-12-31 19:42:18    callback_function    INFO : all processes are closed
+2018-12-31 19:42:18    callback_function    INFO : all threads are closed
+2018-12-31 19:42:18    callback_function    INFO : stop callback_function, and end the program
+2018-12-31 19:43:04    running_log    INFO :  THREAD: Greenlet-0 running is starting
+2018-12-31 19:43:04    running_log    DEBUG :  CMD: A resource binding is successful and start running in -- Greenlet-0
+2018-12-31 19:43:04    command_A    DEBUG :  ===== CMD running start status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:43:04    running_log    INFO :  THREAD: Greenlet-1 running is starting
+2018-12-31 19:43:04    running_log    DEBUG :  CMD: B resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:43:04    command_B    DEBUG :  ===== CMD running start status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:43:04    running_log    INFO :  THREAD: Greenlet-2 running is starting
+2018-12-31 19:43:04    running_log    DEBUG :  CMD: F resource binding is successful and start running in -- Greenlet-2
+2018-12-31 19:43:04    command_F    DEBUG :  ===== CMD running start status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:43:04    running_log    INFO :  THREAD: Greenlet-3 running is starting
+2018-12-31 19:43:04    running_log    INFO :  THREAD: Greenlet-4 running is starting
+2018-12-31 19:43:04    running_log    INFO :  THREAD: Greenlet-5 running is starting
+2018-12-31 19:43:04    running_log    INFO :  THREAD: Greenlet-6 running is starting
+2018-12-31 19:43:04    resource_manager    DEBUG :  CMD: A start monitoring
+2018-12-31 19:43:04    resource_manager    DEBUG :  CMD: B start monitoring
+2018-12-31 19:43:04    resource_manager    DEBUG :  CMD: F start monitoring
+2018-12-31 19:44:04    command_A    INFO : A cmd STDOUT : cmd tool's process ID: 20200
+========= sleep 60s =========
+2018-12-31 19:44:04    command_A    DEBUG :  ===== CMD running end status ===== [ cmd A: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:44:04    running_log    INFO :  CMD: A resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:44:04    running_log    INFO :  CMD: A completed and resource is released successfully
+2018-12-31 19:44:04    cmd_pool    DEBUG :  COMPLETED CMDs: [ A]
+2018-12-31 19:44:04    command_B    INFO : B cmd STDOUT : cmd tool's process ID: 22264
+========= sleep 60s =========
+2018-12-31 19:44:04    command_B    DEBUG :  ===== CMD running end status ===== [ cmd B: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:44:04    running_log    INFO :  CMD: B resource stat: max_cpu:not stat in win	max_memory:2.91016M
+2018-12-31 19:44:04    running_log    INFO :  CMD: B completed and resource is released successfully
+2018-12-31 19:44:04    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B]
+2018-12-31 19:44:04    cmd_pool    INFO : [C] has/have being add to the cmd_queue
+2018-12-31 19:44:04    running_log    DEBUG :  CMD: C resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:44:04    command_C    DEBUG :  ===== CMD running start status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:44:04    resource_manager    DEBUG :  CMD: C start monitoring
+2018-12-31 19:44:04    command_F    INFO : F cmd STDOUT : cmd tool's process ID: 20336
+========= sleep 60s =========
+2018-12-31 19:44:04    command_F    DEBUG :  ===== CMD running end status ===== [ cmd F: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:44:04    running_log    INFO :  CMD: F resource stat: max_cpu:not stat in win	max_memory:2.90625M
+2018-12-31 19:44:04    running_log    INFO :  CMD: F completed and resource is released successfully
+2018-12-31 19:44:04    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F]
+2018-12-31 19:44:12    resource_manager    DEBUG :  CMD: A monitoring is ended
+2018-12-31 19:44:12    resource_manager    DEBUG :  CMD: B monitoring is ended
+2018-12-31 19:44:12    resource_manager    DEBUG :  CMD: F monitoring is ended
+2018-12-31 19:45:04    command_C    INFO : C cmd STDOUT : cmd tool's process ID: 7732
+========= sleep 60s =========
+2018-12-31 19:45:04    command_C    DEBUG :  ===== CMD running end status ===== [ cmd C: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:45:04    running_log    INFO :  CMD: C resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:45:04    running_log    INFO :  CMD: C completed and resource is released successfully
+2018-12-31 19:45:04    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C]
+2018-12-31 19:45:05    cmd_pool    INFO : [D, E] has/have being add to the cmd_queue
+2018-12-31 19:45:05    running_log    DEBUG :  CMD: D resource binding is successful and start running in -- Greenlet-1
+2018-12-31 19:45:05    command_D    DEBUG :  ===== CMD running start status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:45:05    running_log    DEBUG :  CMD: E resource binding is successful and start running in -- Greenlet-4
+2018-12-31 19:45:05    command_E    DEBUG :  ===== CMD running start status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:45:05    resource_manager    DEBUG :  CMD: D start monitoring
+2018-12-31 19:45:05    resource_manager    DEBUG :  CMD: E start monitoring
+2018-12-31 19:45:12    resource_manager    DEBUG :  CMD: C monitoring is ended
+2018-12-31 19:46:05    command_D    INFO : D cmd STDOUT : cmd tool's process ID: 18564
+========= sleep 60s =========
+2018-12-31 19:46:05    command_D    DEBUG :  ===== CMD running end status ===== [ cmd D: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:46:05    running_log    INFO :  CMD: D resource stat: max_cpu:not stat in win	max_memory:3.10547M
+2018-12-31 19:46:05    running_log    INFO :  CMD: D completed and resource is released successfully
+2018-12-31 19:46:05    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D]
+2018-12-31 19:46:05    command_E    INFO : E cmd STDOUT : cmd tool's process ID: 22520
+========= sleep 60s =========
+2018-12-31 19:46:05    command_E    DEBUG :  ===== CMD running end status ===== [ cmd E: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:46:05    running_log    INFO :  CMD: E resource stat: max_cpu:not stat in win	max_memory:2.91406M
+2018-12-31 19:46:05    running_log    INFO :  CMD: E completed and resource is released successfully
+2018-12-31 19:46:05    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D, E]
+2018-12-31 19:46:05    cmd_pool    INFO : [G] has/have being add to the cmd_queue
+2018-12-31 19:46:05    running_log    DEBUG :  CMD: G resource binding is successful and start running in -- Greenlet-4
+2018-12-31 19:46:05    command_G    DEBUG :  ===== CMD running start status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(True), is_running(False), is_completed(False), is_error(False)]
+2018-12-31 19:46:05    resource_manager    DEBUG :  CMD: G start monitoring
+2018-12-31 19:46:13    resource_manager    DEBUG :  CMD: D monitoring is ended
+2018-12-31 19:46:13    resource_manager    DEBUG :  CMD: E monitoring is ended
+2018-12-31 19:47:05    command_G    INFO : G cmd STDOUT : cmd tool's process ID: 21920
+========= sleep 60s =========
+2018-12-31 19:47:05    command_G    DEBUG :  ===== CMD running end status ===== [ cmd G: is_waiting(False), is_in_queue(False), is_ready_to_run(False), is_running(False), is_completed(True), is_error(False)]
+2018-12-31 19:47:05    running_log    INFO :  CMD: G resource stat: max_cpu:not stat in win	max_memory:2.91797M
+2018-12-31 19:47:05    running_log    INFO :  CMD: G completed and resource is released successfully
+2018-12-31 19:47:05    cmd_pool    DEBUG :  COMPLETED CMDs: [ A, B, F, C, D, E, G]
+2018-12-31 19:47:05    running_log    INFO :  THREAD: Greenlet-4 running is end finally
+2018-12-31 19:47:05    running_log    INFO :  THREAD: Greenlet-0 running is end finally
+2018-12-31 19:47:05    running_log    INFO :  THREAD: Greenlet-6 running is end finally
+2018-12-31 19:47:05    running_log    INFO :  THREAD: Greenlet-2 running is end finally
+2018-12-31 19:47:05    running_log    INFO :  THREAD: Greenlet-3 running is end finally
+2018-12-31 19:47:05    running_log    INFO :  THREAD: Greenlet-5 running is end finally
+2018-12-31 19:47:05    running_log    INFO :  THREAD: Greenlet-1 running is end finally
+2018-12-31 19:47:07    callback_function    INFO : start closing all threads, all process, and io-handler (those were not closed normally)
+2018-12-31 19:47:07    callback_function    INFO : all io-handlers are closed
+2018-12-31 19:47:07    callback_function    INFO : all processes are closed
+2018-12-31 19:47:13    resource_manager    DEBUG :  CMD: G monitoring is ended
+2018-12-31 19:47:33    callback_function    INFO : all threads are closed
+2018-12-31 19:47:33    callback_function    INFO : stop callback_function, and end the program

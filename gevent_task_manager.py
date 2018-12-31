@@ -346,9 +346,9 @@ class ResourceManagement(object):
                 res_list = [tuple(max(i) for i in zip(*res_list))]
             if p.is_running():
                 if length < 60:
-                    time.sleep(1)
+                    gevent.sleep(1)
                 else:
-                    time.sleep(10)
+                    gevent.sleep(10)
             else:
                 break
         cpu, mem = [max(i) for i in zip(*res_list)]
@@ -853,7 +853,7 @@ class CmdPool(dict):
             try:
                 signal_ = self._signal_queue.get(timeout=2)
             except queue.Empty:
-                time.sleep(2)
+                gevent.sleep(2)
                 continue
             if signal_ is None:
                 break
@@ -1040,7 +1040,7 @@ class MultiRunManager(object):
                     self.logger.warning(" CMD: " + cmd_obj.name + warning)
                     self.logger.warning(" CMD RAW resource: " + str(cmd_obj))  # write cmd_obj's raw resource to log
                     self.logger.warning(" CMD RUNNING STATUS: " + cmd_obj.cmd_str_status)
-                    # time.sleep(2)
+                    # gevent.sleep(2)
                     _thread_run_flag.wait(5)
                     cmd_obj = self.__pool.next(cmd_obj)
             else:
@@ -1051,7 +1051,7 @@ class MultiRunManager(object):
                     break
                 else:
                     _thread_run_flag.wait(10)
-                    # time.sleep(2)
+                    # gevent.sleep(2)
                     cmd_obj = self.__pool.next(cmd_obj)
         self.__logger.update_status()
         self.logger.info(" THREAD: " + thread.name + ' running is end finally')
@@ -1066,11 +1066,12 @@ class MultiRunManager(object):
         # if any(res):
         #     self.logger.debug('threads returns: ' + '\n'.join(res))
         exc_list = [gevent.spawn(self._cmd_run) for _ in range(self.__max_thread)]
-        _ = [t.start() for t in exc_list]
+        gevent.joinall(exc_list, raise_error=True)
+        # _ = [t.start() for t in exc_list]
         global _event
         _threads_ref_set.update(exc_list)
         _event.wait()
-        time.sleep(1)
+        gevent.sleep(1)
         self.__logger.update_status()
         # _ = [t.join() for t in exc_list]
 

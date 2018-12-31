@@ -22,7 +22,7 @@
 	"E": {
 		"cpu": 1,
 		"mem": "1G",
-		"depends": ["D"]
+		"depends": ["C"]
 	},
 	"F": {
 		"cpu": 1,
