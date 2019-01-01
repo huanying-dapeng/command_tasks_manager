@@ -1008,7 +1008,7 @@ class MultiRunManager(object):
         thread = gevent.getcurrent()
         cmd_obj = self.__pool.next()
 
-        self.logger.info(" THREAD: " + thread.name + ' running is starting')
+        self.logger.info(" Greenlet: " + thread.name + ' running is starting')
         while True:
             if isinstance(cmd_obj, Command):
                 # bind resource (determine whether the resources meet the cmd requirements)
@@ -1056,7 +1056,7 @@ class MultiRunManager(object):
                     # gevent.sleep(2)
                     cmd_obj = self.__pool.next(cmd_obj)
         self.__logger.update_status()
-        self.logger.info(" THREAD: " + thread.name + ' running is end finally')
+        self.logger.info(" Greenlet: " + thread.name + ' running is end finally')
         # release the main thread block
         # (event.wait() in MultiRunManager.run() function)
         _set_event()
