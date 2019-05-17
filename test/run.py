@@ -12,8 +12,7 @@ import time
 
 import psutil
 
-# t = random.randint(15, 30)
-t = 60
+t = random.randint(15, 30)
 time.sleep(t)
 print("cmd tool's process ID: " + str(psutil.Process().pid))
 print("========= sleep " + str(t) + 's =========')
